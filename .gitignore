@@ -19,3 +19,6 @@ build/
 *.blend1
 __pycache__/
 *.pyc
+
+# Local test output
+test_evidence/
