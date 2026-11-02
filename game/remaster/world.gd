@@ -105,11 +105,14 @@ func _environment():
 	sun.shadow_bias=.035
 	add_child(sun)
 
-func _canyon():
+func _build_riverbanks():
 	# Continuous heightfields replace the old sphere mountains. The central paths
 	# are level; the outer banks descend into the gorge and rise into ridges.
 	_terrain(true)
 	_terrain(false)
+
+func _canyon():
+	_build_riverbanks()
 	for i in 70:
 		var near_bank=i%2==0
 		var x=rng.randf_range(-110,110)

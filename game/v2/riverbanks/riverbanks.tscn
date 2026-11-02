@@ -1,0 +1,931 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://game/remaster/terrain.gdshader" id="1_3xjwr"]
+[ext_resource type="Texture2D" path="res://assets/remaster/pbr/ground_diff.jpg" id="2_2jape"]
+[ext_resource type="Texture2D" path="res://assets/remaster/pbr/ground_normal.jpg" id="3_65p7t"]
+[ext_resource type="Texture2D" path="res://assets/remaster/pbr/stone_normal.jpg" id="4_si08a"]
+[ext_resource type="Texture2D" path="res://assets/remaster/pbr/stone_rough.jpg" id="5_6k401"]
+[ext_resource type="Texture2D" path="res://assets/remaster/pbr/stone_diff.jpg" id="6_iwdot"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/NearBankTerrain.res" id="7_nrkgy"]
+[ext_resource type="Shape3D" path="res://game/v2/riverbanks/NearBankCollision.res" id="8_gajfk"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/FarBankTerrain.res" id="9_8mm1l"]
+[ext_resource type="Shape3D" path="res://game/v2/riverbanks/FarBankCollision.res" id="10_fqec7"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_modelShape_002.res" id="11_e8lfm"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_medium_001.res" id="12_qohpq"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_modelShape_003.res" id="13_jesy3"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_mesh1-geometry_003.res" id="14_853bo"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_modelShape.res" id="15_otk4x"]
+[ext_resource type="ArrayMesh" path="res://game/v2/riverbanks/Rock_rock_moss_set_01_modelShape_005.res" id="16_4a3vg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_knjkv"]
+render_priority = 0
+shader = ExtResource("1_3xjwr")
+shader_parameter/ground_map = ExtResource("2_2jape")
+shader_parameter/stone_map = ExtResource("6_iwdot")
+shader_parameter/rock_normal = ExtResource("4_si08a")
+shader_parameter/ground_normal = ExtResource("3_65p7t")
+shader_parameter/rock_rough = ExtResource("5_6k401")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_33s3t"]
+size = Vector3(7.245897, 2.1803856, 7.213264)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dc3qm"]
+size = Vector3(5.489767, 3.5010815, 5.3408546)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tu8ua"]
+size = Vector3(6.855079, 5.237559, 6.4235897)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j7sb2"]
+size = Vector3(7.5337, 2.949387, 8.577724)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6nlxq"]
+size = Vector3(7.964492, 2.738101, 7.05999)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yqr3y"]
+size = Vector3(6.2317133, 3.2535768, 7.670227)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lfjyl"]
+size = Vector3(7.315934, 2.67268, 7.311364)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_offhj"]
+size = Vector3(5.4790363, 2.5253901, 5.4227204)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l565g"]
+size = Vector3(4.241741, 2.0232449, 4.19398)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8auk6"]
+size = Vector3(10.154688, 4.2980433, 7.027559)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3eu0i"]
+size = Vector3(6.715542, 2.9470859, 6.7734675)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pi35a"]
+size = Vector3(4.992529, 1.9541974, 4.969)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nkn1y"]
+size = Vector3(8.79217, 3.2445612, 9.381556)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sx1am"]
+size = Vector3(7.1411934, 2.6550403, 7.1355424)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_np3hk"]
+size = Vector3(6.9551506, 2.909627, 7.004457)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ojmrt"]
+size = Vector3(8.866817, 3.3927922, 9.282634)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h755d"]
+size = Vector3(6.215275, 4.377907, 6.4797096)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3unb1"]
+size = Vector3(5.9723625, 2.716345, 6.030279)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6md3l"]
+size = Vector3(8.483688, 3.1014729, 7.527853)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wq7vg"]
+size = Vector3(8.299606, 5.261116, 8.457312)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tb7os"]
+size = Vector3(5.833065, 2.1806636, 5.265886)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iibk5"]
+size = Vector3(6.74712, 2.4454265, 6.5433073)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nnlcq"]
+size = Vector3(6.522149, 4.46282, 6.2393265)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tm7gp"]
+size = Vector3(10.203439, 3.265913, 10.763359)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t88lh"]
+size = Vector3(7.8168483, 5.0547523, 7.575508)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vhnbj"]
+size = Vector3(6.9821615, 4.8951797, 6.646942)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f5ydb"]
+size = Vector3(12.277521, 3.6915698, 12.196091)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqs8o"]
+size = Vector3(4.868965, 3.0448093, 4.9391327)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ujyxu"]
+size = Vector3(6.434187, 2.4545083, 6.454544)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6miq6"]
+size = Vector3(5.2302685, 3.325351, 5.3343506)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3n83j"]
+size = Vector3(6.8609695, 2.6231737, 6.883621)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w8ec2"]
+size = Vector3(7.760351, 4.739248, 7.724663)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gi3p4"]
+size = Vector3(9.552946, 3.5199368, 9.377762)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1sips"]
+size = Vector3(8.177664, 2.9953542, 7.8819733)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7cie0"]
+size = Vector3(9.6175, 2.9712405, 9.899284)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0uoes"]
+size = Vector3(9.191963, 3.51799, 10.229515)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xwk8v"]
+size = Vector3(5.2501564, 3.4747572, 5.4080505)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nn1qa"]
+size = Vector3(8.926018, 3.2976203, 8.819893)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vy21w"]
+size = Vector3(9.4235, 2.8391006, 9.045174)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u02hq"]
+size = Vector3(11.593327, 3.5034938, 11.640968)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hdtuf"]
+size = Vector3(6.5315475, 4.1034174, 6.6365814)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ltgu1"]
+size = Vector3(5.674385, 2.1862416, 4.967224)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8jafl"]
+size = Vector3(8.644451, 3.4367447, 9.351616)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5thmh"]
+size = Vector3(4.6742134, 3.3342123, 4.8838043)
+
+[node name="Riverbanks" type="Node3D" unique_id=544939135]
+
+[node name="NearBankTerrain" type="MeshInstance3D" parent="." unique_id=97976030]
+material_override = SubResource("ShaderMaterial_knjkv")
+mesh = ExtResource("7_nrkgy")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankTerrain" unique_id=41565482]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NearBankTerrain/Collision" unique_id=1862775028]
+shape = ExtResource("8_gajfk")
+
+[node name="FarBankTerrain" type="MeshInstance3D" parent="." unique_id=2065107402]
+material_override = SubResource("ShaderMaterial_knjkv")
+mesh = ExtResource("9_8mm1l")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankTerrain" unique_id=342224251]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FarBankTerrain/Collision" unique_id=1107194263]
+shape = ExtResource("10_fqec7")
+
+[node name="NearBankRocks" type="Node3D" parent="." unique_id=685062672]
+
+[node name="Rock01" type="Node3D" parent="NearBankRocks" unique_id=1912466524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, -7.1571155, -4.3847437)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock01" unique_id=271053307]
+transform = Transform3D(1.1945776, 0, 1.248219, 0, 1.7277344, 0, -1.248219, 0, 1.1945776, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock01" unique_id=1775149097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049595833, 0.28572607, -0.08319378)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock01/Collision" unique_id=722721569]
+shape = SubResource("BoxShape3D_33s3t")
+
+[node name="Rock02" type="Node3D" parent="NearBankRocks" unique_id=698368894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, -4.1168957, -2.3579304)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock02" unique_id=605039908]
+transform = Transform3D(-1.7803719, 0, 0.8661678, 0, 1.9798915, 0, -0.8661678, 0, -1.7803719, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock02" unique_id=668505905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11989212, 0.44189072, -0.2673905)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock02/Collision" unique_id=488963581]
+shape = SubResource("BoxShape3D_dc3qm")
+
+[node name="Rock03" type="Node3D" parent="NearBankRocks" unique_id=587821262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, -4.6361938, -2.7041292)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock03" unique_id=621095373]
+transform = Transform3D(-2.9468682, 0, -0.2978696, 0, 2.9618843, 0, 0.2978696, 0, -2.9468682, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock03" unique_id=900902817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36285877, 0.66106105, -0.24599123)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock03/Collision" unique_id=1223760158]
+shape = SubResource("BoxShape3D_tu8ua")
+
+[node name="Rock04" type="Node3D" parent="NearBankRocks" unique_id=2068821340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8, -7.202796, -4.4151974)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock04" unique_id=733939042]
+transform = Transform3D(-2.1145835, 0, -1.230821, 0, 2.4467087, 0, 1.230821, 0, -2.1145835, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("13_jesy3")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock04" unique_id=978894330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28413105, 0.07381916, -0.25471687)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock04/Collision" unique_id=1633702668]
+shape = SubResource("BoxShape3D_j7sb2")
+
+[node name="Rock05" type="Node3D" parent="NearBankRocks" unique_id=2052181309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1, -3.8992555, -2.212837)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock05" unique_id=1162152413]
+transform = Transform3D(1.1770264, 0, -1.9426837, 0, 2.2714336, 0, 1.9426837, 0, 1.1770264, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("13_jesy3")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock05" unique_id=1130120216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23179054, 0.068531275, 0.2678988)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock05/Collision" unique_id=1535704888]
+shape = SubResource("BoxShape3D_6nlxq")
+
+[node name="Rock06" type="Node3D" parent="NearBankRocks" unique_id=775557362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1, -3.916536, -2.2243574)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock06" unique_id=1889474972]
+transform = Transform3D(-2.5627096, 0, -0.28413212, 0, 2.5784125, 0, 0.28413212, 0, -2.5627096, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock06" unique_id=1134845088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38194275, 0.26524067, 0.2209518)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock06/Collision" unique_id=2007742126]
+shape = SubResource("BoxShape3D_yqr3y")
+
+[node name="Rock07" type="Node3D" parent="NearBankRocks" unique_id=1362525171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, -5.516475, -3.2909834)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock07" unique_id=233236124]
+transform = Transform3D(1.4940711, 0, 1.5013094, 0, 2.11806, 0, -1.5013094, 0, 1.4940711, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock07" unique_id=1494357514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3582363, 0.21788406, 0.05521941)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock07/Collision" unique_id=1787055960]
+shape = SubResource("BoxShape3D_lfjyl")
+
+[node name="Rock08" type="Node3D" parent="NearBankRocks" unique_id=1618287407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4, -4.5476837, -2.6451225)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock08" unique_id=854730210]
+transform = Transform3D(-2.2725492, 0, -0.33043998, 0, 2.2964473, 0, 0.33043998, 0, -2.2725492, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock08" unique_id=1533604880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08782005, 0.31914902, -0.024761915)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock08/Collision" unique_id=1328402645]
+shape = SubResource("BoxShape3D_offhj")
+
+[node name="Rock09" type="Node3D" parent="NearBankRocks" unique_id=1331571309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7, -4.777435, -2.7982898)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock09" unique_id=1656699125]
+transform = Transform3D(1.8306473, 0, 0.18353216, 0, 1.8398244, 0, -0.18353216, 0, 1.8306473, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock09" unique_id=467480669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06940651, 0.25568962, 0.022946358)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock09/Collision" unique_id=390006925]
+shape = SubResource("BoxShape3D_l565g")
+
+[node name="Rock10" type="Node3D" parent="NearBankRocks" unique_id=452589711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7, -4.970345, -2.9268966)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock10" unique_id=904286676]
+transform = Transform3D(-0.15011626, 0, 2.9146194, 0, 2.9184825, 0, -2.9146194, 0, -0.15011626, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock10" unique_id=461375070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04921341, 0.23283768, -0.0114786625)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock10/Collision" unique_id=1064676942]
+shape = SubResource("BoxShape3D_8auk6")
+
+[node name="Rock11" type="Node3D" parent="NearBankRocks" unique_id=1454865472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -6.546993, -3.9779952)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock11" unique_id=689630644]
+transform = Transform3D(0.61153513, 0, 2.609207, 0, 2.6799135, 0, -2.609207, 0, 0.61153513, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock11" unique_id=1606408133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06439209, 0.37244081, -0.084801435)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock11/Collision" unique_id=1688004488]
+shape = SubResource("BoxShape3D_3eu0i")
+
+[node name="Rock12" type="Node3D" parent="NearBankRocks" unique_id=670591512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -5.4560375, -3.250692)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock12" unique_id=1001795247]
+transform = Transform3D(1.5949824, 0, 0.783511, 0, 1.7770364, 0, -0.783511, 0, 1.5949824, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock12" unique_id=1260202075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07055664, 0.2469635, -0.0026392937)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock12/Collision" unique_id=832354120]
+shape = SubResource("BoxShape3D_pi35a")
+
+[node name="Rock13" type="Node3D" parent="NearBankRocks" unique_id=1123728774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.3, -4.7677536, -2.7918358)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock13" unique_id=963621360]
+transform = Transform3D(2.1362693, 0, -1.6373546, 0, 2.691575, 0, 1.6373546, 0, 2.1362693, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("13_jesy3")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock13" unique_id=916624836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1404419, 0.081207275, 0.39558935)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock13/Collision" unique_id=475951442]
+shape = SubResource("BoxShape3D_nkn1y")
+
+[node name="Rock14" type="Node3D" parent="NearBankRocks" unique_id=1294126527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.3, -4.6297665, -2.6998444)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock14" unique_id=1475943164]
+transform = Transform3D(-1.8018947, 0, 1.6069318, 0, 2.4143434, 0, -1.6069318, 0, -1.8018947, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock14" unique_id=1404450708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039402008, 0.33553314, -0.08746028)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock14/Collision" unique_id=125498788]
+shape = SubResource("BoxShape3D_sx1am")
+
+[node name="Rock15" type="Node3D" parent="NearBankRocks" unique_id=831977818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6, -6.8918557, -4.207904)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock15" unique_id=858926938]
+transform = Transform3D(0.8163389, 0, 2.5167668, 0, 2.6458504, 0, -2.5167668, 0, 0.8163389, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock15" unique_id=638166563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07032776, 0.36770725, -0.07813454)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock15/Collision" unique_id=277307423]
+shape = SubResource("BoxShape3D_np3hk")
+
+[node name="Rock16" type="Node3D" parent="NearBankRocks" unique_id=806629167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.6, -5.588569, -3.339046)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock16" unique_id=1842221825]
+transform = Transform3D(-1.8024265, 0, 1.4348254, 0, 2.3037937, 0, -1.4348254, 0, -1.8024265, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock16" unique_id=2105039046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03251648, 0.18379736, 0.023108482)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock16/Collision" unique_id=872166644]
+shape = SubResource("BoxShape3D_ojmrt")
+
+[node name="Rock17" type="Node3D" parent="NearBankRocks" unique_id=598079380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9, -5.9441895, -3.5761263)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock17" unique_id=926031647]
+transform = Transform3D(0.7393385, 0, -2.3627708, 0, 2.4757438, 0, 2.3627708, 0, 0.7393385, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock17" unique_id=1814242209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14041138, 0.5525594, 0.33846068)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock17/Collision" unique_id=1114145721]
+shape = SubResource("BoxShape3D_h755d")
+
+[node name="Rock18" type="Node3D" parent="NearBankRocks" unique_id=1668213005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.9, -5.6396832, -3.3731222)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock18" unique_id=1201217726]
+transform = Transform3D(-0.4342197, 0, 2.4316251, 0, 2.4700906, 0, -2.4316251, 0, -0.4342197, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock18" unique_id=1251433916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0235672, 0.3432808, -0.09527016)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock18/Collision" unique_id=919285133]
+shape = SubResource("BoxShape3D_3unb1")
+
+[node name="Rock19" type="Node3D" parent="NearBankRocks" unique_id=185251079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.2, -4.924796, -2.8965309)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock19" unique_id=1138334615]
+transform = Transform3D(1.0054628, 0, 1.8504583, 0, 2.10598, 0, -1.8504583, 0, 1.0054628, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock19" unique_id=250292680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025966644, 0.16801596, -0.02560258)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock19/Collision" unique_id=456782288]
+shape = SubResource("BoxShape3D_6md3l")
+
+[node name="Rock20" type="Node3D" parent="NearBankRocks" unique_id=1643693209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2, -5.9014554, -3.5476367)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock20" unique_id=1933022216]
+transform = Transform3D(-1.5632517, 0, 2.5314214, 0, 2.975206, 0, -2.5314214, 0, -1.5632517, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock20" unique_id=400341969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062877655, 0.66403437, -0.43584085)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock20/Collision" unique_id=875198268]
+shape = SubResource("BoxShape3D_wq7vg")
+
+[node name="Rock21" type="Node3D" parent="NearBankRocks" unique_id=848786750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.5, -5.0482397, -2.9788265)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock21" unique_id=1927718395]
+transform = Transform3D(0.6872187, 0, 1.5856271, 0, 1.7281444, 0, -1.5856271, 0, 0.6872187, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock21" unique_id=336977950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25562286, 0.17777348, 0.14872813)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock21/Collision" unique_id=1488520214]
+shape = SubResource("BoxShape3D_tb7os")
+
+[node name="Rock22" type="Node3D" parent="NearBankRocks" unique_id=2001082273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.5, -5.711291, -3.4208605)
+
+[node name="Model" type="MeshInstance3D" parent="NearBankRocks/Rock22" unique_id=1075651759]
+transform = Transform3D(-1.1993895, 0, -1.5222265, 0, 1.937965, 0, 1.5222265, 0, -1.1993895, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="NearBankRocks/Rock22" unique_id=2028704387]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31975555, 0.19935751, -0.08801007)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="NearBankRocks/Rock22/Collision" unique_id=969007520]
+shape = SubResource("BoxShape3D_iibk5")
+
+[node name="FarBankRocks" type="Node3D" parent="." unique_id=765813980]
+
+[node name="Rock01" type="Node3D" parent="FarBankRocks" unique_id=1731571111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, -4.8988433, -75.12077)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock01" unique_id=226497459]
+transform = Transform3D(-2.4273086, 0, -0.6910512, 0, 2.523763, 0, 0.6910512, 0, -2.4273086, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock01" unique_id=2004186408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3412037, 0.56327677, -0.15202332)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock01/Collision" unique_id=148947059]
+shape = SubResource("BoxShape3D_nnlcq")
+
+[node name="Rock02" type="Node3D" parent="FarBankRocks" unique_id=40256452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, -6.366289, -74.14247)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock02" unique_id=1360901433]
+transform = Transform3D(-2.231313, 0, -1.3109128, 0, 2.5879047, 0, 1.3109128, 0, -2.231313, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock02" unique_id=1261269967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10545111, 0.42797756, 0.09963989)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock02/Collision" unique_id=426775399]
+shape = SubResource("BoxShape3D_tm7gp")
+
+[node name="Rock03" type="Node3D" parent="FarBankRocks" unique_id=443228629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8, -5.250233, -74.88651)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock03" unique_id=410943644]
+transform = Transform3D(-2.6214333, 0, -1.1397986, 0, 2.8585055, 0, 1.1397986, 0, -2.6214333, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock03" unique_id=1792210728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40585232, 0.6379881, -0.11949921)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock03/Collision" unique_id=1755426720]
+shape = SubResource("BoxShape3D_t88lh")
+
+[node name="Rock04" type="Node3D" parent="FarBankRocks" unique_id=1386444107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8, -5.5554285, -74.683044)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock04" unique_id=816652902]
+transform = Transform3D(-2.6941688, 0, 0.6361997, 0, 2.768266, 0, -0.6361997, 0, -2.6941688, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock04" unique_id=958321322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24547672, 0.61784744, -0.3280487)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock04/Collision" unique_id=1419304533]
+shape = SubResource("BoxShape3D_vhnbj")
+
+[node name="Rock05" type="Node3D" parent="FarBankRocks" unique_id=1169100762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1, -6.56627, -74.009155)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock05" unique_id=556627519]
+transform = Transform3D(-2.0004098, 0, -2.1342738, 0, 2.9251947, 0, 2.1342738, 0, -2.0004098, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock05" unique_id=692996487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.082499504, 0.48375702, 0.14172363)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock05/Collision" unique_id=1447219682]
+shape = SubResource("BoxShape3D_f5ydb")
+
+[node name="Rock06" type="Node3D" parent="FarBankRocks" unique_id=979162076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1, -5.735091, -74.56327)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock06" unique_id=1900679223]
+transform = Transform3D(-0.9829487, 0, 1.4137305, 0, 1.7218659, 0, -1.4137305, 0, -0.9829487, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock06" unique_id=1679477324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022636414, 0.38430214, -0.2538452)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock06/Collision" unique_id=962304369]
+shape = SubResource("BoxShape3D_aqs8o")
+
+[node name="Rock07" type="Node3D" parent="FarBankRocks" unique_id=1061160990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, -4.422362, -75.43842)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock07" unique_id=1381505481]
+transform = Transform3D(1.1876103, 0, -1.8898058, 0, 2.231991, 0, 1.8898058, 0, 1.1876103, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock07" unique_id=1613529794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012537003, 0.31019068, 0.08779144)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock07/Collision" unique_id=269032098]
+shape = SubResource("BoxShape3D_ujyxu")
+
+[node name="Rock08" type="Node3D" parent="FarBankRocks" unique_id=262475884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4, -5.4350033, -74.76333)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock08" unique_id=1188942614]
+transform = Transform3D(0.9712712, 0, 1.6102691, 0, 1.8805144, 0, -1.6102691, 0, 0.9712712, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock08" unique_id=110009202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26317024, 0.41971064, -0.09059906)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock08/Collision" unique_id=629931973]
+shape = SubResource("BoxShape3D_6miq6")
+
+[node name="Rock09" type="Node3D" parent="FarBankRocks" unique_id=1845379512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7, -7.6486597, -73.28756)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock09" unique_id=890079270]
+transform = Transform3D(1.2503855, 0, -2.0313802, 0, 2.3853655, 0, 2.0313802, 0, 1.2503855, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("15_otk4x")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock09" unique_id=1111233366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125255585, 0.33150625, 0.093940735)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock09/Collision" unique_id=694443427]
+shape = SubResource("BoxShape3D_3n83j")
+
+[node name="Rock10" type="Node3D" parent="FarBankRocks" unique_id=383027936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7, -6.346856, -74.155426)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock10" unique_id=1265237369]
+transform = Transform3D(2.00149, 0, -1.7823839, 0, 2.680085, 0, 1.7823839, 0, 2.00149, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock10" unique_id=1183997356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057998657, 0.59816647, 0.39241028)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock10/Collision" unique_id=1515970872]
+shape = SubResource("BoxShape3D_w8ec2")
+
+[node name="Rock11" type="Node3D" parent="FarBankRocks" unique_id=1948189792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -5.072335, -75.00511)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock11" unique_id=850078378]
+transform = Transform3D(1.6108612, 0, -1.76574, 0, 2.390128, 0, 1.76574, 0, 1.6108612, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock11" unique_id=1096687965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037101746, 0.19068527, -0.018333435)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock11/Collision" unique_id=654992858]
+shape = SubResource("BoxShape3D_gi3p4")
+
+[node name="Rock12" type="Node3D" parent="FarBankRocks" unique_id=497924196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -6.845084, -73.82328)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock12" unique_id=790613098]
+transform = Transform3D(-1.3015485, 0, -1.5629501, 0, 2.0339227, 0, 1.5629501, 0, -1.3015485, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock12" unique_id=1809076783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019763947, 0.16226673, 0.029151917)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock12/Collision" unique_id=1194806789]
+shape = SubResource("BoxShape3D_1sips")
+
+[node name="Rock13" type="Node3D" parent="FarBankRocks" unique_id=976123489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.3, -7.589207, -73.327194)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock13" unique_id=1990064606]
+transform = Transform3D(-1.8802332, 0, 1.4170227, 0, 2.3544066, 0, -1.4170227, 0, -1.8802332, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock13" unique_id=1313300565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12051773, 0.3893628, -0.05381775)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock13/Collision" unique_id=1020626780]
+shape = SubResource("BoxShape3D_7cie0")
+
+[node name="Rock14" type="Node3D" parent="FarBankRocks" unique_id=1952597984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.3, -5.2540827, -74.88394)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock14" unique_id=375946998]
+transform = Transform3D(2.4554987, 0, -1.5772116, 0, 2.9184022, 0, 1.5772116, 0, 2.4554987, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("13_jesy3")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock14" unique_id=1490464741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11619949, 0.08805084, 0.44007874)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock14/Collision" unique_id=404008590]
+shape = SubResource("BoxShape3D_0uoes")
+
+[node name="Rock15" type="Node3D" parent="FarBankRocks" unique_id=1419959762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6, -7.000918, -73.71939)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock15" unique_id=1595786070]
+transform = Transform3D(0.81755024, 0, 1.7868564, 0, 1.9650049, 0, -1.7868564, 0, 0.81755024, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock15" unique_id=253885191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26248932, 0.43856812, -0.12524414)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock15/Collision" unique_id=1773067875]
+shape = SubResource("BoxShape3D_xwk8v")
+
+[node name="Rock16" type="Node3D" parent="FarBankRocks" unique_id=442372961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.6, -5.488096, -74.727936)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock16" unique_id=105250885]
+transform = Transform3D(1.5357283, 0, 1.6295452, 0, 2.2391694, 0, -1.6295452, 0, 1.5357283, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("16_4a3vg")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock16" unique_id=1009341887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019748688, 0.17864227, -0.03337097)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock16/Collision" unique_id=366786093]
+shape = SubResource("BoxShape3D_nn1qa")
+
+[node name="Rock17" type="Node3D" parent="FarBankRocks" unique_id=1392278587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9, -5.359925, -74.813385)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock17" unique_id=2083535276]
+transform = Transform3D(1.2491401, 0, 1.8710412, 0, 2.249699, 0, -1.8710412, 0, 1.2491401, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock17" unique_id=1524742735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.044757843, 0.37204647, -0.11790466)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock17/Collision" unique_id=877681893]
+shape = SubResource("BoxShape3D_vy21w")
+
+[node name="Rock18" type="Node3D" parent="FarBankRocks" unique_id=1143330722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.9, -6.866605, -73.80893)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock18" unique_id=1368631167]
+transform = Transform3D(-2.001807, 0, -1.9234998, 0, 2.7761633, 0, 1.9234998, 0, -2.001807, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("11_e8lfm")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock18" unique_id=1218579572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08522034, 0.4591112, 0.1302185)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock18/Collision" unique_id=1247178817]
+shape = SubResource("BoxShape3D_u02hq")
+
+[node name="Rock19" type="Node3D" parent="FarBankRocks" unique_id=1814151320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.2, -7.704844, -73.25011)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock19" unique_id=735755493]
+transform = Transform3D(-1.2864411, 0, -1.931287, 0, 2.3205173, 0, 1.931287, 0, -1.2864411, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock19" unique_id=931178466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.32943726, 0.5179148, 0.09712219)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock19/Collision" unique_id=949872801]
+shape = SubResource("BoxShape3D_hdtuf")
+
+[node name="Rock20" type="Node3D" parent="FarBankRocks" unique_id=625913947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2, -5.455199, -74.74987)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock20" unique_id=1601596314]
+transform = Transform3D(0.52953136, 0, 1.6496596, 0, 1.7325647, 0, -1.6496596, 0, 0.52953136, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock20" unique_id=1946024932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24039459, 0.17822886, 0.17355347)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock20/Collision" unique_id=1357933427]
+shape = SubResource("BoxShape3D_ltgu1")
+
+[node name="Rock21" type="Node3D" parent="FarBankRocks" unique_id=1301367855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.5, -7.460956, -73.4127)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock21" unique_id=1537156832]
+transform = Transform3D(2.4026854, 0, 1.2825512, 0, 2.72357, 0, -1.2825512, 0, 2.4026854, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("14_853bo")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock21" unique_id=1380505471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46122742, 0.28017282, -0.0671463)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock21/Collision" unique_id=1522394042]
+shape = SubResource("BoxShape3D_8jafl")
+
+[node name="Rock22" type="Node3D" parent="FarBankRocks" unique_id=1485686386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.5, -7.538865, -73.360756)
+
+[node name="Model" type="MeshInstance3D" parent="FarBankRocks/Rock22" unique_id=919983691]
+transform = Transform3D(-0.5244485, 0, 1.8111211, 0, 1.8855255, 0, -1.8111211, 0, -0.5244485, 0, 0, 0)
+visibility_range_end = 190.0
+mesh = ExtResource("12_qohpq")
+skeleton = NodePath("")
+
+[node name="Collision" type="StaticBody3D" parent="FarBankRocks/Rock22" unique_id=1056899552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11242676, 0.4208293, -0.2554245)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape3D" parent="FarBankRocks/Rock22/Collision" unique_id=988183247]
+shape = SubResource("BoxShape3D_5thmh")

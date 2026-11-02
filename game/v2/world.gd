@@ -10,6 +10,11 @@ var v2_patches:Array[Node3D]=[]
 var v2_bodies:Array[StaticBody3D]=[]
 var v2_repaired:Array[bool]=[false,false]
 
+func _build_riverbanks():
+	# The chapter owns the editable banks. Standalone world instances load the same scene.
+	if not mission or not mission.riverbanks:
+		add_child(preload("res://game/v2/riverbanks/riverbanks.tscn").instantiate())
+
 func _bridge():
 	super._bridge()
 	for child in get_children():

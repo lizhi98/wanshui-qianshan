@@ -9,6 +9,15 @@ func run():
 	if errors: quit(1); return
 	var game=load("res://game/v2/main.tscn").instantiate(); root.add_child(game)
 	await create_timer(.5).timeout
+	# Each bank must have exactly one ground surface after baking the old heightfields.
+	var space = game.get_world_3d().direct_space_state
+	for z in [100.0, -180.0]:
+		var ray = PhysicsRayQueryParameters3D.create(Vector3(0, 100, z), Vector3(0, -25, z), 1)
+		var ground = space.intersect_ray(ray)
+		check(not ground.is_empty() and game.riverbanks.is_ancestor_of(ground.collider), "ground belongs to the editable bank at z=%s" % z)
+		if not ground.is_empty():
+			ray.exclude = [ground.rid]
+			check(space.intersect_ray(ray).is_empty(), "no duplicate ground collision at z=%s" % z)
 	game.save_store.path="user://v2_campaign_test.json"
 	game.begin(true)
 	await create_timer(.7).timeout

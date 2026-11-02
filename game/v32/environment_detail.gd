@@ -11,13 +11,6 @@ func setup(m):
 				var wall=mission.world.stone.duplicate(); wall.albedo_color=Color(.66,.62,.54); wall.uv1_scale=Vector3.ONE*.65; mesh.material_override=wall
 			if minf(size_value.x,minf(size_value.y,size_value.z))>.035:
 				mesh.mesh=_bevel(size_value,minf(.035,minf(size_value.x,minf(size_value.y,size_value.z))*.12))
-	var rng=RandomNumberGenerator.new(); rng.seed=32029
-	for side in [0,1]:
-		for i in 22:
-			var x=(-1 if i%2 else 1)*(6.5+float(i/2)*4.3)
-			var z=-2.2-rng.randf()*2.8 if side==0 else -75.7+rng.randf()*2.8
-			var y=world._ground_height(x,z,side==0)
-			world.rock(Vector3(x,y-.5,z),Vector3.ONE*rng.randf_range(1.7,3.0),Color.WHITE)
 	for point in [Vector3(-9,0,17),Vector3(11,0,9),Vector3(-9,0,-87),Vector3(10,0,-93)]: _house_detail(point)
 	for gun in mission.battlefield.guns: _gun_detail(gun)
 	var roof_material=ShaderMaterial.new(); roof_material.shader=load("res://game/v32/roof.gdshader")

@@ -8,6 +8,7 @@ var current_module
 var march
 var assault
 var battlefield
+@export var riverbanks: Node3D
 var scenery_detail
 var vanguard
 var vegetation
