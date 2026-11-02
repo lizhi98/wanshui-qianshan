@@ -6,16 +6,30 @@
 
 [ext_resource type="FontFile" path="res://assets/remaster/fonts/MaShanZheng-Regular.ttf" id="ink"]
 
+[ext_resource type="Script" path="res://game/chapters/chapter_preview.gd" id="preview"]
+[ext_resource type="Texture2D" path="res://game/chapters/snow_cover.png" id="snow_cover"]
+
 [node name="ChapterMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource("theme")
+script = ExtResource("preview")
 
 [node name="Landscape" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 script = ExtResource("bg")
+
+[node name="SnowCover" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture_filter = 4
+texture = ExtResource("snow_cover")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Masthead" type="VBoxContainer" parent="."]
 anchor_left = 0.065
@@ -41,6 +55,8 @@ text = "同一段长征，两次不同的接力。"
 [node name="Caption" type="Label" parent="."]
 anchor_left = 0.065
 anchor_top = 0.885
+theme_override_colors/font_shadow_color = Color(0.08, 0.13, 0.12, 0.9)
+theme_override_constants/shadow_outline_size = 2
 theme_override_colors/font_color = Color(0.9333, 0.8941, 0.8000, 1)
 theme_override_font_sizes/font_size = 16
 text = "大渡河畔   ·   泸定桥"
