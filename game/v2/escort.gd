@@ -25,10 +25,10 @@ var markers:Array[Node3D]=[]
 func setup(m):
 	mission=m
 	if blocker: return
-	route_props.A.append(_box("ShortRouteCover",Vector3(-.7,.43,5.7),Vector3(1.6,.9,.85),Color("777761")))
-	for pos in [Vector3(3.6,.43,5.8),Vector3(3.6,.43,1.05),Vector3(6.0,.43,4.3)]: route_props.B.append(_box("SideRouteCover",pos,Vector3(1.45,.9,.8),Color("66745f")))
-	blocker=_box("MovableCrate",blocker_position+Vector3(0,.43,0),Vector3(1.0,.9,.8),Color("795a3c"))
-	supply=_box("AmmunitionSupply",supply_position+Vector3(0,.35,0),Vector3(.8,.7,.65),Color("5f644a"))
+	route_props.A.append(_box("ShortRouteCover",Vector3(-.7,.43,5.7),Vector3(1.6,.9,.85),mission.world.stone))
+	for pos in [Vector3(3.6,.43,5.8),Vector3(3.6,.43,1.05),Vector3(6.0,.43,4.3)]: route_props.B.append(_box("SideRouteCover",pos,Vector3(1.45,.9,.8),mission.world.stone))
+	blocker=_box("MovableCrate",blocker_position+Vector3(0,.43,0),Vector3(1.0,.9,.8),mission.world.material(Color("795a3c")))
+	supply=_box("AmmunitionSupply",supply_position+Vector3(0,.35,0),Vector3(.8,.7,.65),mission.world.material(Color("5f644a")))
 	var supply_label=Label3D.new(); supply_label.text="补给箱 · E补充弹药"; supply_label.font_size=42; supply_label.pixel_size=.002; supply_label.position=Vector3(0,.8,0); supply_label.billboard=BaseMaterial3D.BILLBOARD_ENABLED; supply.add_child(supply_label)
 	for body in route_props.A+route_props.B+[blocker,supply]: _set_prop(body,false)
 
@@ -149,9 +149,9 @@ func stop():
 func _set_prop(body:Node3D,value:bool):
 	body.visible=value
 	if body is StaticBody3D: body.collision_layer=1 if value else 0
-func _box(label:String,pos:Vector3,size_value:Vector3,color:Color)->StaticBody3D:
+func _box(label:String,pos:Vector3,size_value:Vector3,material:Material)->StaticBody3D:
 	var body=StaticBody3D.new(); body.name=label; add_child(body); body.position=pos
 	var mesh=MeshInstance3D.new(); mesh.mesh=BoxMesh.new(); mesh.mesh.size=size_value
-	var material=StandardMaterial3D.new(); material.albedo_color=color; material.roughness=.95; mesh.material_override=material; body.add_child(mesh)
+	mesh.material_override=material; body.add_child(mesh)
 	var collider=CollisionShape3D.new(); collider.shape=BoxShape3D.new(); collider.shape.size=size_value; body.add_child(collider)
 	return body
