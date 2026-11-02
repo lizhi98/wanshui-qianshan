@@ -78,7 +78,7 @@ func _make_tree():
 	motion_space.min_space = 0
 	motion_space.max_space = 5
 	for entry in [["Idle_Loop",0.0],["Walk_Loop",1.8],["Jog_Fwd_Loop",3.2],["Sprint_Loop",4.8]]:
-		motion_space.add_blend_point(_clip(entry[0]),entry[1])
+		motion_space.add_blend_point(_clip(entry[0]), entry[1], -1, entry[0])
 	graph.add_node("Locomotion",motion_space,Vector2(0,0))
 	graph.add_node("Aim",_clip("Pistol_Idle_Loop"),Vector2(0,180))
 	var upper = AnimationNodeBlend2.new()
@@ -101,9 +101,9 @@ func _make_tree():
 			var work_pose=AnimationNodeBlendSpace1D.new()
 			work_pose.min_space=.2
 			work_pose.max_space=.8
-			work_pose.add_blend_point(_clip("Fixing_Kneeling"),.2)
-			work_pose.add_blend_point(_clip("Crouch_Idle"),.45)
-			work_pose.add_blend_point(_clip("Idle_Loop"),.8)
+			work_pose.add_blend_point(_clip("Fixing_Kneeling"), .2, -1, &"Fixing_Kneeling")
+			work_pose.add_blend_point(_clip("Crouch_Idle"), .45, -1, &"Crouch_Idle")
+			work_pose.add_blend_point(_clip("Idle_Loop"), .8, -1, &"Idle_Loop")
 			states.add_node(key,work_pose)
 		else: states.add_node(key,_clip(clips[key]))
 	for from in clips:
