@@ -141,7 +141,7 @@ func _allies_across()->bool:
 func _render():
 	if not barrier: return
 	barrier.position.y=.55+pull*1.41
-	barrier.rotation.z=0 if clear else angle*.20*(1-pull)
+	barrier.rotation.z=0.0 if clear else angle*.20*(1-pull)
 	rope.rotation.x=angle*.12
 	rope.scale.z=1.0-pull*.18
 func safe_position()->Vector3: return Vector3(0,.05,-78.7) if clear else WINCH

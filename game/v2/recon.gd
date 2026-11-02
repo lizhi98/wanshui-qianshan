@@ -39,7 +39,7 @@ func setup(m):
 		var marker=Node3D.new(); add_child(marker); marker.position=entry[0]
 		var pole=_box("RoutePost",entry[0]+Vector3(0,.45,0),Vector3(.08,.9,.08),mission.world.material(Color("6e593f")),false)
 		pole.reparent(marker,true)
-		var sign=_label(entry[1],entry[0]+Vector3(0,1.25,0),.09); sign.reparent(marker,true)
+		var route_label=_label(entry[1],entry[0]+Vector3(0,1.25,0),.09); route_label.reparent(marker,true)
 		route_signs.append(marker); marker.hide()
 	for label in target_signs.values(): label.hide()
 

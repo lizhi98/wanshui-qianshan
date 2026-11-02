@@ -235,7 +235,7 @@ func _render():
 	loose_plank.rotation.z=0.0 if fixed else alignment*.20
 	loose_shape.disabled=not fixed
 	rope.scale.x=1.0 if fixed else (.7+clampf(tension,0,1)*.4)
-	rope.rotation.x=0 if fixed else -.10+alignment*.08
+	rope.rotation.x=0.0 if fixed else -.10+alignment*.08
 func _allies_snapshot()->Array:
 	var result=[]
 	for actor in [mission.amu,mission.zhou]:

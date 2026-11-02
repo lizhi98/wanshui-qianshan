@@ -300,8 +300,8 @@ func tick(delta:float):
 			lateral=clampf(lateral+Input.get_axis("move_left","move_right")*delta,-1,1)
 			if site==1: depth=clampf(depth+Input.get_axis("move_forward","move_back")*delta,-1,1)
 			var gap=mission.world.get_v2_gap(site)
-			active_board.position=gap.center+Vector3(lateral*.48,.38,depth*.34 if site==1 else 0)
-			active_board.rotation.y=depth*.22 if site==1 else 0
+			active_board.position=gap.center+Vector3(lateral*.48,.38,depth*.34 if site==1 else 0.0)
+			active_board.rotation.y=depth*.22 if site==1 else 0.0
 			_placement_hands()
 		"place_check":
 			_placement_hands()
@@ -478,7 +478,7 @@ func cancel_interaction(reason:String="取消搬运"):
 		recover_start=active_board.position; _set_step("recover",reason)
 
 func _update_preparation_board():
-	active_board.position=_work_position()+Vector3(lateral*.22 if prep_round==0 else 0,0,depth*.25 if prep_round>0 else 0)
+	active_board.position=_work_position()+Vector3(lateral*.22 if prep_round==0 else 0.0,0,depth*.25 if prep_round>0 else 0.0)
 
 func _work_hands(delta:float):
 	mission.player.visual.mode="brace"
