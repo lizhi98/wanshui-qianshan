@@ -54,9 +54,15 @@ func main_menu():
 	ending_active=false; ending_clock=0
 	if not hud or not modern: return
 	super.main_menu()
-	var actions=[]
-	if save_store.exists(): actions.append(["继续故事",continue_story])
-	actions.append_array([["章节选择",func():get_tree().change_scene_to_file("res://game/chapters/main.tscn")],["开始新故事",begin],["操作与画质",settings_menu],["历史档案与制作说明",archive_menu],["退出",quit_game]])
+	var checkpoint = save_store.read()
+	var finished = not checkpoint.is_empty() and checkpoint.ledger.current in ["complete", "modern"]
+	var actions = []
+	if not checkpoint.is_empty() and not finished:
+		actions.append(["继续故事", continue_story])
+	actions.append(["开始新故事", begin])
+	if finished:
+		actions.append(["查看上次通关结算", continue_story])
+	actions.append_array([["章节选择",func():get_tree().change_scene_to_file("res://game/chapters/main.tscn")],["操作与画质",settings_menu],["历史档案与制作说明",archive_menu],["退出",quit_game]])
 	var save_note="" if save_store.last_error.is_empty() else "\n\n"+save_store.last_error
 	hud.show_menu("飞夺泸定桥","突击在前 · 铺板跟进\n\n突击组先过铁索，两岸火力压制。\n你与阿木跟在后面，将桥板铺到缺口。\n必要时右键放板射击，松开后 E 接着搬。\n\nWASD 移动 · E 铺板 · Tab详情\n角色与战斗调度为艺术化改编。"+save_note,actions)
 func _stop_modules():

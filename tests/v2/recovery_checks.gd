@@ -45,6 +45,22 @@ func run():
 		if id=="relay": check(game.relay.observed and game.relay.phase=="signal","unfinished relay restores a controllable signal step")
 
 	game.main_menu()
+	# Reopening the title must preserve the completed checkpoint until a player chooses an action.
+	for terminal in ["complete", "modern"]:
+		var completed = fixture("complete")
+		completed.ledger.current = terminal
+		game.save_store.path = "user://v2_title_" + terminal + ".json"
+		check(game.save_store.write(completed), "prepare finished checkpoint " + terminal)
+		game.main_menu()
+		await process_frame
+		var buttons = game.hud.buttons.get_children()
+		check(not game.started and game.save_store.read().ledger.current == terminal, "title preserves finished checkpoint " + terminal)
+		check(buttons[0].text == "开始新故事" and buttons[1].text == "查看上次通关结算", "finished checkpoint offers replay before results")
+		buttons[0].pressed.emit()
+		check(game.ledger.current == "march" and game.current_module == game.march and not game.hud.overlay.visible, "first action starts playable prologue")
+		game.main_menu()
+		await process_frame
+		check(game.hud.buttons.get_child(0).text == "继续故事", "unfinished checkpoint offers continue first")
 	game.save_store.path="user://v2_corruption_test.json"
 	var file=FileAccess.open(game.save_store.path,FileAccess.WRITE); file.store_string('{broken'); file.close()
 	check(not game.continue_story() and not game.save_store.last_error.is_empty(),"corrupt JSON falls back to title with explanation")
