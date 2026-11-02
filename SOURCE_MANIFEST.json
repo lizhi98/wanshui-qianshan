@@ -1,0 +1,33 @@
+{
+  "godot": {
+    "version": "4.6.stable.official.89cea1439",
+    "source": "https://godotengine.org/download/archive/4.6-stable/",
+    "license": "MIT",
+    "archive_sha256": "5c9177625c0dca18c92ba6328203c7b5a9596c85ef9d7c968396f0272d8f10d9"
+  },
+  "platformer": {
+    "url": "https://github.com/KenneyNL/Starter-Kit-3D-Platformer",
+    "sha": "3fa8a04b1c01ab23db43123d4ce814a34c3fc7f0",
+    "code_license": "MIT",
+    "asset_license": "CC0"
+  },
+  "fps": {
+    "url": "https://github.com/KenneyNL/Starter-Kit-FPS",
+    "sha": "185fd2326d74a5cf858cffc616f87cf9696f9cc0",
+    "code_license": "MIT",
+    "asset_license": "CC0"
+  },
+  "characters": {
+    "url": "https://quaternius.itch.io/universal-base-characters",
+    "archive": "Universal Base Characters[Standard].zip",
+    "license": "CC0 1.0",
+    "archive_sha256": "fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40"
+  },
+  "animations": {
+    "url": "https://quaternius.itch.io/universal-animation-library",
+    "archive": "Universal Animation Library[Standard].zip",
+    "license": "CC0 1.0",
+    "clips": 43,
+    "archive_sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724"
+  }
+}

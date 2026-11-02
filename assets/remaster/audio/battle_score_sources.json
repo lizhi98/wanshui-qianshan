@@ -1,0 +1,17 @@
+{
+  "soundfont": "GeneralUser GS 2.0.3",
+  "author": "S. Christian Collins",
+  "source": "https://github.com/mrbumpy409/GeneralUser-GS",
+  "license": "licenses/GeneralUser_GS_License.txt",
+  "soundfont_sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
+  "original_composition": true,
+  "movie_audio_included": false,
+  "tracks": {
+    "advance.wav": "c8f3ed9ad47c99a0468f3a8c991dd31112fea737663e63260de4eb40e74543d4",
+    "assault.wav": "f3f30c68a5e748f6965e64083e47d185672e4306f8da7230f2abb25798ff426c",
+    "cannon_fire.wav": "c5211f687939541ecf0128f886641ba9e14d248e57e1ccbc8e7f1586dc70845c",
+    "chain_battle.wav": "76327098aff1c95f83b5c474dd63d6515a347f34ef7406ca837de44260dc94bb",
+    "shell_impact.wav": "671c419acb115437b5720fd709c2888d56f28b99378a6ba794c7a0a1b56ff378",
+    "victory.wav": "d8bf9bbbffbc1bf472eecb223ad1c3ca2beb453f92e44460e798707cd562ec52"
+  }
+}

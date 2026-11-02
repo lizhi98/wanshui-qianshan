@@ -1,0 +1,134 @@
+[
+  {
+    "path": "Build_Windows.cmd",
+    "bytes": 341,
+    "sha256": "4ddc0f2ab3bf3064824d2b95b177a62af2081c2b4de33450e65b0b385f3379d5",
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "bytes": 1029,
+    "sha256": "bdb5a0e28c8dff9fa65c897fd5d26c66e8db2a6e0eb82d17eed41114bdb7c2f1",
+    "change": "modified"
+  },
+  {
+    "path": "game/chapters/manager.gd",
+    "bytes": 3122,
+    "sha256": "77bbda7115a539afa08c842afe4c34cbe30f0407dd223b64b45c3a7dd2cc67ac",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/campaign.gd",
+    "bytes": 25668,
+    "sha256": "b4b04423870457e860b66eb32a55a818bbb1b3e12b911f7961b2c4bf1ba49b72",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/crowd.gd",
+    "bytes": 6101,
+    "sha256": "ed3b6052caba869444ebaaedf6e2565c9922ae923b0071d2436ddb80d8a22c03",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/crowd_actor.gd",
+    "bytes": 138,
+    "sha256": "48681f37e54b4766e6fd176f8a704ee4b5e3269b8917981e0f13a629a50efc92",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/crowd_actor.gd.uid",
+    "bytes": 19,
+    "sha256": "002c18ac55ad1a558449ad9bd60b67240ec61bfaa36a2e1713d5dc8fbbc42c3c",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/footprints.gd",
+    "bytes": 3590,
+    "sha256": "2dfec2035c28880dd42c9661f930e6991c0e3ce7741642ba1e0e7876a10efd57",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/npc.gd",
+    "bytes": 1798,
+    "sha256": "d2bb03f2bd2424accfa280abf581189387add9873e6e4947dac3780fd29e0c62",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/save_store.gd",
+    "bytes": 2618,
+    "sha256": "fd9751a728fc1ae12f6f839228ea6c8d2b24672fb5131b23d6f6017332b2a38a",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/terrain.gdshader",
+    "bytes": 1657,
+    "sha256": "360ccf5d50cb60d4fb28c2dd8db36e9d74965eb2516e3d901265caa48887a601",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/visual.gd",
+    "bytes": 7976,
+    "sha256": "685618336c3ea229f81609929c17fc99bb1421f57730afff27e01a9eca038e10",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/world.gd",
+    "bytes": 9841,
+    "sha256": "606c40ba9c18377959261747959c1a2419cd907851f67d06f4651337718f8e5d",
+    "change": "modified"
+  },
+  {
+    "path": "qa/memorial_replay.gd",
+    "bytes": 9004,
+    "sha256": "96b168566a3a74f16675bce0bf39815bf4306998836779d2eb883d3373da0561",
+    "change": "modified"
+  },
+  {
+    "path": "README_V4.1.1.md",
+    "bytes": 639,
+    "sha256": "13832bc638c35f9bdd8714828b184a4b3c2cbd786dbd14c7359552da12e0fedc",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/review_411.gd",
+    "bytes": 2869,
+    "sha256": "3ea8e5c68f80f40f5e30dd4e4e1f487ad48a62976798f1b0ba97ac93a3b2f1d8",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/review_411.gd.uid",
+    "bytes": 20,
+    "sha256": "792f497510627a83a5f3baad414ce6674d41761915a5a429882f566563f50639",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.1_ASSET_LICENSES.md",
+    "bytes": 3637,
+    "sha256": "65ce6d09a9aa84c6021ec43fae1b34b9ab7cae9ad45e1d9b8fc686db31315e1a",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.1_AUDIO_DIRECTOR.md",
+    "bytes": 5521,
+    "sha256": "f0f3519ff74bb29ece81952d4af0e4b61a1ba2090cbcbe10ff125ee75c42a142",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.1_REWORK_REPORT.md",
+    "bytes": 2163,
+    "sha256": "cb0dc2ec165408adb0c8f90e3c160aa5186924ee352b6e78f1841813bcd86a63",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.1_TEST_REPORT.md",
+    "bytes": 1887,
+    "sha256": "558deaea129a1e56204f983cea663c4c35f3dba1e1171f3030a60faf7c549724",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.1_WORKLOG.md",
+    "bytes": 683,
+    "sha256": "9ac0fd2234230f39cc487b46cbbbb4317215617f0f5bdd369a1dd939a59edd23",
+    "change": "new"
+  }
+]

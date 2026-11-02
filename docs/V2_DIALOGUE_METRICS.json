@@ -1,0 +1,123 @@
+{
+  "method": "All authored dialogue text, including both prologue branches and optional files; separate from the branch-0 engine traversal. V2 primary route does not invoke these dialogue panels. Moving barks are gameplay cues and remain in scripts.",
+  "files": [
+    {
+      "file": "prologue.dialogue",
+      "old": {
+        "all_authored_lines": 19,
+        "all_authored_characters": 518
+      },
+      "new": {
+        "all_authored_lines": 4,
+        "all_authored_characters": 45
+      }
+    },
+    {
+      "file": "bridge.dialogue",
+      "old": {
+        "all_authored_lines": 16,
+        "all_authored_characters": 508
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 36
+      }
+    },
+    {
+      "file": "signal.dialogue",
+      "old": {
+        "all_authored_lines": 12,
+        "all_authored_characters": 309
+      },
+      "new": {
+        "all_authored_lines": 2,
+        "all_authored_characters": 20
+      }
+    },
+    {
+      "file": "after_combat.dialogue",
+      "old": {
+        "all_authored_lines": 16,
+        "all_authored_characters": 408
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 34
+      }
+    },
+    {
+      "file": "after_repair.dialogue",
+      "old": {
+        "all_authored_lines": 13,
+        "all_authored_characters": 324
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 32
+      }
+    },
+    {
+      "file": "reunion.dialogue",
+      "old": {
+        "all_authored_lines": 20,
+        "all_authored_characters": 483
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 36
+      }
+    },
+    {
+      "file": "survey.dialogue",
+      "old": {
+        "all_authored_lines": 12,
+        "all_authored_characters": 355
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 38
+      }
+    },
+    {
+      "file": "timber_check.dialogue",
+      "old": {
+        "all_authored_lines": 12,
+        "all_authored_characters": 357
+      },
+      "new": {
+        "all_authored_lines": 3,
+        "all_authored_characters": 35
+      }
+    },
+    {
+      "file": "supply.dialogue",
+      "old": {
+        "all_authored_lines": 6,
+        "all_authored_characters": 159
+      },
+      "new": {
+        "all_authored_lines": 2,
+        "all_authored_characters": 21
+      }
+    },
+    {
+      "file": "amu_optional.dialogue",
+      "old": {
+        "all_authored_lines": 6,
+        "all_authored_characters": 134
+      },
+      "new": {
+        "all_authored_lines": 2,
+        "all_authored_characters": 22
+      }
+    }
+  ],
+  "all_authored_old": {
+    "all_authored_lines": 132,
+    "all_authored_characters": 3555
+  },
+  "all_authored_new": {
+    "all_authored_lines": 28,
+    "all_authored_characters": 319
+  }
+}

@@ -1,0 +1,46 @@
+func _build_ground():
+	if ResourceLoader.exists("res://assets/memorial/terrain/ground_mesh.res") and not "--bake-memorial" in OS.get_cmdline_user_args():
+		terrain=MeshInstance3D.new();terrain.name="ContinuousMountainCollision";terrain.mesh=load("res://assets/memorial/terrain/ground_mesh.res");terrain.material_override=snow_material.duplicate();terrain.material_override.set_shader_parameter("path_surface",true);add_child(terrain)
+		var body=StaticBody3D.new();terrain.add_child(body);var collider=CollisionShape3D.new();collider.shape=load("res://assets/memorial/terrain/ground_shape.res");body.add_child(collider)
+		_build_far_ridges();return
+	var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);st.set_smooth_group(0)
+	var nx=200;var nz=500
+	var grid=PackedVector3Array();grid.resize((nx+1)*(nz+1))
+	for z in nz+1:
+		for x in nx+1:
+			var p=Vector3(-100+float(x),0,70-float(z));p.y=height_at(p);grid[z*(nx+1)+x]=p
+	for iz in nz:
+		for ix in nx:
+			var verts=[]
+			for offset in [Vector2i(0,0),Vector2i(1,0),Vector2i(0,1),Vector2i(1,1)]:
+				verts.append(grid[(iz+offset.y)*(nx+1)+ix+offset.x])
+			for index in [0,2,1,1,2,3]:
+				var wear=1-smoothstep(.6,2.3,route.sample(verts[index]).z)
+				st.set_color(Color(wear,wear,wear));st.set_uv(Vector2(verts[index].x,verts[index].z)*.1);st.add_vertex(verts[index])
+	st.index();st.generate_normals();st.generate_tangents();terrain=MeshInstance3D.new();terrain.name="ContinuousMountainCollision";terrain.mesh=st.commit();terrain.material_override=snow_material.duplicate();terrain.material_override.set_shader_parameter("path_surface",true);add_child(terrain);terrain.create_trimesh_collision()
+	if "--bake-memorial" in OS.get_cmdline_user_args():
+		DirAccess.make_dir_recursive_absolute("res://assets/memorial/terrain")
+		ResourceSaver.save(terrain.mesh,"res://assets/memorial/terrain/ground_mesh.res");ResourceSaver.save(terrain.mesh.create_trimesh_shape(),"res://assets/memorial/terrain/ground_shape.res")
+	_build_far_ridges()
+func _build_walk_ribbon():
+	var mesh:Mesh;var shape:Shape3D
+	if ResourceLoader.exists("res://assets/memorial/terrain/trail_mesh.res") and not "--bake-memorial" in OS.get_cmdline_user_args():mesh=load("res://assets/memorial/terrain/trail_mesh.res");shape=load("res://assets/memorial/terrain/trail_shape.res")
+	else:
+		var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);st.set_smooth_group(0)
+		var count=int(ceil(route.total/.25))
+		for i in count:
+			for across in 8:
+				var points=[]
+				for offset in [Vector2i(0,0),Vector2i(1,0),Vector2i(0,1),Vector2i(1,1)]:
+					var s=minf(route.total,(i+offset.x)*.25);var p=route.at(s);var side=route.nearest(p).tangent.cross(Vector3.UP)
+					p+=side*(-1.6+(across+offset.y)*.4);p.y=height_at(p)+.016;points.append(p)
+				for index in [0,1,2,1,3,2]:
+					var lateral=across+(1 if index in [2,3] else 0)
+					var wear=1-smoothstep(.6,1.6,absf(-1.6+lateral*.4))
+					st.set_color(Color(wear,wear,wear));st.set_uv(Vector2(points[index].x,points[index].z)*.1);st.add_vertex(points[index])
+		st.index();st.generate_normals();st.generate_tangents();mesh=st.commit();shape=mesh.create_trimesh_shape()
+		if "--bake-memorial" in OS.get_cmdline_user_args():ResourceSaver.save(mesh,"res://assets/memorial/terrain/trail_mesh.res");ResourceSaver.save(shape,"res://assets/memorial/terrain/trail_shape.res")
+	# This ribbon refines collision only. Rendering it over the coarser terrain
+	# creates intersecting triangles at bends; trail wear is baked into the ground.
+	var node=Node3D.new();node.name="DetailedRockTrailCollision";add_child(node)
+	var body=StaticBody3D.new();node.add_child(body);var collision=CollisionShape3D.new();collision.shape=shape;body.add_child(collision)

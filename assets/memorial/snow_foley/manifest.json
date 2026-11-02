@@ -1,0 +1,28 @@
+{
+  "source": "https://opengameart.org/content/4-dry-snow-steps",
+  "author": "Iwan \"qubodup\" Gabovitch",
+  "license": "CC0 / Public Domain Dedication",
+  "processing": "trim start silence; 70Hz highpass; 6.5kHz lowpass; loudness normalization; 44.1k mono PCM16; no synthetic noise",
+  "files": [
+    {
+      "file": "step_01.wav",
+      "sha256": "193026bb94d96f63e7e27d0b290092c5110a80947505ee26b58bb684ad528a46",
+      "original": "snow_step_dry-01.flac"
+    },
+    {
+      "file": "step_02.wav",
+      "sha256": "39816a043260494c51e67653955a3256ddfe8bad3b1f2cf244d400a9d3c11aae",
+      "original": "snow_step_dry-02.flac"
+    },
+    {
+      "file": "step_03.wav",
+      "sha256": "841b57bf1104ed2b5c730b1e0b264eaa2a431c1cd5ccbcd39066a29310f028f9",
+      "original": "snow_step_dry-03.flac"
+    },
+    {
+      "file": "step_04.wav",
+      "sha256": "473bf733dec5e6c89478303a7ddb8f4de731e37ec156067083d0fe799a2ee09e",
+      "original": "snow_step_dry-04.flac"
+    }
+  ]
+}

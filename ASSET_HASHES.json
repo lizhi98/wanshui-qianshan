@@ -1,0 +1,286 @@
+{
+  "assets/remaster/audio/chain.wav": {
+    "sha256": "5242fcaa3df27494e9ea903e039656c1be1d247a21fea1beaf913aa672167219",
+    "bytes": 3840044
+  },
+  "assets/remaster/audio/ending.wav": {
+    "sha256": "e0854ac3f68674de69d776ba4bc855201c93c8ff5b2aed1b717c0f1a13b0ca9d",
+    "bytes": 3840044
+  },
+  "assets/remaster/audio/explore.wav": {
+    "sha256": "17c8ee06794ad57a5dabcd78b88483c68ef4f95b40e27e30fd7d550889dd8538",
+    "bytes": 3840044
+  },
+  "assets/remaster/audio/modern.wav": {
+    "sha256": "7550fd34080cdb46b725a7309d44134014a63952136c8e26249272151082697b",
+    "bytes": 3840044
+  },
+  "assets/remaster/audio/tension.wav": {
+    "sha256": "b9313f11b4766958d8fbcd65a07e8435678471bee6a7e27c47288855df8051a7",
+    "bytes": 3840044
+  },
+  "assets/remaster/audio/wind.wav": {
+    "sha256": "4164fbeba00696b6b9247d99ab750478251aa1d39ed69a9461d7590c0d563ffd",
+    "bytes": 1152044
+  },
+  "assets/remaster/characters/amu.glb": {
+    "sha256": "0b0987e9c72ef5110fc0c700caaec71657832f001782da1a9818e8e2027d75f0",
+    "bytes": 13265756
+  },
+  "assets/remaster/characters/amu_base.glb": {
+    "sha256": "f25ba9a5614983e41d695f6a9a5ce270e575168c0b8258ec9c2e1d0228c41ac2",
+    "bytes": 11540468
+  },
+  "assets/remaster/characters/amu_base_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/amu_base_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/amu_base_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/amu_base_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/characters/amu_base_young_lightskinned_male_diffuse3.png": {
+    "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+    "bytes": 3593099
+  },
+  "assets/remaster/characters/amu_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/amu_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/amu_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/amu_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/characters/amu_young_lightskinned_male_diffuse3.png": {
+    "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+    "bytes": 3593099
+  },
+  "assets/remaster/characters/linchuan.glb": {
+    "sha256": "e7ffab175fd1045873e80a48ad9faaffdbbdf072dda70efb14aee961fa744464",
+    "bytes": 13269096
+  },
+  "assets/remaster/characters/linchuan_base.glb": {
+    "sha256": "a45940cf187510a60cb023f6e4b8bd64143242ab773c54237fafb2f89e8b3c66",
+    "bytes": 11543804
+  },
+  "assets/remaster/characters/linchuan_base_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/linchuan_base_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/linchuan_base_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/linchuan_base_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/characters/linchuan_base_young_lightskinned_male_diffuse3.png": {
+    "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+    "bytes": 3593099
+  },
+  "assets/remaster/characters/linchuan_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/linchuan_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/linchuan_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/linchuan_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/characters/linchuan_young_lightskinned_male_diffuse3.png": {
+    "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+    "bytes": 3593099
+  },
+  "assets/remaster/characters/zhou.glb": {
+    "sha256": "557be4fd7074ab9abddf309bb67de2fa56affc2becf5d30de7af73f2b8f2f95e",
+    "bytes": 13406764
+  },
+  "assets/remaster/characters/zhou_base.glb": {
+    "sha256": "28c11396d1094e3ee9f383afef4f7573e0bfcda0b4e9d800e742b6a2044b9bbd",
+    "bytes": 11681472
+  },
+  "assets/remaster/characters/zhou_base_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/zhou_base_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/zhou_base_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/zhou_base_middleage_lightskinned_male_diffuse2.png": {
+    "sha256": "e897c4cc1b6ad5d10a7d2b2be92402feda4e772e6582dfaf0a1e8fc4621d8097",
+    "bytes": 3730636
+  },
+  "assets/remaster/characters/zhou_base_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/characters/zhou_brown_eye.png": {
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "bytes": 610817
+  },
+  "assets/remaster/characters/zhou_eyebrow001.png": {
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "bytes": 89619
+  },
+  "assets/remaster/characters/zhou_male_casualsuit01_normal.png": {
+    "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+    "bytes": 1738660
+  },
+  "assets/remaster/characters/zhou_middleage_lightskinned_male_diffuse2.png": {
+    "sha256": "e897c4cc1b6ad5d10a7d2b2be92402feda4e772e6582dfaf0a1e8fc4621d8097",
+    "bytes": 3730636
+  },
+  "assets/remaster/characters/zhou_short02_diffuse.png": {
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "bytes": 3553543
+  },
+  "assets/remaster/environment/pine_game.glb": {
+    "sha256": "f2063307e43a66c8c166d4b8026fa93c48e546cf1bbe2fcb68d17c8c083c42f4",
+    "bytes": 10285412
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_bark_arm_1k.jpg": {
+    "sha256": "336a4680cd571b6076b67afee2310b290b8900d9d126eb39ec1ae92e95be2ea9",
+    "bytes": 801278
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_bark_diff_1k.jpg": {
+    "sha256": "5c76836b01c3536fa0e24207b67bf4f3315b53ebe2b4ecc6f08dfcf3f8d74929",
+    "bytes": 725265
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_bark_nor_gl_1k.jpg": {
+    "sha256": "05c46455531781b6cf18cae0648cf627f60ee942adaa8bcbfd1592fc2506a9e0",
+    "bytes": 1016849
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_twig_arm_1k.jpg": {
+    "sha256": "47facef9985e8c073184a64d15ea14bd2dc3b3debfb93f3671b6d5ad0dbc163d",
+    "bytes": 474787
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_twig_diff_1k.jpg": {
+    "sha256": "e649f0f9bc74d1af5f1a45eaf2fe7a29adaaddfab251f746b983da301e4b80e1",
+    "bytes": 510932
+  },
+  "assets/remaster/environment/pine_game_pine_sapling_medium_twig_nor_gl_1k.jpg": {
+    "sha256": "2a02a482a18d20255c800845902d5e0061d2a2d14107d7c4ed0b789414153141",
+    "bytes": 797935
+  },
+  "assets/remaster/environment/rocks/rock_moss_set_01.bin": {
+    "sha256": "de8360e6175879aaf02c171911069cf5f1852547f9ca7f10e440085dbcc3315e",
+    "bytes": 1466380
+  },
+  "assets/remaster/environment/rocks/rock_moss_set_01.gltf": {
+    "sha256": "c36675aca9c6b2be7785c2534cf413b03ec82a5a2a5407a2b1c0cdb0346c9727",
+    "bytes": 9987
+  },
+  "assets/remaster/environment/rocks/textures/rock_moss_set_01_diff_1k.jpg": {
+    "sha256": "40cea65d8aa4ee73a93b04af19963834d061eee9779c3fc2c1cba76eef812ccc",
+    "bytes": 168099
+  },
+  "assets/remaster/environment/rocks/textures/rock_moss_set_01_nor_gl_1k.jpg": {
+    "sha256": "eb4aad3f207f1dc5b624d74ae240372171626a66912bd71adf7bd3e518181d6e",
+    "bytes": 209975
+  },
+  "assets/remaster/environment/rocks/textures/rock_moss_set_01_rough_1k.jpg": {
+    "sha256": "4d6ec46623abd8e2cdb855f59c7ce31873ad61b36b60e4de579e9e776a497c6b",
+    "bytes": 82624
+  },
+  "assets/remaster/fonts/NotoSansSC.ttf": {
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "bytes": 17772300
+  },
+  "assets/remaster/icon.svg": {
+    "sha256": "594cd08180b69b29550fde1c460f2c412dd23fee67897c880ed81a6ec2a0b24f",
+    "bytes": 541
+  },
+  "assets/remaster/pbr/ground_diff.jpg": {
+    "sha256": "c598c555f13cd5328409fd5e2a45496a26e319e52299e3959042f1449c2f1b06",
+    "bytes": 1206953
+  },
+  "assets/remaster/pbr/ground_normal.jpg": {
+    "sha256": "8dd5166ddcc293cefd331d491ce6b9162bc9202ddd999ac1e4141697560d38e0",
+    "bytes": 1486072
+  },
+  "assets/remaster/pbr/ground_rough.jpg": {
+    "sha256": "9f84b7e7b5fdd2ff9798645fdec243b994fced05e543692761994b793211b5d0",
+    "bytes": 644332
+  },
+  "assets/remaster/pbr/stone_diff.jpg": {
+    "sha256": "20f653a42fb24f42aa40641663070d578678da49af18cc1049dbdd4ed8679f3c",
+    "bytes": 859211
+  },
+  "assets/remaster/pbr/stone_normal.jpg": {
+    "sha256": "5915fea28a97357c78a04fb31c2516f1f7ed1b3a9cef4ae25aa93e4655e6c595",
+    "bytes": 802497
+  },
+  "assets/remaster/pbr/stone_rough.jpg": {
+    "sha256": "cc5229dd6bbdc4e817cb647e60242224b8e4f0237473ac018861ea243f2e8130",
+    "bytes": 668127
+  },
+  "assets/remaster/pbr/wood_diff.jpg": {
+    "sha256": "d758be23e8fe7bfbd73bc4ab257cfd59406e1835f6557c12a67cd4fdb15de0d8",
+    "bytes": 228279
+  },
+  "assets/remaster/pbr/wood_normal.jpg": {
+    "sha256": "5e570e57d688b016b217b9e8e0592f9a8b3364406e22bf6cd775da990452bdb6",
+    "bytes": 157419
+  },
+  "assets/remaster/pbr/wood_rough.jpg": {
+    "sha256": "ef640502cec94bd2b6500e252891a778a7a721be16b5536d4efc9fe4d99b12aa",
+    "bytes": 186804
+  },
+  "art_source/amu.blend": {
+    "sha256": "a8afab18630a082febe3903203defb95ed4465c71bf0bb654870067689c0e2e8",
+    "bytes": 22365456
+  },
+  "art_source/linchuan.blend": {
+    "sha256": "ba33f26940721067235b6a27ead7613ed3730c493f92cd502260a7cf6ef63de6",
+    "bytes": 22095924
+  },
+  "art_source/pine_game.blend": {
+    "sha256": "95ff8e09c517b9155f31def96443d8686615029d4e51174930461406d4d5900d",
+    "bytes": 18868353
+  },
+  "art_source/README.md": {
+    "sha256": "f81c5b506e2e40d6fa180f9813eb658ec36c2b8dfcc5a8925de9fe17511b22a1",
+    "bytes": 1860
+  },
+  "art_source/UAL1_Standard.glb": {
+    "sha256": "69591853d817488edaa8fd9bf8fc1d821eaeaf789f8627b3cd23b41c4ed67997",
+    "bytes": 7618436
+  },
+  "art_source/zhou.blend": {
+    "sha256": "fe2b90acc84190fac8ddf2388b4d7f220b16cadf4e041ac5d0619665d2a3d90f",
+    "bytes": 26368568
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "original_composition": true,
+  "soundfont": "GeneralUser GS",
+  "no_commercial_samples": true,
+  "cues": [
+    "m_camp",
+    "m_march",
+    "m_storm",
+    "m_search",
+    "m_memorial",
+    "m_continue"
+  ]
+}

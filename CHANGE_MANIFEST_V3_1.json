@@ -1,0 +1,242 @@
+[
+  {
+    "path": "Build_Windows.cmd",
+    "sha256": "dac2e884461e99a02eff1c624675ac4242a3b5d7e75f7aa41068117e31f6ef28",
+    "bytes": 343,
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "sha256": "adafb3dc00bbce7fb8af13f75235724d6c89c46fcffb50a0dbdd21ef0d15c9ee",
+    "bytes": 975,
+    "change": "modified"
+  },
+  {
+    "path": "README.md",
+    "sha256": "2a411622341c3227697ffaddb30a35170a5c0b68947e7b15fe80f1029ebaf690",
+    "bytes": 6877,
+    "change": "modified"
+  },
+  {
+    "path": "README_V3_1.md",
+    "sha256": "11a4e9a395262b2c83ffeeb4276ac8b89e66ea6437929213e89f1ce9315150b3",
+    "bytes": 2910,
+    "change": "new"
+  },
+  {
+    "path": "Run_Tests.cmd",
+    "sha256": "21087ab81137c3e22d1c981f13b58c9134d07cf2cec4de65cfa08ca3cfb5b337",
+    "bytes": 1129,
+    "change": "modified"
+  },
+  {
+    "path": "UPDATE_REPORT_V3_1.md",
+    "sha256": "7e0e5990a5395fb048c5332b132ad55f20dc7897f69c6c86bcde9ab83c3c6e80",
+    "bytes": 2244,
+    "change": "new"
+  },
+  {
+    "path": "game/camera.gd",
+    "sha256": "d35dd5b1849b793e98eec937b6109909a64c6b4393226d56dda3401e89711233",
+    "bytes": 3798,
+    "change": "modified"
+  },
+  {
+    "path": "licenses/GeneralUser_GS_License.txt",
+    "sha256": "7b32efefdf95ce38a043799f0659853ddc00fbaa14d8c50f0aca16b9b8b405be",
+    "bytes": 2317,
+    "change": "new"
+  },
+  {
+    "path": "qa/v2_replay.gd",
+    "sha256": "7219657460c6df46f687913831144c3e826cbca94548aba44e376593c3b2dc9e",
+    "bytes": 18323,
+    "change": "modified"
+  },
+  {
+    "path": "tools/compose_battle_score.py",
+    "sha256": "d88da6fbee047e77694012b463d57fce9daae1018bf3aedd48bf3e2883b3fc2c",
+    "bytes": 4843,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/advance.wav",
+    "sha256": "c8f3ed9ad47c99a0468f3a8c991dd31112fea737663e63260de4eb40e74543d4",
+    "bytes": 3413376,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/advance.wav.import",
+    "sha256": "0da7f8026a00c7818f698e7956d7e7ce7d74e0dcb139b8836a21b494f33639d2",
+    "bytes": 501,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/advance_score.json",
+    "sha256": "4f872aef37901e8139a57dfc0b10d82551feac2a3ef94d54a8c2d5ca118b42e8",
+    "bytes": 222,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/assault.wav",
+    "sha256": "f3f30c68a5e748f6965e64083e47d185672e4306f8da7230f2abb25798ff426c",
+    "bytes": 5945848,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/assault.wav.import",
+    "sha256": "94e5889daecacd8cf0063ea1095d2f6f085d2030f53b5c0a5ac7d4af3eb7dcb5",
+    "bytes": 501,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/assault_score.json",
+    "sha256": "461cccbbd71a7e206c0e088cd0d07c8d8cb8759621b667fd2c2ba0199cdf201c",
+    "bytes": 223,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/battle_score_sources.json",
+    "sha256": "59c758a1cedb611e3bd247455704ecc82b15185eab589d45da96888ac7d24c06",
+    "bytes": 914,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/cannon_fire.wav",
+    "sha256": "c5211f687939541ecf0128f886641ba9e14d248e57e1ccbc8e7f1586dc70845c",
+    "bytes": 240044,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/cannon_fire.wav.import",
+    "sha256": "214fd2098250d02810ce5cdb603a76ebd9ca76ecb4906b35b77658d43dee27e7",
+    "bytes": 513,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/chain_battle.wav",
+    "sha256": "76327098aff1c95f83b5c474dd63d6515a347f34ef7406ca837de44260dc94bb",
+    "bytes": 4850568,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/chain_battle.wav.import",
+    "sha256": "6caf7e278d188958725793b28a8419c750dc24f48493de01d2ab2c2f672c6ff6",
+    "bytes": 516,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/chain_battle_score.json",
+    "sha256": "b771ca5bf249d0918537c9dadf53996f714b83445b7cb087b3c1b6007674c0f6",
+    "bytes": 224,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/shell_impact.wav",
+    "sha256": "671c419acb115437b5720fd709c2888d56f28b99378a6ba794c7a0a1b56ff378",
+    "bytes": 316844,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/shell_impact.wav.import",
+    "sha256": "225b35cbad244b0f33ae20b06c1c7ce08d27bb18ffb2157c846183d1d6f6b65d",
+    "bytes": 516,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/victory.wav",
+    "sha256": "d8bf9bbbffbc1bf472eecb223ad1c3ca2beb453f92e44460e798707cd562ec52",
+    "bytes": 3840044,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/victory.wav.import",
+    "sha256": "1b679dc9d3a2f17ecd361dd2de13ade21b5e0535d19047b80e1c9f270ec7715c",
+    "bytes": 501,
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/victory_score.json",
+    "sha256": "7d4d9cf2a36cfff2f07cc780a11f2e052c528806b8216f3f9cfda33ac825c6d0",
+    "bytes": 209,
+    "change": "new"
+  },
+  {
+    "path": "game/remaster/audio.gd",
+    "sha256": "23cb944dbf9ba6154f264629f79ea4e45758fb4f354990d60f465f9bb0e70404",
+    "bytes": 4172,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/character_visual.gd",
+    "sha256": "320324b7dc90c67402e016be635a0777585e981d4889d09a7f7b91f6dfe6ee8f",
+    "bytes": 18303,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/assault.gd",
+    "sha256": "93afd3adac241c71ac9b552ff32ffe653f2e28065e1d85740eb7c6410334aa77",
+    "bytes": 10177,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/campaign.gd",
+    "sha256": "922bc2e5f6f3e5cc60253bd7e970e51bea10bad3c3b5cb2150fc9a54b35cb8b0",
+    "bytes": 15871,
+    "change": "modified"
+  },
+  {
+    "path": "game/v31/battlefield.gd",
+    "sha256": "8b0409e9b43bf0450e0d53b20de43d2e48f0ae0a10867809cf465d8e412ecd14",
+    "bytes": 14043,
+    "change": "new"
+  },
+  {
+    "path": "game/v31/battlefield.gd.uid",
+    "sha256": "9e15daf14198efaa612713630899c6898b8a4a6b03ccee21ec61b0a4cb1e727c",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v3/assault_checks.gd",
+    "sha256": "ff5bad6d038310da9e17f17fc329da1196db2580d73eb64145d77e85eaa84ebe",
+    "bytes": 4491,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v31/battle_checks.gd",
+    "sha256": "41ff576d36cf2dd8d474563158260a95452b2aab674ec077dc159ffd14caae9d",
+    "bytes": 2135,
+    "change": "new"
+  },
+  {
+    "path": "tests/v31/battle_checks.gd.uid",
+    "sha256": "a81448e4e215ac0f0b8b1df828d90c4a6bf371e8de3477440c863c0ba196243c",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v31/climb_motion.gd",
+    "sha256": "c74b4fab565a1f334259a1c18a4d5e623ec7dd30c218cee66fab67d313392aa5",
+    "bytes": 2016,
+    "change": "new"
+  },
+  {
+    "path": "tests/v31/climb_motion.gd.uid",
+    "sha256": "b94e459dc34ffe5db4973a870115fbecb853601300a9ee8ea30b55ea1c8c6fd5",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v31/visual_review.gd",
+    "sha256": "bb744f22cf1ab6516e27ec1441c5dca2df28132597e84f2f5d4e64cb1822037e",
+    "bytes": 1892,
+    "change": "new"
+  },
+  {
+    "path": "tests/v31/visual_review.gd.uid",
+    "sha256": "df119444e03c9c90b24787c5abef4f51f285a6aa0240b74a506954b794f9b332",
+    "bytes": 20,
+    "change": "new"
+  }
+]

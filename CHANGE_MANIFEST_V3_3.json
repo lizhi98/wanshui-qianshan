@@ -1,0 +1,302 @@
+[
+  {
+    "path": "Build_Windows.cmd",
+    "sha256": "0ee2953089903b23f1a0122eab7c884e0af75cdb22233a6051dad4e8ea0c6796",
+    "bytes": 343,
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "sha256": "df303173ce3713e24710281687211f002afccc8e78453a47d30ece9ca1b0dbd9",
+    "bytes": 975,
+    "change": "modified"
+  },
+  {
+    "path": "README.md",
+    "sha256": "4763b234f8396ca79c6dfd2d67e1d054347688cdc810294fd0999fa878170595",
+    "bytes": 7320,
+    "change": "modified"
+  },
+  {
+    "path": "README_V3_3.md",
+    "sha256": "c2eb1eac79d35524265b9525cff265792946edf1945d51be8278ebf315f97e61",
+    "bytes": 2386,
+    "change": "new"
+  },
+  {
+    "path": "Run_Tests.cmd",
+    "sha256": "ca13878a4ca815629807b07aa220f25b0417eb1f6b092fe7a074abd639c46dc0",
+    "bytes": 978,
+    "change": "modified"
+  },
+  {
+    "path": "UPDATE_REPORT_V3_3.md",
+    "sha256": "d27578bd83ba373afd424d7942fe35dd36c79bae9711af9efd2289037d2682ca",
+    "bytes": 2680,
+    "change": "new"
+  },
+  {
+    "path": "game/camera.gd",
+    "sha256": "47732db27b7fa701578af3d8c3cccbaf6483c0a490cd9bcd431ec89b6c352b30",
+    "bytes": 5397,
+    "change": "modified"
+  },
+  {
+    "path": "qa/v2_replay.gd",
+    "sha256": "f3fd0738d99fe769f004b936fd70fb20b7400b208d175833d2c755552005def3",
+    "bytes": 17320,
+    "change": "modified"
+  },
+  {
+    "path": "tools/Generate_Expressive_Voices.py",
+    "sha256": "f0854bc4e04f075b1baca8e9bcafa181e5e5c3b2f5166162899da6bf8b8bef05",
+    "bytes": 6467,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/43a81ec37db54cfc6cd329a5b9c7294f.wav",
+    "sha256": "42db745c1a0e4eff0d38456da1ab290033e64a850fd4ec1f68a5a9b67ca1d92a",
+    "bytes": 249574,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/43a81ec37db54cfc6cd329a5b9c7294f.wav.import",
+    "sha256": "87a7c069c044028cd210dbfc9d451d94f0edf69346b45171d0887ee3479adb30",
+    "bytes": 567,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/c6de23366c4e170fdcfbfd659d0e88c0.wav",
+    "sha256": "c7de91c4509a8a0314aabe3d6443d764d57905acbd4bff55fd50387b5c8a7986",
+    "bytes": 119032,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/c6de23366c4e170fdcfbfd659d0e88c0.wav.import",
+    "sha256": "e2853b9239ac72e861a83c07673afdfbd1ea49e15a55c90fff50499a5d2cc3b3",
+    "bytes": 568,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/fb2b805755e3dcf181856a5c07c8bd74.wav",
+    "sha256": "bb6459bbb574394699ec924f6a5c8e398a4ed15b9c9ca90f0d112e47f337e251",
+    "bytes": 115170,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/fb2b805755e3dcf181856a5c07c8bd74.wav.import",
+    "sha256": "ea31ef682844b6f5e43833a746585379c3ec5f50d5f2fb6b0475321d2500abb9",
+    "bytes": 567,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/manifest.json",
+    "sha256": "378b1017d3b18b9381103ebe5a67915e2b9d9f22e69a4f484dd88cb71917ecb3",
+    "bytes": 46924,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/audio.gd",
+    "sha256": "af422b890d0c77ee7aa3c6192b1ed2b09b53f89611a2020392c4acd23a919d10",
+    "bytes": 4293,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/character_visual.gd",
+    "sha256": "61b710b01ca8361e5f93320c3843418bcad6359209f6da13b3aea2b23c92afd8",
+    "bytes": 18442,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/terrain.gdshader",
+    "sha256": "ffe9946ee01ea455097759fbbbb06ea575650ec228f72f80d59e1edbe81ab4f2",
+    "bytes": 1894,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/world.gd",
+    "sha256": "aa10bc8130ce3bb2278bd308e8eeae7e2aeefe74d45455b41dfbf34cc13fadb0",
+    "bytes": 15847,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/assault.gd",
+    "sha256": "53c00fdd1771ab15666d74518bc758e1a030387cdec813ad9e015d92acca0e23",
+    "bytes": 11814,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/campaign.gd",
+    "sha256": "4220c510aaed40268a4048f6bd44ed9fcf62a5f60c470a387914e9dcf16008ef",
+    "bytes": 16401,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/guidance.gd",
+    "sha256": "ed087a81e6c729fb5ddf525403eac18542f9bd72eb9552a20de56a41b408b6a7",
+    "bytes": 10769,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/hud.gd",
+    "sha256": "4971e1cc2f1e274f6a537e44a00cbd5a8cc4c6282cd41ddc25fa82ad3ae00c0f",
+    "bytes": 9838,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/objectives.gd",
+    "sha256": "a108095d152380add521d9f4e2e7aa08dde9bf649dbda54e83f895670b119baa",
+    "bytes": 829,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/repair.gd",
+    "sha256": "e2655468da1ad9e98354b8ee75fd09752289b4a164e505dd253913e1e3edb378",
+    "bytes": 30790,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/save_store.gd",
+    "sha256": "ffc4f557b595c1f55b483c3439360345c19b36475557c3d01e5b199c6b13c416",
+    "bytes": 6059,
+    "change": "modified"
+  },
+  {
+    "path": "game/v31/battlefield.gd",
+    "sha256": "2cfff8e79cbdc780c2eb5bb8bfa4e8776c7f349d1d2e55949bd1bb07ac690847",
+    "bytes": 15296,
+    "change": "modified"
+  },
+  {
+    "path": "game/v32/environment_detail.gd",
+    "sha256": "38dbf49eb87dcbd4288f7fc27e2a8eb651abb0455439b2491abd315f2f5e93f7",
+    "bytes": 7464,
+    "change": "modified"
+  },
+  {
+    "path": "game/v33/character_detail.gd",
+    "sha256": "e8fe0248ed6f11d4e42d633acf3b014bee06cfbb98f1b3b4d52e4649a890c397",
+    "bytes": 2062,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/character_detail.gd.uid",
+    "sha256": "33fb4ff271b44e0fb62fab5e66a520a710fef8e13445b51bd05501a7aec6f2d5",
+    "bytes": 19,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/cloth.gdshader",
+    "sha256": "51320afe6f7d665f8274a375eb689d8a1932414108a084f9965da22664508dea",
+    "bytes": 1007,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/cloth.gdshader.uid",
+    "sha256": "0a2d68f5091442be65387e1b1ac47846602fce83a8a18b8e1392d180e691cced",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/foliage.gd",
+    "sha256": "cc4d7367e1483fbfa7b6b51c57aa278d2e9a5e02af781690613a2e1f517eaa69",
+    "bytes": 7486,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/foliage.gd.uid",
+    "sha256": "e1ad4638cdfe9544548d08ac3870d0c130bfc25aa9c893523d6641b91a3906b9",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/foliage.gdshader",
+    "sha256": "af822ee00db56f4e2dd83895044911804e601e2bcb3acdb2dfde25d143cda1d0",
+    "bytes": 666,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/foliage.gdshader.uid",
+    "sha256": "abe963a5a64d63edf93bdaa633af8b5255dbdc484c3227d131de49e81c08580b",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/retired_epilogue.gd",
+    "sha256": "bd478abfd5c2bee3e0957f19e1e953b9a13c22004ebdcbdff76acf909893efd4",
+    "bytes": 170,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/retired_epilogue.gd.uid",
+    "sha256": "a8292b395a6a0eb9329a5e701bff93ada197cf747571edbd8d75d50032675298",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/vanguard.gd",
+    "sha256": "4d8c427de4d98ebf5f7c01a88de096760ffda313b115c2e71310e04a19b6cbac",
+    "bytes": 5864,
+    "change": "new"
+  },
+  {
+    "path": "game/v33/vanguard.gd.uid",
+    "sha256": "cf473a905f66d833216d3b5789d188c4af4494d1db67de367a4abe52cb657c04",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v2/guidance_checks.gd",
+    "sha256": "e6bd212144badbcb306c41b3422948ca04a8421ac8505548d77370f22e0f24c6",
+    "bytes": 3011,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v2/recovery_checks.gd",
+    "sha256": "c92a507043fb6b39c499743c6623561ae4038d709c819c8661d1b6f046c365d4",
+    "bytes": 4797,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v3/assault_checks.gd",
+    "sha256": "1765b4e88b0f78108aed4b2296e6403e5eaf30a1ebf22e23ea8d9b110822f79e",
+    "bytes": 4881,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v33/character_inspect.gd",
+    "sha256": "52126db5fe51d0afa41ab803d92bb5aad47044b3dd6b01c40434e983b82f1b6d",
+    "bytes": 609,
+    "change": "new"
+  },
+  {
+    "path": "tests/v33/character_inspect.gd.uid",
+    "sha256": "fcf06d23539e5fe2cbe3bc78f4b6e1444e773016cf371eab4fe77ebe3fed68fb",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v33/coordination_checks.gd",
+    "sha256": "3ff6432970c51b1a7803f06dd411b1db3c388b2b06224f0bdaeeb452906f0f7d",
+    "bytes": 2664,
+    "change": "new"
+  },
+  {
+    "path": "tests/v33/coordination_checks.gd.uid",
+    "sha256": "3741b118bb68530f571d4f35385075a036e85fceedaabd46f5594e3bc197995d",
+    "bytes": 19,
+    "change": "new"
+  },
+  {
+    "path": "tests/v33/visual_review.gd",
+    "sha256": "11ee48348d33ec7b4e2aad6a38ba01872167d63ba6ee58e7ae892c06b8f527a1",
+    "bytes": 2175,
+    "change": "new"
+  },
+  {
+    "path": "tests/v33/visual_review.gd.uid",
+    "sha256": "3e66386afdf063a525e04ee092505bcfa4c93a01de8bec0cdc50f9ea5dcd20cd",
+    "bytes": 20,
+    "change": "new"
+  }
+]

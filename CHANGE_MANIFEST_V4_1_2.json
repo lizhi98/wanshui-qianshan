@@ -1,0 +1,518 @@
+[
+  {
+    "path": "assets/memorial/climax_voices/A/00.wav",
+    "bytes": 253420,
+    "sha256": "a0b1926a1dad78eefaea48639bc5459232a36f4735a61a1bdd6faea8d4db8c63",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/00.wav.import",
+    "bytes": 496,
+    "sha256": "ca318d4d72928c8701c283f53f5f1888a7575c9c2fd06e1ddea802d21f84fb45",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/01.wav",
+    "bytes": 188140,
+    "sha256": "acb8d3700b6998aceb9f3863087e3eed3a291a32305d9af80ba6c9a1ece797fb",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/01.wav.import",
+    "bytes": 496,
+    "sha256": "18c876e520d4d235d3bf1e931a34cc96fd4f433a4114e7cbcb351f2df7ad0c8d",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/02.wav",
+    "bytes": 245476,
+    "sha256": "7b206aad086ea20a30059956ba909ffa2ea1a6c0bf2e62e7d754198458746720",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/02.wav.import",
+    "bytes": 495,
+    "sha256": "024a22a8c99de70171edab9ba4686fdc4a8a0c1d18d5d244b96b0f03efe57b1f",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/03.wav",
+    "bytes": 134374,
+    "sha256": "7d3b1289fd3334d4e5341b9bb810703b3cadad4b9b97daffd1ba045fe67332e9",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/03.wav.import",
+    "bytes": 496,
+    "sha256": "60cfca2ef4c2598d0e7531412b07995bf6decd54d7315bedf8584a06ccb7391c",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/04.wav",
+    "bytes": 149162,
+    "sha256": "d0f060a48762e2db021d51e1f4aef800bf443d56129a7abb1f9810b1b5bc3702",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/04.wav.import",
+    "bytes": 496,
+    "sha256": "b491f064a40c60bb82a8426bee5cf2d459c38401f72e18f6e5f7ca3b7d124e75",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/05.wav",
+    "bytes": 157326,
+    "sha256": "1874e3ca68985582bbf6393a281de1ba678b66aeef1a76a819aadf3c98ac0cea",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/05.wav.import",
+    "bytes": 495,
+    "sha256": "3583ba04f4d06f481ed356779e91e559cced0caaeeabe587167589875e11cd98",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/06.wav",
+    "bytes": 142060,
+    "sha256": "4e4501dff5e29cd6b9b92b813e449b19fbd59d15a707da0e43642b995af89124",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/06.wav.import",
+    "bytes": 496,
+    "sha256": "1b9222c0e1a06a41364d6c55c5a6e50595450b8099e48028509374dc0d043168",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/07.wav",
+    "bytes": 172778,
+    "sha256": "04d373c19a91cf8fad9074ed6b8bb5aa485a8923b782f14b5db008d0f3259380",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/07.wav.import",
+    "bytes": 496,
+    "sha256": "a0299e3c0a7ca8c2c1af889cf5a747bfe67809a79e2a60e0ae124aa19877252a",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/08.wav",
+    "bytes": 187938,
+    "sha256": "34d3def5eea4a7e57c14fc59768200261ef58f7bf14cc0d16f2347df81534444",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/08.wav.import",
+    "bytes": 495,
+    "sha256": "bf92e071109018734260266aaa1ae0c02a08c101443ea12db8570ca688a08aae",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/09.wav",
+    "bytes": 233658,
+    "sha256": "1bc67c7f15208741fc9e7276d12a72191fd6fc65d25cda7d404a4e80e30e7422",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/A/09.wav.import",
+    "bytes": 496,
+    "sha256": "c2710121686da46bffbb353c25da8d117933c1c6c0d73784fe0ff172f8cccffa",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/00.wav",
+    "bytes": 460778,
+    "sha256": "1e002c82cb99dee65249b1f41653ab7c2c229058059ff5e1dff2a3a89bccd624",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/00.wav.import",
+    "bytes": 496,
+    "sha256": "229452be95b430fdb70edf13a59114198902867598074390b0ef2919eb67fca1",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/01.wav",
+    "bytes": 134380,
+    "sha256": "219f4283588f776a1c5c70c880ac0bd94171a458e5ce6b1692c5775f583247cf",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/01.wav.import",
+    "bytes": 496,
+    "sha256": "7b76b91c82a98f75b85e2f5ff23f5d7e624ebe7b3695e96302644db4c73f44be",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/02.wav",
+    "bytes": 199420,
+    "sha256": "c0a1e297564420e14132ed96761204541106109fbe606d342d3fe0458dd64cae",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/02.wav.import",
+    "bytes": 495,
+    "sha256": "89faf08ff4c525ecdf6768e78f7c9b9c6b290acc414b1d7d1d3ce7272210ed61",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/03.wav",
+    "bytes": 199654,
+    "sha256": "21fd66143453b992677c7b6e0c96a95516894792e5887f23969e7907ddccde1c",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/03.wav.import",
+    "bytes": 496,
+    "sha256": "2d0b4e183d8a4a8d6387fe6e76b17aacd35d71f593f985c3c3ee451cd53e19e6",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/04.wav",
+    "bytes": 69100,
+    "sha256": "ad6ceb48a41cfd5bfb91eab1ab35136ffc68d275ead3e847763166934cc19c62",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/04.wav.import",
+    "bytes": 496,
+    "sha256": "a3f47f677da261de2fe922b7f62692c843518aee40711f9e8746ca196d4039d8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/05.wav",
+    "bytes": 145768,
+    "sha256": "425f373923a1d4ab1f49b99cfde0e1e95cb510e422e3fecf772c90dc2f7cba41",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/05.wav.import",
+    "bytes": 496,
+    "sha256": "054527ced43370930836a09a8178b358980fd867da55fa3de1543bd1e111e3e3",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/06.wav",
+    "bytes": 180470,
+    "sha256": "858d28914ee42108da005366473ae4186489cb8c67e0cf9358988d69a8ce03da",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/06.wav.import",
+    "bytes": 496,
+    "sha256": "3fc23cefff74381b3c78b6c7671d79841b426bed767ab05f9749fd224b05af3e",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/07.wav",
+    "bytes": 207342,
+    "sha256": "7ca91de19cd43dff418017d7b02d48d83827bcf3183474511938b9f2a859f2f7",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/07.wav.import",
+    "bytes": 496,
+    "sha256": "713a60741b22b818ffef78ebabb0c76007b89ca09e015a7e7cdc282a9c0d9e59",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/08.wav",
+    "bytes": 195806,
+    "sha256": "36c55e548b57c230c946901bb893e2f168b20bb477f0da52141c9d0d28343d72",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/08.wav.import",
+    "bytes": 496,
+    "sha256": "b711dc08099974b15f1b2b904c0c187c762f280a9dd4f71560f497120f7cf672",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/09.wav",
+    "bytes": 149304,
+    "sha256": "2cf8a99d5be6b4054f4e89c69bd9c9267e6415381616211d2ce82a1b192e4502",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/B/09.wav.import",
+    "bytes": 495,
+    "sha256": "3c7eaeae0288ae2f7f33783ebc768563d5c6e359d267d802a08e29ca44174393",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/climax_voices/manifest.json",
+    "bytes": 25488,
+    "sha256": "422711f5ae45e03622f7c221a1490f330879c7a822e081f8d936577048bb7cf3",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/ending_text.json",
+    "bytes": 512,
+    "sha256": "ef57655efd17e92a1426025918f3463a73fd95ad1053b1c19aaec6cb20e83102",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain412/ground_mesh.res",
+    "bytes": 5623076,
+    "sha256": "b0eee74927ce9ad4c443ddcace879ac9b3ec973a29ea3359daa91f0fcdfa0999",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain412/ground_shape.res",
+    "bytes": 7200351,
+    "sha256": "c89440aa05cf357ae8ff905a5e0606e4624504abf2c0d0bd0f8d3f958fe3afed",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain412/trail_mesh.res",
+    "bytes": 655652,
+    "sha256": "9f7705fe3b900833fcd82f37bbf7d64760085e1fc508bbce21eaa61b236b5cf6",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain412/trail_shape.res",
+    "bytes": 982431,
+    "sha256": "7a730151922d62667b84ec8c77def97e3ad665113ebc3d5d46533dc5f2494f5e",
+    "change": "new"
+  },
+  {
+    "path": "Build_Windows.cmd",
+    "bytes": 341,
+    "sha256": "586fa74b667d1f28b524d4f7b37be92b5467234a30c9c1ff10ded62355946744",
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "bytes": 1099,
+    "sha256": "376984eca47616784d06590157d38b75c2725e31bbb32df3b52691d735966038",
+    "change": "modified"
+  },
+  {
+    "path": "game/chapters/manager.gd",
+    "bytes": 3122,
+    "sha256": "dbd91d00a0412bfea027941183d3fcd2d61e8bcdd08d2f016dbf20a214bef731",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/audio.gd",
+    "bytes": 2893,
+    "sha256": "4ed9d5d7eee530f5067f1a9057a7882da7949e49d269865d0dd01185a37c6af0",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/campaign.gd",
+    "bytes": 27317,
+    "sha256": "8dc442dd8e3233755c2e3464cad238334662c08682c1ab6da9e483d4281e40c1",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/climax.gd",
+    "bytes": 7306,
+    "sha256": "5223809eecab193f68e07fd11cff89f076e1fe3881b5a4557ab299df95550d13",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/climax.gd.uid",
+    "bytes": 19,
+    "sha256": "51856cae81a8e90a14721a71c595e018feabbf5d5631c9e269c660a92aeb46b2",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/hud.gd",
+    "bytes": 1792,
+    "sha256": "a3f881332877928dc400bcfaa59e146e4a2d621a7f301d891436c72504aaeaa2",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/npc.gd",
+    "bytes": 1927,
+    "sha256": "f0209aa5947125c9deaa1c35837d5d997009807002327ecba124c3b20bf83ead",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/route.gd",
+    "bytes": 2544,
+    "sha256": "8d95e05569287879e06e0e312155fffeff2795e6a23990dfc3f8c026672a575f",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/route.gd.uid",
+    "bytes": 20,
+    "sha256": "2219fcd73fd6ec4ada4b140e1179b267aa431e41b594616f73d64fb42209cc1d",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/save_store.gd",
+    "bytes": 3592,
+    "sha256": "c3cf083613f25f16192f383aa7dd9210e390b1eb3d66ec76a5d655ed07f9647e",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/visual.gd",
+    "bytes": 9976,
+    "sha256": "7774e562a4cd8371831e0b7501a1a3833e6648ca8f5cc7cae21aa9ff9c416250",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/world.gd",
+    "bytes": 9497,
+    "sha256": "95afe83de36e712613ed8f6cbd327a1fd8448cf16bb938fbf1935e96f6120fd8",
+    "change": "modified"
+  },
+  {
+    "path": "qa/memorial_replay.gd",
+    "bytes": 10250,
+    "sha256": "83a515a6994caade1a2874bee6012e61d668cc294d0a3596dda3ebb066460c6e",
+    "change": "modified"
+  },
+  {
+    "path": "README_V4.1.2.md",
+    "bytes": 1368,
+    "sha256": "e8720394573f796f77d2c0734326e6f859e5566a1e95befa5f4aaadadc1c978d",
+    "change": "new"
+  },
+  {
+    "path": "Run_Drama_Tests.cmd",
+    "bytes": 328,
+    "sha256": "c222c75c58232e28144adfa88778b71b5a1cca1d0c7f26be5bd2c864ed868457",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/commander_close_probe.gd",
+    "bytes": 1872,
+    "sha256": "e60e956a6f257477ce45f96078862e476a4f05940060cd8144d47e920976add2",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/director_checks.gd",
+    "bytes": 2706,
+    "sha256": "9d98dc3d9dbedb631e41b6a1a744552de3088707dcd487ffd9a0417ed8eda9ff",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/director_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "7db0e8f140e8b0db8cf4fd9eec66b8b14cec71f1107457ede0958fcd9622cae0",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/finger_probe.gd",
+    "bytes": 468,
+    "sha256": "4286ed1f2a57f063c3ac8a2d901fca52ee39c4572c48f08283d8824d8351789a",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/finger_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "d11a7d339e94a56134b12c3e9c361331151e0bbd8738641af017393b39258de8",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/navigation_probe.gd",
+    "bytes": 848,
+    "sha256": "f8cd0c394e9303d2f9e58ddecc728aacd54cb63cd9f692c302d7530b160ea9cb",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/navigation_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "c95586a9aef51bfff5167b269aea0a4186c416e8cd651ee6ad9b671ed2b6a884",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/render_benchmark.gd",
+    "bytes": 2101,
+    "sha256": "6fe8bd75b9a77ec40788c2507adec421da2d0583dd6cd6fbd66c7bca82e0f1a4",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/salute_pose_checks.gd",
+    "bytes": 1606,
+    "sha256": "16fbe087244a3b253b09fdff20907d16ae003c625ea5f6fed1b60ad6676219a5",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/salute_pose_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "12481616265f34dc1bf4e4b6a610213b06a673c1981f55e77cce097745e7b441",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/save_probe.gd",
+    "bytes": 355,
+    "sha256": "e2036ae63463767dbcdcb41e46319bfe62c512e8f0e0d020f329eb56c8b45487",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/save_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "90b61a9a738588d751c3ff1c1c50dd7fc17a043dfa552676796fedd79e27282d",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/stage_review.gd",
+    "bytes": 1638,
+    "sha256": "109b9b2c331795ab841376904da09139986d0711fb57661327f943a01575ff37",
+    "change": "new"
+  },
+  {
+    "path": "tests/v412/stage_review.gd.uid",
+    "bytes": 20,
+    "sha256": "ef115fe733a365346b859d6f1e23e10fa5b6aad9e806bd10de3a1d8248b3ace8",
+    "change": "new"
+  },
+  {
+    "path": "tools/Generate_Climax_AB.py",
+    "bytes": 6093,
+    "sha256": "4a3441dd458d55eb78397219fd08df4cff3c256376074a0023e950ae4a646c10",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_ASSET_LICENSES.md",
+    "bytes": 4016,
+    "sha256": "c13e8523ba1e6ed194f69dc5793219c96dc11acd68610763032a609d05ddc407",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_AUDIO_DIRECTOR.md",
+    "bytes": 7713,
+    "sha256": "3a3a79c86229f488ba70be06a48cb411952e468cda3f348702e1a65c19b29674",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_AUDIO_REVIEW.md",
+    "bytes": 985,
+    "sha256": "6e04e9f61997dca206ca72c54d9b688d68387560351c1eab09c6cd15fc02f2fd",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_BUGFIX_REPORT.md",
+    "bytes": 6531,
+    "sha256": "49af1fd5983003de2376b1216b0433462e604ab849d0fba04ddc1a7740f016c7",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_HISTORY_NOTE.md",
+    "bytes": 569,
+    "sha256": "2137a6960319b78a9fc52a757ef32dfc1ffffc00b9cc54e7ac0bc44a6f5f0910",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_HUMAN_REVIEW_CHECKLIST.md",
+    "bytes": 1074,
+    "sha256": "c9ff21f2e1f9157968bfd1e4af7f0a4235a128d7cb8ade9587dba19cdc1cad9a",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_TEST_REPORT.md",
+    "bytes": 2752,
+    "sha256": "d94ee67135331825dd28c910936d7d1d34edf02baede7c6cae4190b36dd5a84c",
+    "change": "new"
+  },
+  {
+    "path": "V4.1.2_WORKLOG.md",
+    "bytes": 2892,
+    "sha256": "3a076feb97cf8b18c24425f2adda3c94e01c7306edcab330d4d490c945fcb20f",
+    "change": "new"
+  }
+]

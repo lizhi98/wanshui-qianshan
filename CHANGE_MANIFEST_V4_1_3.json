@@ -1,0 +1,376 @@
+{
+  "baseline_backup_verified": true,
+  "original_source_unchanged": true,
+  "changed": [
+    {
+      "path": "ANIMATION_ACCEPTANCE_V413.json",
+      "kind": "added",
+      "sha256": "4abed568eccae0d258da3a6ff28a818241b57dac6e4ef59a593ba87bdfd3e0c1"
+    },
+    {
+      "path": "Build_Windows.cmd",
+      "kind": "modified",
+      "sha256": "48d6b867dced5c98930a968e9ac05e333f690840e73775ed540940b0eb654b2a"
+    },
+    {
+      "path": "export_presets.cfg",
+      "kind": "modified",
+      "sha256": "d1ee5c72fb3743f6643c05c32e211643ef92ec8a21c2237ee9d9e3ea2908dd88"
+    },
+    {
+      "path": "game/chapters/manager.gd",
+      "kind": "modified",
+      "sha256": "fb1f44ee02f17ea53ed210dda8c6275cc51aefc35b7d385af6e7dfadcb5df711"
+    },
+    {
+      "path": "game/memorial/campaign.gd",
+      "kind": "modified",
+      "sha256": "5e27cbf6dfe53e3f095f6a91c93d544b90fa9ad0822072efaac71c21ac88aca6"
+    },
+    {
+      "path": "game/memorial/climax.gd",
+      "kind": "modified",
+      "sha256": "8e4f0f0a56a838767ecf611ac3b4899505b2e18c48260ae27984322035995b42"
+    },
+    {
+      "path": "game/memorial/contact_ik.gd",
+      "kind": "added",
+      "sha256": "4ad7740458c1a66912b63f0336268eefb08dca9945d4581c057142d0204cf60c"
+    },
+    {
+      "path": "game/memorial/contact_ik.gd.uid",
+      "kind": "added",
+      "sha256": "7e613d5130c6dce4bc1d78ea8420026a874ad0619b293183487d57b603907213"
+    },
+    {
+      "path": "game/memorial/crowd.gd",
+      "kind": "modified",
+      "sha256": "d4b47e984bcdeefe97c537e801351538b04f618cbb81cfe7905a9153a8c4d3f2"
+    },
+    {
+      "path": "game/memorial/dusted_cloth.gdshader",
+      "kind": "added",
+      "sha256": "2da31ed49cdaa005ceaa6a9d8c5d2930dd527c3eef99a10df1561d6f9f8bd7e3"
+    },
+    {
+      "path": "game/memorial/dusted_cloth.gdshader.uid",
+      "kind": "added",
+      "sha256": "2f0d653be86c40eac09b464928bddaca61a48e781c73117cfe2d77cab94dd66d"
+    },
+    {
+      "path": "game/memorial/footprints.gd",
+      "kind": "modified",
+      "sha256": "58034e5eabbbcf04e4ee423ef7d98b43fc768a4fed12891e6447f5ddc5958a07"
+    },
+    {
+      "path": "game/memorial/npc.gd",
+      "kind": "modified",
+      "sha256": "50130502d91041d52c671acbcac619df44a50a7e6915bcaafe410d1537b88183"
+    },
+    {
+      "path": "game/memorial/player.gd",
+      "kind": "added",
+      "sha256": "bf69b3453fe076250e5a17b19cdee44f37360fe26ed2a4fe0f9235ee3b22c917"
+    },
+    {
+      "path": "game/memorial/player.gd.uid",
+      "kind": "added",
+      "sha256": "0d4abba5dae90f54fdc73233bac4d40ac0e1767219171e6c011021b582ff7c6c"
+    },
+    {
+      "path": "game/memorial/save_store.gd",
+      "kind": "modified",
+      "sha256": "443b801583aa794359bc6ac94d7db022cd0e29fc47cd51c5569b952327d91ccf"
+    },
+    {
+      "path": "game/memorial/terrain.gdshader",
+      "kind": "modified",
+      "sha256": "77fffd29882739afc78ae1dc08a2fd92e27e86e595941743024bdcb0721530c1"
+    },
+    {
+      "path": "game/memorial/visual.gd",
+      "kind": "modified",
+      "sha256": "31143d3c2f82414f0d7c7cadfc1c4a3484d1d25f446d9b78153f9f04b706f0bf"
+    },
+    {
+      "path": "game/memorial/world.gd",
+      "kind": "modified",
+      "sha256": "2e36e197322d3e66b91b9b19c167aaf3de0891d9b4c7bf7e1c63474867f0d1f7"
+    },
+    {
+      "path": "game/snow/campaign.gd",
+      "kind": "modified",
+      "sha256": "d4b2d851383ff4a243b58cb8430e89d441298236c07ce7887dd69aa69a246ea9"
+    },
+    {
+      "path": "qa/animation_lab.gd",
+      "kind": "added",
+      "sha256": "f910e985ec551adc99f9ef007bf5b507834961ef8cc398628d8dc13cf9a3804b"
+    },
+    {
+      "path": "qa/animation_lab.gd.uid",
+      "kind": "added",
+      "sha256": "9350e13873374df7d356a2bd0c8b6b0b467a269b91070db7b6e6b125b901a491"
+    },
+    {
+      "path": "qa/memorial_replay.gd",
+      "kind": "modified",
+      "sha256": "7bca39e7c79b134e425b91f67132c00420a6b7070d793489917633bad0077cf6"
+    },
+    {
+      "path": "qa/movie_capture.gd",
+      "kind": "added",
+      "sha256": "adfe065b014d8ca2b12155e992602f47226a9596b144e87dea9dfeaa9599cb14"
+    },
+    {
+      "path": "qa/movie_capture.gd.uid",
+      "kind": "added",
+      "sha256": "55a174cdd371cee8bd0eabe88cd979d3ce27d20ccc972e9558b8e4382b09d80d"
+    },
+    {
+      "path": "qa/shoe_surface.gd",
+      "kind": "added",
+      "sha256": "f5925cde6178bb03cf2300b17a0ca9b0fa719bb7d5f994636268a254110f7b43"
+    },
+    {
+      "path": "qa/shoe_surface.gd.uid",
+      "kind": "added",
+      "sha256": "a9bf1e199c4f537eb18ce24ef0c708024626a727332c4c58d70d883c950fe192"
+    },
+    {
+      "path": "README_V4.1.3.md",
+      "kind": "added",
+      "sha256": "0b7dc2dc7a228392c9dfc77b276f00a231f0eec7d46b964623120959df2ec47e"
+    },
+    {
+      "path": "Run_Animation_Tests.cmd",
+      "kind": "added",
+      "sha256": "6e7932218f31381f41d43945cf562a56f5de66f6dc7af2e6ab4910cd1062e4d9"
+    },
+    {
+      "path": "tests/v412/commander_close_probe.gd.uid",
+      "kind": "added",
+      "sha256": "b41612f9a20f74c3901daa242191919b5222727e19171edf77c2b1be9ee72993"
+    },
+    {
+      "path": "tests/v412/render_benchmark.gd.uid",
+      "kind": "added",
+      "sha256": "876d7f2bd2e678cb1d3101396f49c84c1e4712fbd4a94afbed6a05b417180fc1"
+    },
+    {
+      "path": "tests/v413/action_rest_probe.gd",
+      "kind": "added",
+      "sha256": "07c8ae803fe25edfcfeded344f788ffebf45ca54607c843137994f5b6495a3d2"
+    },
+    {
+      "path": "tests/v413/action_rest_probe.gd.uid",
+      "kind": "added",
+      "sha256": "49bf79bdbd1485772945e5d766e592dca17fb7a96f35944923282f620a6747e1"
+    },
+    {
+      "path": "tests/v413/animation_bindings.gd",
+      "kind": "added",
+      "sha256": "4285a565d5a58c7cdb534c902d86d92f6a0058b640233160726df13077e34963"
+    },
+    {
+      "path": "tests/v413/animation_bindings.gd.uid",
+      "kind": "added",
+      "sha256": "6d195da4b9da4ab69328354167551d48718b4db7fe9a2487e28ea07421394397"
+    },
+    {
+      "path": "tests/v413/baseline_probe.gd",
+      "kind": "added",
+      "sha256": "378ec7c0c9936f15b3d14744346c4d4e223243c75c4fdf330239514e7644aebd"
+    },
+    {
+      "path": "tests/v413/baseline_probe.gd.uid",
+      "kind": "added",
+      "sha256": "33c78782705c68a56db0fdc227daf8ce937fbef660bac1e846cdc739496f1d29"
+    },
+    {
+      "path": "tests/v413/capture_probe.gd",
+      "kind": "added",
+      "sha256": "317c986a717b2bd1632212bce135029286262c9573174ade2cc1da1c62f17fe8"
+    },
+    {
+      "path": "tests/v413/capture_probe.gd.uid",
+      "kind": "added",
+      "sha256": "d16bf37b316d5d7f6971c9f51dac8d48e75c9962b04d1daf3d2805fa3df8ca26"
+    },
+    {
+      "path": "tests/v413/lifecycle_checks.gd",
+      "kind": "added",
+      "sha256": "f655cbaf069ff6109611910142ecdfb6f4acf5f21b43cc3de957b32045a7e329"
+    },
+    {
+      "path": "tests/v413/lifecycle_checks.gd.uid",
+      "kind": "added",
+      "sha256": "16c57505be6b02457a89673026edecedab6749e9fa515193134529fabcfea89b"
+    },
+    {
+      "path": "tests/v413/march_clearance.gd",
+      "kind": "added",
+      "sha256": "f1e615b7393889e8a10cca2765ef9ae98432926beb273c336de997d4ced8b5b1"
+    },
+    {
+      "path": "tests/v413/march_clearance.gd.uid",
+      "kind": "added",
+      "sha256": "c5b534734a57fe5440ac83bbf7e45e90c7dc7044f7ad310939deffe0ad6f2da9"
+    },
+    {
+      "path": "tests/v413/movie_capture_loop.gd",
+      "kind": "added",
+      "sha256": "534c12bc698e853e75a4b8d65773b20b2d691eb1259958d9e3884e027d484653"
+    },
+    {
+      "path": "tests/v413/movie_capture_loop.gd.uid",
+      "kind": "added",
+      "sha256": "18e957eab002769d66827af6611b34025f065fb4de473402ea8b1f1a968bc43b"
+    },
+    {
+      "path": "tests/v413/progress_checks.gd",
+      "kind": "added",
+      "sha256": "f952236857d78bc6111b568c1dab2cd7d800a053c917ee86b5a2faa0e3984d93"
+    },
+    {
+      "path": "tests/v413/progress_checks.gd.uid",
+      "kind": "added",
+      "sha256": "38a28582b1111d9dda01a962cb13a2a33868348574b087685052156007c50cda"
+    },
+    {
+      "path": "tests/v413/ramp_probe.gd",
+      "kind": "added",
+      "sha256": "048e0a508db77664f385addeded33716113f3e03897b39daee9e4a391717555c"
+    },
+    {
+      "path": "tests/v413/ramp_probe.gd.uid",
+      "kind": "added",
+      "sha256": "7d8fbfa53ddd642ffb32d0d42ba99277c6c18cc17ba8ede2185c7c1220a63ef0"
+    },
+    {
+      "path": "tests/v413/render_benchmark.gd",
+      "kind": "added",
+      "sha256": "e211fdcbdbc240d45f0e59f5d3bd0f4d74cebd2ce122075846abe4fad2f3c3f0"
+    },
+    {
+      "path": "tests/v413/render_benchmark.gd.uid",
+      "kind": "added",
+      "sha256": "18c4da6618efe43093da427c5b3c2b4c99e8b3df481a0401345155050f2c4f08"
+    },
+    {
+      "path": "tests/v413/render_exported_lab.gd",
+      "kind": "added",
+      "sha256": "08b640deda1a16e81cef4b05c89872b91b7f76332ccdac9226a0e4a3d712a735"
+    },
+    {
+      "path": "tests/v413/render_exported_lab.gd.uid",
+      "kind": "added",
+      "sha256": "9d76d7f703be98541e2cc6573b7945acffaf110280cb3400c0ce6c0eb49d7267"
+    },
+    {
+      "path": "tests/v413/render_seated_reference.gd",
+      "kind": "added",
+      "sha256": "aa8a72c0ec7dc98d56595b4c275cbe21b36fe1143a64020e976f05e7aedbb695"
+    },
+    {
+      "path": "tests/v413/render_seated_reference.gd.uid",
+      "kind": "added",
+      "sha256": "405c59e29bf3e52bb32f8e2a072c937b66ba5273e78095ed4278e318e121cdc8"
+    },
+    {
+      "path": "tests/v413/rendered_sole_probe.gd",
+      "kind": "added",
+      "sha256": "1dadd1c71b05eb0dd4a68e5d6632f3f45b4a2f3548ceef3f14a85efbf48413a6"
+    },
+    {
+      "path": "tests/v413/rendered_sole_probe.gd.uid",
+      "kind": "added",
+      "sha256": "5d8d4563c46b47b7a686e3db48525e09dae9b630254762035ad5a6f9cc43be34"
+    },
+    {
+      "path": "tests/v413/resource_probe.gd",
+      "kind": "added",
+      "sha256": "f865e1cf3e42db264b70c0468620847a6bb6b3cb84f50119f59a73d478f5f26c"
+    },
+    {
+      "path": "tests/v413/resource_probe.gd.uid",
+      "kind": "added",
+      "sha256": "b101180b92f89a15edcf889476370758e235ff881a475a8dd3c4b1e43f085b9e"
+    },
+    {
+      "path": "tests/v413/slope_solver_experiment.gd",
+      "kind": "added",
+      "sha256": "e33e28a3e15b32183fb07a3d74ab9a1af2dc7322b0215b8851aea0a46f4c98d7"
+    },
+    {
+      "path": "tests/v413/slope_solver_experiment.gd.uid",
+      "kind": "added",
+      "sha256": "8644122d1740733d35da1fbe07829cf48d068b89b329dd3030b8c23a47c6f03f"
+    },
+    {
+      "path": "tests/v413/sole_asset_probe.gd",
+      "kind": "added",
+      "sha256": "59c29b6f0e4f2fc54f0c5371dcc30d1ed71c839afa2ec2a849342f59c8edd892"
+    },
+    {
+      "path": "tests/v413/sole_asset_probe.gd.uid",
+      "kind": "added",
+      "sha256": "d64c24787701b460468c26b03e90f880f2f6ebd4a94c5587d5dc26e33f3ef2c1"
+    },
+    {
+      "path": "tests/v413/stuck_checkpoint.json",
+      "kind": "added",
+      "sha256": "351266131be677442af7e924d33236604d70d2f6da328b4bd9fe8b647418d9a1"
+    },
+    {
+      "path": "tests/v413/stuck_terrain_probe.gd",
+      "kind": "added",
+      "sha256": "c2328e03fc418c8dbbfba04a777a8ade3c2752d84e749590d0438b3b6baaf0db"
+    },
+    {
+      "path": "tests/v413/stuck_terrain_probe.gd.uid",
+      "kind": "added",
+      "sha256": "65d82436ab267558e7da5cea69cec0036cc88bfaa039ed6879f80a856ff0630e"
+    },
+    {
+      "path": "tests/v413/trace_input.gd",
+      "kind": "added",
+      "sha256": "5350ae9860279c243e026e9fd8919e61eaf4a5ce43ae3b811f674a834bb03e8a"
+    },
+    {
+      "path": "tests/v413/trace_input.gd.uid",
+      "kind": "added",
+      "sha256": "b14dd23d0e0894b3b6a29940d4bbaad21292bdef4550faf4fd0c42e71a7987ad"
+    },
+    {
+      "path": "tools/Analyze_Animation_Motion.py",
+      "kind": "added",
+      "sha256": "bdff4e1cef7fe4421bef3c53ed13ab5bd3d08383518a9709e4a0500b7e25be60"
+    },
+    {
+      "path": "V4.1.3_CHARACTER_ANIMATION_BUGFIX.md",
+      "kind": "added",
+      "sha256": "07857378f7c039be3862e5aa334f294380c6d8330a416314ec6cde5b3ff66dc9"
+    },
+    {
+      "path": "V4.1.3_NAVIGATION_AND_GROUNDING.md",
+      "kind": "added",
+      "sha256": "c5ba410119eb26fd05a940457b9e9a7aac175d774df9f3f1e6f54ae82e07cf45"
+    },
+    {
+      "path": "V4.1.3_REMAINING_ISSUES.md",
+      "kind": "added",
+      "sha256": "50d00fd2d2d8ea5269431edfb48b35806578293e6bfbea999b4a22df7639923c"
+    },
+    {
+      "path": "V4.1.3_TEST_REPORT.md",
+      "kind": "added",
+      "sha256": "11df4f87778a45c8ccd791f93978fb3e7a594d91c4766c97bbb75a21e17b3606"
+    },
+    {
+      "path": "V4.1.3_WORKLOG.md",
+      "kind": "added",
+      "sha256": "97bd2c6b7b68ac26935bccc99623c90f432c267b74497b0e32340a681836cd58"
+    }
+  ]
+}

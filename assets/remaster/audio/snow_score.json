@@ -1,0 +1,14 @@
+{
+  "original_music": true,
+  "instruments": "GeneralUser GS 2.0.3",
+  "cues": [
+    "snow_walk",
+    "snow_crisis",
+    "snow_summit"
+  ],
+  "foley": [
+    "snow_step",
+    "snow_slide"
+  ],
+  "no_film_audio": true
+}

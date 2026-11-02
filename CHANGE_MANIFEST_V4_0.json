@@ -1,0 +1,746 @@
+[
+  {
+    "path": "Build_Windows.cmd",
+    "bytes": 339,
+    "sha256": "5d2ee81016af2ef8e52bc29e8295995b62a192f5650ca48377c6950377700c0f",
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "bytes": 997,
+    "sha256": "f8bca8139085754e175f92c4447e4bac2df3818df474caa145d3f80d1f0420f5",
+    "change": "modified"
+  },
+  {
+    "path": "project.godot",
+    "bytes": 6686,
+    "sha256": "5718697d779869818a08f407696868395318c11519ddb3fab22afbf9fd6336d4",
+    "change": "modified"
+  },
+  {
+    "path": "README_V4_0.md",
+    "bytes": 2021,
+    "sha256": "0254fba2fdfb517d4c7a1c10317452e07d7e54272e6e9539e770c64891b1be8b",
+    "change": "new"
+  },
+  {
+    "path": "Run_Snow.cmd",
+    "bytes": 134,
+    "sha256": "544d078e306d9ee5e4cc2f8a1f242995b11d5c51d2092374f687ca2c127bebf1",
+    "change": "new"
+  },
+  {
+    "path": "Run_Snow_Replay.cmd",
+    "bytes": 125,
+    "sha256": "9df274089bfe52fa4140b21d4d7d3e285a0a3158b584b15c0a35768a957fe262",
+    "change": "new"
+  },
+  {
+    "path": "Run_Snow_Tests.cmd",
+    "bytes": 388,
+    "sha256": "4b402558bb4d13a96fa7273fdf0b42bd1a0646b3c607ea4b67dfd4730cf69056",
+    "change": "new"
+  },
+  {
+    "path": "Run_Tests.cmd",
+    "bytes": 1037,
+    "sha256": "acc5b716e352a331a2c42b25042fff1d23ce8f755c18c986607553d1a348db66",
+    "change": "modified"
+  },
+  {
+    "path": "SNOW_ASSET_SOURCES.md",
+    "bytes": 2067,
+    "sha256": "64185f7a5e793674a9a2d8907037b2741b6f67e6be4feeb13d8ad6ee0e574231",
+    "change": "new"
+  },
+  {
+    "path": "SNOW_MOUNTAIN_REPORT.md",
+    "bytes": 8171,
+    "sha256": "214038eaf1ce027f613c786ed7c448e40c9de58277c5e83dc72bae97428f9c32",
+    "change": "new"
+  },
+  {
+    "path": "V4_WORKLOG.md",
+    "bytes": 3601,
+    "sha256": "bd4a6c175cb879bbdf04fd38405fec8d0f63351c7cd189fa9b4736d0c6e74996",
+    "change": "new"
+  },
+  {
+    "path": "game/camera.gd",
+    "bytes": 5520,
+    "sha256": "eb70e452f48a4acb2d733cfd153199bc5f03cd497d899c4fa9676eebe061edaa",
+    "change": "modified"
+  },
+  {
+    "path": "qa/snow_replay.gd",
+    "bytes": 11424,
+    "sha256": "458a9cbf2d5b855cd7d6d771a8555eb1ef0444b56a0077bb749ffe903f4665eb",
+    "change": "new"
+  },
+  {
+    "path": "qa/snow_replay.gd.uid",
+    "bytes": 20,
+    "sha256": "58b6f563d69267474e9ba1809c0acbe7afe5fdf4afde8623a03d2a2bdab9e9d4",
+    "change": "new"
+  },
+  {
+    "path": "tools/compose_snow_score.py",
+    "bytes": 2993,
+    "sha256": "9e7a4637de7257888710d2447d8d6c4b20159ad96a82a513289b5e2bc456b75e",
+    "change": "new"
+  },
+  {
+    "path": "tools/Generate_Snow_Voices.py",
+    "bytes": 6017,
+    "sha256": "da2d8f2345d32d695983912dd37913fe5ffb22468e63ec3ce61411dbf80652b2",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/snow_cloud.png",
+    "bytes": 2927,
+    "sha256": "0b3676b3fb2b6a19b9869007561f9385546630b5c79aed3525b973e08912445c",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/snow_cloud.png.import",
+    "bytes": 946,
+    "sha256": "ea8f11c9aee590ca0d504b654a3e677c32b277c8b875de5629b741531dcbcb9c",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_crisis.wav",
+    "bytes": 4189132,
+    "sha256": "e2453ec70abda3ad45bc2dc90d7caa939e8de270b0e43324ea3e3ba1fdc4dba2",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_crisis.wav.import",
+    "bytes": 512,
+    "sha256": "22fa7276f014cec0af25c0a0688823bb67253d2c6fae13c148e947184f8a9276",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_score.json",
+    "bytes": 230,
+    "sha256": "15807c7fd8079d35845a410fdb37f5153939f519ca5a233ce40b21bed67c6774",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_summit.wav",
+    "bytes": 5585496,
+    "sha256": "2f641e1156dbb74f086389cdc42d302c75759533ab8dbfd1fe5e5c4c14f91252",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_summit.wav.import",
+    "bytes": 512,
+    "sha256": "23d24f9609f97a92d2f388c1bcdf2c7d24ac85cfedf97ebbe31f931deafb4395",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_walk.wav",
+    "bytes": 7275832,
+    "sha256": "5300fd52dafbcec00851cadc5ac0f0c425a375e05d669d1b748d0c9d24320aa7",
+    "change": "new"
+  },
+  {
+    "path": "assets/remaster/audio/snow_walk.wav.import",
+    "bytes": 507,
+    "sha256": "098fdda44e40e160ee57e960679c4bd7bca5fcd60d711f142ce35f77c104991c",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/audio/snow_slide.wav",
+    "bytes": 547244,
+    "sha256": "9fac60690a9121460d0cfd461ab7acaa76f49d65b3543f873dd28b745501727a",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/audio/snow_slide.wav.import",
+    "bytes": 506,
+    "sha256": "b601b8fe8a114756a27705ed94c0405c9503881c5533ff2098a07c9ce682de5b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/audio/snow_step.wav",
+    "bytes": 30764,
+    "sha256": "4412e1a23471b00d0d4f8f2b94467c16f2560de8f1a2e8f4e82ec7a64720246b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/audio/snow_step.wav.import",
+    "bytes": 503,
+    "sha256": "533bee5fa2c95af1d6c509b2a92f0b18dde3cc8e2c0f513bea57b6501abdd8e7",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/terrain/ground_mesh.res",
+    "bytes": 5623076,
+    "sha256": "99f27df80a2d9b7c796ffa40574d26dbf47d871e5078fbafbdd7a47b50fa63c4",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/terrain/ground_shape.res",
+    "bytes": 7200351,
+    "sha256": "2975b0580585e81b1a3be716180682b4db64d3ee117a3246b18646c104d29fc6",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/terrain/trail_mesh.res",
+    "bytes": 936356,
+    "sha256": "fa3d9e9f31df973d4b81004d37296214c579fb814f352093862e9b7a1581fd5e",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/terrain/trail_shape.res",
+    "bytes": 1403487,
+    "sha256": "5ab3f96d238e97c5de4deb8ffbb91989cc5ad59e64f2d9cc4e877f184baa074b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/17ee465c29acedd3d5b92d479f1aa095.wav",
+    "bytes": 80212,
+    "sha256": "29481df8d4c3547660d0c2f074206e2b6173024e9e14b9aadedb702d8b21955f",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/17ee465c29acedd3d5b92d479f1aa095.wav.import",
+    "bytes": 573,
+    "sha256": "21a9a67d7a56181aee5762e0a1036efa67742da98c4f304ed4766af9779c0fc1",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/19a6469464655c113b98418ca7ef21b4.wav",
+    "bytes": 130076,
+    "sha256": "5dcf4dc8e4475c1c9aaaaf496c30f9ef09bcdaff22f8ac014d68448d32b9b029",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/19a6469464655c113b98418ca7ef21b4.wav.import",
+    "bytes": 573,
+    "sha256": "a7043dfbc80deed164c24adce1a5260692e60e0c1cc184c431e6d3cec086ff1c",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/25a1c04b667f93eece8ac484ef1075e6.wav",
+    "bytes": 203424,
+    "sha256": "dab833930e3d2ec330a5401604380e9fa66efbc8412577a956ebdec0777b8be5",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/25a1c04b667f93eece8ac484ef1075e6.wav.import",
+    "bytes": 573,
+    "sha256": "7e0b45ddd64d589cf9d8b102cfc2aabbc934e141d8da1b05f09082eb0f116575",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/2ddca126d2b1ab327440f91316015c85.wav",
+    "bytes": 164718,
+    "sha256": "795b3210cae0ce28f220c3c3f124974d1ffe147ee5b2d740fbaa3e5e1dc48298",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/2ddca126d2b1ab327440f91316015c85.wav.import",
+    "bytes": 573,
+    "sha256": "bfd593d7a2b27199b0b35f6d34bf93a206e3bdae3a0f93ddcad3b381e3e06bd7",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/2ea585a2aee739e97b373ab7124f97da.wav",
+    "bytes": 53230,
+    "sha256": "de758fbb3c88252f106d81280b129840a7855cb2d2902dd39216cdb7ed2f4db5",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/2ea585a2aee739e97b373ab7124f97da.wav.import",
+    "bytes": 573,
+    "sha256": "732ba591993446640f46b627dc236d2de5adeb4dd0ba37b9767be7c45fcbe7fd",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/38ddf121646b9696d131a17930c624c7.wav",
+    "bytes": 84254,
+    "sha256": "cb9f01f0adc6d51b5287d7489306e189e9da574ce70b0f0c19b350fae651923e",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/38ddf121646b9696d131a17930c624c7.wav.import",
+    "bytes": 573,
+    "sha256": "afa2521e89fdeb31d47b2251c8fc7a891ea077643d88f448403ba23c78415758",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/3abf1ea50e3dbacf4eb6be13d3f6b5bf.wav",
+    "bytes": 191974,
+    "sha256": "dca2dffa6063a8b0ad8fd84513dd2edb3d15d09a8d81def75e7fd6b5c419fda7",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/3abf1ea50e3dbacf4eb6be13d3f6b5bf.wav.import",
+    "bytes": 573,
+    "sha256": "c38f95d2c7deddd685900821455517bb4c5a679fcd860c5dcb8c276c7f5441d7",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/3d5d6d35164a60b0fe7e76f2c1569b9f.wav",
+    "bytes": 168802,
+    "sha256": "52b6ae3e426f38620c2b12f9e441d59c25d457bade0b88529a463288b242179a",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/3d5d6d35164a60b0fe7e76f2c1569b9f.wav.import",
+    "bytes": 572,
+    "sha256": "a3a3fa9f1187bbfcbcfa83e1ab43c719d063fa260e7746feb4163bab91636aa2",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/445ea390c84fd2628276168c104223e0.wav",
+    "bytes": 245500,
+    "sha256": "4480302eb3a0fefed7c4bd21f6d0061dac3d5487756c6070533ebb44f5a40cf9",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/445ea390c84fd2628276168c104223e0.wav.import",
+    "bytes": 572,
+    "sha256": "86e22ca67b98968503c34dc41e24a61192f60edaae9477acf88f01be95d5196b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/45d9d23eb2bdc36714ffb1010167e0e4.wav",
+    "bytes": 111272,
+    "sha256": "adb57d64d98f675ecf658c87257b977bbba5dd3618dda664a837c3a814cca8bd",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/45d9d23eb2bdc36714ffb1010167e0e4.wav.import",
+    "bytes": 573,
+    "sha256": "966fb786bf8849da669a7652a5aeb9f213868266ca9c2320e4445e96e6f76370",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/67e6c44d15ee6bafa0241e60f353ee43.wav",
+    "bytes": 191976,
+    "sha256": "fcaa713bcc6975f3a623c6fd7cbe44ceb26ce9f8f0c78f7ed57094a14613fddd",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/67e6c44d15ee6bafa0241e60f353ee43.wav.import",
+    "bytes": 573,
+    "sha256": "e4d21356bc3cb2634e5f62b9b9e955248b7f34276932ed75e2dab6983b1605aa",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/714eba55650f3c16307371e74f7f1061.wav",
+    "bytes": 245736,
+    "sha256": "e070bcac2f1fa3331b035f81b3c8ee0d7e03704b23b2b4288b8b2091a4f4fe6d",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/714eba55650f3c16307371e74f7f1061.wav.import",
+    "bytes": 573,
+    "sha256": "7b36fc1739e9a489dfe9c057dedec5a6685f745bbbc6ba941ba7eaa031dd4212",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/8e2c7aeee27bb9989b17ffff9995dd3e.wav",
+    "bytes": 111334,
+    "sha256": "938469ec015c4c3e00d0a7a349da0cf0049637aa3aedb50a1ae7cca478bdca36",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/8e2c7aeee27bb9989b17ffff9995dd3e.wav.import",
+    "bytes": 573,
+    "sha256": "59d7ffcdeb1aad6d84c973226d579e52749f028fe49d2b98eaf87dfd1660ed6b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/92941a37f9a7f7bfe9be5f1e8bd5dd08.wav",
+    "bytes": 61410,
+    "sha256": "bb12ed64e925d52a4e0f4cf5f05cc911f3003ac9ab46f74778b9355349551be9",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/92941a37f9a7f7bfe9be5f1e8bd5dd08.wav.import",
+    "bytes": 572,
+    "sha256": "eb095e4a76abbd92ee70486a1de4188b8ebc151274159b4cb948cf74207c9cc5",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/a2b9eab5d4ea3651e5b5fb2c3089348f.wav",
+    "bytes": 76694,
+    "sha256": "ff649f111f778c37525534cf5bf46059198ce8b600cd1cc24c9bedda4ea05422",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/a2b9eab5d4ea3651e5b5fb2c3089348f.wav.import",
+    "bytes": 573,
+    "sha256": "69b743d649d3020baadae3192207abe2bbf03224cc69b94ecedcca2fa49741dd",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/ad640b0da41c834411c33ce69a8d1cfa.wav",
+    "bytes": 203464,
+    "sha256": "9d794f15a327ee39abbe5beb6206a9d8b2b570603dcddaff0e0582dec257669e",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/ad640b0da41c834411c33ce69a8d1cfa.wav.import",
+    "bytes": 573,
+    "sha256": "ffd3b0166d1a1e08cd472cdc865ac9f9ccfc34935470fd6441bfd396f9605206",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/c6fc03f54f56ecd6f717beb1c329a2c1.wav",
+    "bytes": 103146,
+    "sha256": "9a05b8455a97de230f41f68b26fb8379bc031a209c68f737c3bab9693550be40",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/c6fc03f54f56ecd6f717beb1c329a2c1.wav.import",
+    "bytes": 573,
+    "sha256": "c9b2f5c64a20c65178c894f1bdaba0e3f71e364b0e172f4c192586d009ca7b45",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/cb031c9627cd61695765f17041ee0bae.wav",
+    "bytes": 141410,
+    "sha256": "ab9e53bc186f50bf474d8ee92446b36e8c58e6fd4bcb78436bb3c5330019e2f1",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/cb031c9627cd61695765f17041ee0bae.wav.import",
+    "bytes": 573,
+    "sha256": "fa2c74b71e599ce6af02108c9353a13fb5f97d0e823d9ee7d44dcb0749dedade",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/d6dbb284a8c84e056ce38121145da273.wav",
+    "bytes": 149610,
+    "sha256": "b3a89a2dc3e19f8846a983cee0f59dd5c1f4c171c5a25129dfb7a993f627ca74",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/d6dbb284a8c84e056ce38121145da273.wav.import",
+    "bytes": 572,
+    "sha256": "1c563828519ef6f8c9c9487fc6941d286733fa5bb98b4ddfbd87587cbd56d782",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/e5e3c4f9cda5f7e0dc80b5a0899da9b5.wav",
+    "bytes": 126638,
+    "sha256": "0bf73acc4898861a69a90cc2e9834c2feced62f683d5edec4053eacf01595911",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/e5e3c4f9cda5f7e0dc80b5a0899da9b5.wav.import",
+    "bytes": 571,
+    "sha256": "247d24bbee44561d2dda4a11ab9e5cbe26e0c8b99ff205dbed5635267090f3b2",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/e5eddfb77f1765b3375a0db8b97b89d3.wav",
+    "bytes": 99256,
+    "sha256": "504b76b8e5087956728b14a32a474727e5eb45e154697ab599bf397faea93f59",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/e5eddfb77f1765b3375a0db8b97b89d3.wav.import",
+    "bytes": 573,
+    "sha256": "f519aaf885f18a0d18fed9e44127888e68b5eef60b7af65cf6203d55c8ea5172",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/ffc2d2b0491dda44e3789f74f493db9e.wav",
+    "bytes": 153150,
+    "sha256": "359f09123bd5a566d5f652fa672067e09054d6a1ff3099abf908385dd6e765ec",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/ffc2d2b0491dda44e3789f74f493db9e.wav.import",
+    "bytes": 573,
+    "sha256": "956f1fbd0ad4e5f8f6bad223e28200a5d83e763f054eed33bbe92d5a6ce71d7b",
+    "change": "new"
+  },
+  {
+    "path": "assets/snow/voices/manifest.json",
+    "bytes": 23010,
+    "sha256": "26c58511e36c2afb7d885ac4e8c6d32309c4559070d4ca251b49d5c0cd36a9bc",
+    "change": "new"
+  },
+  {
+    "path": "game/chapters/main.tscn",
+    "bytes": 179,
+    "sha256": "0a28b6b6b5b282cbedeef490f4f228cc96ca51e0c8ef740486d5a5e1960e4335",
+    "change": "new"
+  },
+  {
+    "path": "game/chapters/manager.gd",
+    "bytes": 2933,
+    "sha256": "eb3970b7f750319e008a48af1ba9f43c86581b1dc4dfa7d0e02930178016e553",
+    "change": "new"
+  },
+  {
+    "path": "game/chapters/manager.gd.uid",
+    "bytes": 19,
+    "sha256": "5549ff4b3131a3f0babcf1661c97a72bc58e51f5bd5164148bf3f0e38878c85f",
+    "change": "new"
+  },
+  {
+    "path": "game/remaster/audio.gd",
+    "bytes": 4339,
+    "sha256": "548f5ce5bdd25bdc9ddcfff45aeb40078db9b77d1bb2a061074c27c9ae1dab8b",
+    "change": "modified"
+  },
+  {
+    "path": "game/snow/audio.gd",
+    "bytes": 614,
+    "sha256": "7d2337b6246bef631db907cc612d3458f937fc3bcd7c75fc5c712b2442ca61dd",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/audio.gd.uid",
+    "bytes": 20,
+    "sha256": "139c526de493d4ff0aff42ddb8b0fa55e4167c16951693dd9457283485d54dff",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/campaign.gd",
+    "bytes": 20749,
+    "sha256": "9b84331f0d3b005ea5ea119f76882d17822abb3711cd98e396a349d92f572e62",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/campaign.gd.uid",
+    "bytes": 20,
+    "sha256": "a60e97cc0ce0414ccb6a997263e5fb98c839dd7b749f918d518b5835a90969b2",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/hud.gd",
+    "bytes": 3048,
+    "sha256": "2ef369fe50559ed7be89ab472d4328ccbd553d2cd75f777ed19e5fe00a8fb5d8",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/hud.gd.uid",
+    "bytes": 20,
+    "sha256": "6f977710a2fdb8ebf60f1cbe71c76d744e9105b38c93486715b5f642fa018bb6",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/main.tscn",
+    "bytes": 180,
+    "sha256": "53a6fc60bec4a2200e83f647a98235e376c4a624a622d0104a34ae3a86fa1647",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/npc.gd",
+    "bytes": 2629,
+    "sha256": "1bd5048d20d82cdf28ec8d9597496588b9c59f262d00e64cb7beb9bb40430327",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/npc.gd.uid",
+    "bytes": 19,
+    "sha256": "2edc7a0bc94717a841bf6d43a69e915c2f3e34db716381362bfe3c4e4c80e85e",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/observation.gd",
+    "bytes": 903,
+    "sha256": "266c3ac7f9e00c25dfbba70c4c34b1201824d748b0ce494b63191524c7200753",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/observation.gd.uid",
+    "bytes": 19,
+    "sha256": "b0b07c15e51ddc52b67d2806fdd7cac23b210cfdf4a004f6d275198f55631f5f",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/player.gd",
+    "bytes": 1019,
+    "sha256": "bdac14ae97d39605cea745b0aec93d2df80e9880083aac699bc037d61d283644",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/player.gd.uid",
+    "bytes": 18,
+    "sha256": "2a5b987efff16fb7895159715c1d5c9c371b65b77335e26da1fc8228fdff0dd4",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/route.gd",
+    "bytes": 2151,
+    "sha256": "02c081e4ce462c7c41795abd9e2a809a9aefcf2b0f56d86d87dd61a5ef365f47",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/route.gd.uid",
+    "bytes": 20,
+    "sha256": "3abc870504831ab76d257fc95a7df190df8d97bcf16aac575a451bd242dce29d",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/route_map.gd",
+    "bytes": 1796,
+    "sha256": "e0a2328453b3a1a8440e3d72fd41696f09b28e6610df53ffa89bca7eef0b7ea5",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/route_map.gd.uid",
+    "bytes": 20,
+    "sha256": "a8b9aee8cca53874857b7315a05a92f19f1b1736ce35cbcb80ece5de0a6059a2",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/save_store.gd",
+    "bytes": 2720,
+    "sha256": "abf2c652dfc06a8161b33e0a65db2d8e28a5b0085cc14ad9c350f6f36f566383",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/save_store.gd.uid",
+    "bytes": 20,
+    "sha256": "168fadc1bec29267f8fb0c168913b95fe40b87a5dfb96a245c0e7b65b2be5cc0",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/terrain.gdshader",
+    "bytes": 1485,
+    "sha256": "4384fed6c6ef49c04bf984f699ce9ff9d0cd2048a7c45bd04812fc4660e02abb",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/terrain.gdshader.uid",
+    "bytes": 19,
+    "sha256": "827d0d5edb113cdaa1a5ea24f148ea8d5b338fcbdd770fc76b192bc07374f2e8",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/vegetation.gd",
+    "bytes": 996,
+    "sha256": "bd3f6ffaaa63a54bcc41fb59e6cf7127347a5ebda6a556c2c5e121178ca62645",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/vegetation.gd.uid",
+    "bytes": 19,
+    "sha256": "438dcac731e491624990fb943ba417c1fcb0088b4f850d2fe1071594db464f5d",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/weather.gd",
+    "bytes": 2906,
+    "sha256": "1fe670554bcd5bfea6ade892bdc017ad509b9485253ceef4b16ca0b054c7ddf7",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/weather.gd.uid",
+    "bytes": 20,
+    "sha256": "a02e6219e7109af416b78cab0372c74e4fdfb615bcaf577e0c86cecb885b8453",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/world.gd",
+    "bytes": 16857,
+    "sha256": "2f382d292c590d1eca408c8a9aaffb3b34af96a7181b901f4f7ca82c45d61a04",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/world.gd.uid",
+    "bytes": 20,
+    "sha256": "aaae3352021b0e578ed711cebce2b60ad358ed35a9e8bcd5810e05ebb6334037",
+    "change": "new"
+  },
+  {
+    "path": "game/v2/campaign.gd",
+    "bytes": 16594,
+    "sha256": "5e98656b449a8a1cafcdd8b2d9391d459c264fea096930f3c0fccca6888c01f0",
+    "change": "modified"
+  },
+  {
+    "path": "tests/snow/jump_checks.gd",
+    "bytes": 1927,
+    "sha256": "76b4d47ade48445573b24627f370b42a74d8590952e7481e2e83eb7a7a1c93ed",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/jump_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "99896785339e08a1f99aa239297f1eb8d96e30be44aecf71de3803c52820281e",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/load_probe.gd",
+    "bytes": 711,
+    "sha256": "2e4ab06bdce9de94f4658d80ea4292d43cf85cf0617800fd6511da4787f0b020",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/load_probe.gd.uid",
+    "bytes": 19,
+    "sha256": "9677bb7025fe214eade40a9003473604a2500768c531f17486ec39e745a7f01e",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/mechanics_checks.gd",
+    "bytes": 6065,
+    "sha256": "f858e1c6ad278d5e9ede26ac329f5a02bb2cac5174fbb523f9079e37316a4a86",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/mechanics_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "9363d7a6182d6c39bddf986d6262e3193434f7dadbd77d09c3a11f3e1cb8d8d3",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/npc_probe.gd",
+    "bytes": 937,
+    "sha256": "48d7a50233fe23fcdb59eb23e82984bec2416ca2b74eb884022d8aa7e3227a35",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/npc_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "175dda8db7805d1612b69909838ac67dd5e20dc41c3157c302045c264e445451",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/party_climb_checks.gd",
+    "bytes": 1237,
+    "sha256": "1ba6f2de732d040d4afcfe1e8ee3a1f7981583c6b482a135ffa470b5fe2d363a",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/party_climb_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "35e5e6c3f2fb14a5839d1266111ef9812224b8b4b2dce91b93bc07a9302c53bd",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/sight_probe.gd",
+    "bytes": 872,
+    "sha256": "eccc8d838de2303fffea5b3901e14c17566a60e126e1d6cd7e83b25301981e8e",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/sight_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "5b3a2a5a201e1ffbb9651af959aeae32953d4c90029d86f5caac4b018a02b8a3",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/visual_review.gd",
+    "bytes": 2261,
+    "sha256": "aae534f87fdd0c35ea177ed18a43a8649f507f23fa9cbd1765435dd43a5432fc",
+    "change": "new"
+  },
+  {
+    "path": "tests/snow/visual_review.gd.uid",
+    "bytes": 19,
+    "sha256": "6d4ddb211b9010bbf348e38e264890d1c52b14efe4e73389b73e4c2bbea81671",
+    "change": "new"
+  }
+]

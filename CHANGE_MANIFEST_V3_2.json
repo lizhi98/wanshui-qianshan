@@ -1,0 +1,152 @@
+[
+  {
+    "path": "Build_Windows.cmd",
+    "sha256": "6142bddb2637156ebb20e180b7e2456ef10bdf816130e453d4707486983af5e3",
+    "bytes": 343,
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "sha256": "aedc08cbb64d4b1e99d276d4c203116957942bb6970f511d44122aa6646e98cb",
+    "bytes": 975,
+    "change": "modified"
+  },
+  {
+    "path": "README.md",
+    "sha256": "6a5044f890b8e9242e5531b13eed60ba11b0bb98a491b3da719606c669748c84",
+    "bytes": 7098,
+    "change": "modified"
+  },
+  {
+    "path": "README_V3_2.md",
+    "sha256": "20a3a06da3313071ec033763e5e2cb3e4534312107a9f10f4560474f8673f857",
+    "bytes": 2432,
+    "change": "new"
+  },
+  {
+    "path": "Run_Tests.cmd",
+    "sha256": "57a1db8f92040bfd3a7346ed91d8a6acd8f04359ea1d3d9fb8991d21368164d3",
+    "bytes": 1244,
+    "change": "modified"
+  },
+  {
+    "path": "UPDATE_REPORT_V3_2.md",
+    "sha256": "9e05cc5813deb423fccf28f675901a818633e4c11a0fa412dc9e993c56f8a764",
+    "bytes": 3387,
+    "change": "new"
+  },
+  {
+    "path": "game/camera.gd",
+    "sha256": "6f51769b4f0b0f92b791f496a403191f8c62fdc3de4915ddc8f752fd2446351d",
+    "bytes": 5320,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/audio.gd",
+    "sha256": "e34905c3d52a0b8fb946c505be0504f310a0199b68696e4aaa64d7bf5d06c6a9",
+    "bytes": 4258,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/river.gdshader",
+    "sha256": "5b5c76dc9c5d4fef1ce9ccf28ec554d2ae913fd38a6087f2973aea3bd74960c4",
+    "bytes": 834,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/terrain.gdshader",
+    "sha256": "be6c8e8d587abee18e0225093c9eb30cfe72732ad56039e19564a4e464be7c07",
+    "bytes": 1759,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/world.gd",
+    "sha256": "21dafa990a2096f2db763db61e1ad4d0d304892dea4b91e9c17029ca5df2f206",
+    "bytes": 15768,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/assault.gd",
+    "sha256": "5e7b9bc2452ea7f6879eeb9416295091b5a1c6a2591606a8a2b862997768359e",
+    "bytes": 11692,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/campaign.gd",
+    "sha256": "9c90b4bb7766b2cf26ea0aa1fc74c2f93699ae46e3412ec9c262c3a14427afc1",
+    "bytes": 16055,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/save_store.gd",
+    "sha256": "28ee4987757e3ba155bcff1f39729c25027a7c8877624767c225e6425718bcb9",
+    "bytes": 5845,
+    "change": "modified"
+  },
+  {
+    "path": "game/v31/battlefield.gd",
+    "sha256": "0c557c4cf0f7a884a229918cf804a6be9cdf1743aa49244397bb25117cd1796b",
+    "bytes": 14896,
+    "change": "modified"
+  },
+  {
+    "path": "game/v32/environment_detail.gd",
+    "sha256": "ae7a4d9b546a5ce5ca63bc63bd240898b25c6ec3d0cd078d2eab6846abd5097c",
+    "bytes": 7397,
+    "change": "new"
+  },
+  {
+    "path": "game/v32/environment_detail.gd.uid",
+    "sha256": "b59fe6a558d18fc4e62c49ec0975fc4b273d92ca6a2d148a3b9ffc660d5f8b75",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v32/roof.gdshader",
+    "sha256": "d0565b3b76fdae0c7ec18e9157a0b9a059dc3672730274fb682581edf879d8ce",
+    "bytes": 472,
+    "change": "new"
+  },
+  {
+    "path": "game/v32/roof.gdshader.uid",
+    "sha256": "f259995a8fff290c1338051c536907618c648a8fee4f359eb364e4ef0976d180",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v3/assault_checks.gd",
+    "sha256": "18d2eddb33d0b76daf36c7c99f4c7887a4ff9e5efcb69c822ecae729d75d6d45",
+    "bytes": 4710,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v3/visual_review.gd",
+    "sha256": "9ed076c0bd58396c22f048d71f4f64ffdc332adb7913eaa942ba052b45ec3ebc",
+    "bytes": 2569,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v32/behavior_checks.gd",
+    "sha256": "d77711e0be45f836071ee641dd108bce1a8e7f78d1df15fd494cb93f8982bec4",
+    "bytes": 3531,
+    "change": "new"
+  },
+  {
+    "path": "tests/v32/behavior_checks.gd.uid",
+    "sha256": "af6788e026731b568fc2be4ab11d2becac0bab04fc0a5090215dc2511095cc53",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v32/camera_visual.gd",
+    "sha256": "4a886179e899b78d0a3a3c27f2e1aac7a819b4b7a12bdeb9c775758b7f03b089",
+    "bytes": 4489,
+    "change": "new"
+  },
+  {
+    "path": "tests/v32/camera_visual.gd.uid",
+    "sha256": "cab30980703d2cf6cd3e4cb442036463014c240a56b4ebbc161c1538ed557782",
+    "bytes": 19,
+    "change": "new"
+  }
+]

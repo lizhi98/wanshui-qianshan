@@ -1,0 +1,19 @@
+{
+  "schema": 413,
+  "units": "metres, seconds, radians; per-frame limits normalised to 60 Hz",
+  "nonjump_root_ground_gap": 0.06,
+  "vertical_speed_per_frame_at_60hz": 0.12,
+  "yaw_radians_per_second": 4.0,
+  "stance_horizontal_drift_per_plant": 0.08,
+  "sole_penetration": 0.025,
+  "stationary_sole_gap": 0.03,
+  "pelvis_delta_per_frame_at_60hz": 0.06,
+  "hand_delta_per_frame_at_60hz": 0.15,
+  "cross_limb_correlation_min": 0.65,
+  "same_limb_correlation_max": -0.45,
+  "npc_min_horizontal_clearance": 0.56,
+  "target_switches_per_second": 4,
+  "npc_command_acceleration": 7.5,
+  "transition_observation_grace_seconds": 0.8,
+  "spawn_settle_seconds": 2.0
+}

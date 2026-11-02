@@ -1,0 +1,1322 @@
+{
+	"binary": "C:/Users/14438/Documents/Codex/2026-10-28/files-mentioned-by-the-user-ludingbridge/outputs/V4_1_5/Windows/WanShuiQianShan_V4_1_5.exe",
+	"chapter": "memorial",
+	"checks": [
+		{
+			"check": "camp panorama releases normal third-person control",
+			"passed": true,
+			"time": 10.0666666666666
+		},
+		{
+			"check": "walk to (-5.0, 0.0, 38.8)",
+			"passed": true,
+			"time": 15.4666666666666
+		},
+		{
+			"check": "F gaze identifies physical clue stock",
+			"passed": true,
+			"time": 16.7
+		},
+		{
+			"check": "walk to (-5.0, 0.0, 38.8)",
+			"passed": true,
+			"time": 17.0666666666667
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 19.6333333333335
+		},
+		{
+			"check": "E picks up a visible parcel into the character's hands",
+			"passed": true,
+			"time": 19.6333333333335
+		},
+		{
+			"check": "walk to (5.0, 0.000282, 36.65)",
+			"passed": true,
+			"time": 27.1000000000005
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 32.0000000000007
+		},
+		{
+			"check": "actual handover commits for young",
+			"passed": true,
+			"time": 32.0000000000007
+		},
+		{
+			"check": "recipient visibly wears the delivered coat: young",
+			"passed": true,
+			"time": 32.0000000000007
+		},
+		{
+			"check": "walk to (-5.0, 0.0, 38.8)",
+			"passed": true,
+			"time": 38.0000000000004
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 40.5666666666669
+		},
+		{
+			"check": "E picks up a visible parcel into the character's hands",
+			"passed": true,
+			"time": 40.5666666666669
+		},
+		{
+			"check": "walk to (9.0, 0.000282, 31.65)",
+			"passed": true,
+			"time": 51.9666666666663
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 56.866666666666
+		},
+		{
+			"check": "actual handover commits for veteran",
+			"passed": true,
+			"time": 56.866666666666
+		},
+		{
+			"check": "recipient visibly wears the delivered coat: veteran",
+			"passed": true,
+			"time": 56.866666666666
+		},
+		{
+			"check": "walk to (-5.0, 0.0, 38.8)",
+			"passed": true,
+			"time": 66.0666666666655
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 68.633333333332
+		},
+		{
+			"check": "E picks up a visible parcel into the character's hands",
+			"passed": true,
+			"time": 68.633333333332
+		},
+		{
+			"check": "walk to (-8.0, 0.000282, 28.65)",
+			"passed": true,
+			"time": 76.3666666666649
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 81.2666666666646
+		},
+		{
+			"check": "actual handover commits for giver",
+			"passed": true,
+			"time": 81.2666666666646
+		},
+		{
+			"check": "the already clothed soldier redirects his parcel instead of consuming it",
+			"passed": true,
+			"time": 81.2666666666646
+		},
+		{
+			"check": "walk to (-1.0, 0.000282, 40.65)",
+			"passed": true,
+			"time": 91.2666666666641
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 96.1666666666638
+		},
+		{
+			"check": "actual handover commits for amu",
+			"passed": true,
+			"time": 96.1666666666638
+		},
+		{
+			"check": "recipient visibly wears the delivered coat: amu",
+			"passed": true,
+			"time": 96.1666666666638
+		},
+		{
+			"check": "three physical parcels produce exactly three real deliveries",
+			"passed": true,
+			"time": 96.1666666666638
+		},
+		{
+			"check": "walk to (-8.0, 0.000282, 41.65)",
+			"passed": true,
+			"time": 100.366666666664
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 120.466666666662
+		},
+		{
+			"check": "march begins without revealing the old soldier's identity",
+			"passed": true,
+			"time": 120.466666666662
+		},
+		{
+			"check": "walk to (0.0, 0.0, 40.0)",
+			"passed": true,
+			"time": 125.266666666662
+		},
+		{
+			"check": "walk to (0.0, 3.0, 23.9)",
+			"passed": true,
+			"time": 134.799999999995
+		},
+		{
+			"check": "walk to (-10.5, 5.0, 15.5)",
+			"passed": true,
+			"time": 144.266666666661
+		},
+		{
+			"check": "walk to (10.5, 7.0, 12.0)",
+			"passed": true,
+			"time": 156.999999999994
+		},
+		{
+			"check": "walk to (15.51672, 8.954565, 1.966563)",
+			"passed": true,
+			"time": 163.933333333327
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 170.033333333326
+		},
+		{
+			"check": "player clears the actual obstruction and lets the column advance",
+			"passed": true,
+			"time": 170.033333333326
+		},
+		{
+			"check": "walk to (18.2, 10.0, -3.4)",
+			"passed": true,
+			"time": 173.833333333326
+		},
+		{
+			"check": "walk to (8.4, 14.0, -19.5)",
+			"passed": true,
+			"time": 185.566666666659
+		},
+		{
+			"check": "walk to (0.0, 17.0, -33.5)",
+			"passed": true,
+			"time": 195.633333333325
+		},
+		{
+			"check": "climbing changes the scene into the storm act",
+			"passed": true,
+			"time": 195.633333333325
+		},
+		{
+			"check": "walk to (-10.5, 24.0, -47.5)",
+			"passed": true,
+			"time": 208.899999999991
+		},
+		{
+			"check": "the rock shelter changes physical wind exposure",
+			"passed": true,
+			"time": 208.899999999991
+		},
+		{
+			"check": "wait for a real lull behind the rock",
+			"passed": true,
+			"time": 208.899999999991
+		},
+		{
+			"check": "walk to (7.0, 30.0, -64.3)",
+			"passed": true,
+			"time": 229.433333333323
+		},
+		{
+			"check": "F gaze identifies physical clue wind_mark",
+			"passed": true,
+			"time": 230.733333333323
+		},
+		{
+			"check": "walk to (16.8, 38.0, -83.2)",
+			"passed": true,
+			"time": 253.033333333322
+		},
+		{
+			"check": "Q releases the waiting rear squad after the safe route is checked",
+			"passed": true,
+			"time": 254.766666666655
+		},
+		{
+			"check": "the delivered coat returns in the storm dialogue",
+			"passed": true,
+			"time": 254.766666666655
+		},
+		{
+			"check": "walk to (26.6, 40.0, -90.2)",
+			"passed": true,
+			"time": 271.566666666667
+		},
+		{
+			"check": "walk to (8.4, 47.0, -104.2)",
+			"passed": true,
+			"time": 286.966666666679
+		},
+		{
+			"check": "walk to (5.6, 49.0, -112.6)",
+			"passed": true,
+			"time": 293.033333333351
+		},
+		{
+			"check": "walk to (-2.1, 49.0, -113.3)",
+			"passed": true,
+			"time": 297.700000000021
+		},
+		{
+			"check": "walk to (-3.5, 50.0, -117.5)",
+			"passed": true,
+			"time": 300.700000000024
+		},
+		{
+			"check": "walk to (-14.7, 54.0, -129.4)",
+			"passed": true,
+			"time": 310.166666666698
+		},
+		{
+			"check": "a physical regroup and headcount starts the search",
+			"passed": true,
+			"time": 325.033333333376
+		},
+		{
+			"check": "walk to (-3.5, 50.0, -117.5)",
+			"passed": true,
+			"time": 334.833333333384
+		},
+		{
+			"check": "walk to (-2.1, 49.0, -113.3)",
+			"passed": true,
+			"time": 337.56666666672
+		},
+		{
+			"check": "F gaze identifies physical clue strap",
+			"passed": true,
+			"time": 339.133333333388
+		},
+		{
+			"check": "the search recognizes the familiar satchel strap",
+			"passed": true,
+			"time": 339.366666666721
+		},
+		{
+			"check": "walk to (5.6, 49.0, -112.6)",
+			"passed": true,
+			"time": 344.366666666725
+		},
+		{
+			"check": "walk to (14.0, 48.0, -110.1)",
+			"passed": true,
+			"time": 350.16666666673
+		},
+		{
+			"check": "the same old soldier is found sitting at the sheltered rock",
+			"passed": true,
+			"time": 350.16666666673
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 359.30000000007
+		},
+		{
+			"check": "E performs a real kneeling check before further investigation",
+			"passed": true,
+			"time": 359.30000000007
+		},
+		{
+			"check": "F gaze identifies physical clue coat",
+			"passed": true,
+			"time": 360.866666666738
+		},
+		{
+			"check": "F gaze identifies physical clue ledger",
+			"passed": true,
+			"time": 362.333333333406
+		},
+		{
+			"check": "commander, guard and witnesses physically arrive before the identity reveal",
+			"passed": true,
+			"time": 375.300000000083
+		},
+		{
+			"check": "the guard reports after physically reaching the searching player",
+			"passed": true,
+			"time": 375.300000000083
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 警卫员",
+			"passed": true,
+			"time": 376.466666666751
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 警卫员",
+			"passed": true,
+			"time": 376.466666666751
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 376.466666666751
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 指挥员",
+			"passed": true,
+			"time": 381.366666666754
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 指挥员",
+			"passed": true,
+			"time": 381.366666666754
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 381.366666666754
+		},
+		{
+			"check": "the commander discovers the thin clothing before the angry order",
+			"passed": true,
+			"time": 385.700000000091
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 指挥员",
+			"passed": true,
+			"time": 386.900000000092
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 指挥员",
+			"passed": true,
+			"time": 386.900000000092
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 386.900000000092
+		},
+		{
+			"check": "the concern about supplies follows the first order",
+			"passed": true,
+			"time": 390.733333333429
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 指挥员",
+			"passed": true,
+			"time": 391.93333333343
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 指挥员",
+			"passed": true,
+			"time": 391.93333333343
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 391.93333333343
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 指挥员",
+			"passed": true,
+			"time": 401.000000000103
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 指挥员",
+			"passed": true,
+			"time": 401.000000000103
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 401.000000000103
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 警卫员",
+			"passed": true,
+			"time": 409.633333333444
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 警卫员",
+			"passed": true,
+			"time": 409.633333333444
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 409.633333333444
+		},
+		{
+			"check": "the commander passes through anger, unanswered orders and the identity shock",
+			"passed": true,
+			"time": 414.633333333448
+		},
+		{
+			"check": "the identity reveal leaves music silent while ambience remains",
+			"passed": true,
+			"time": 414.633333333448
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 周班长",
+			"passed": true,
+			"time": 422.833333333454
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 周班长",
+			"passed": true,
+			"time": 422.833333333454
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 422.833333333454
+		},
+		{
+			"check": "actual dialogue has exactly its named speaker: 指挥员",
+			"passed": true,
+			"time": 427.666666666791
+		},
+		{
+			"check": "actual dialogue camera frames named speaker: 指挥员",
+			"passed": true,
+			"time": 427.666666666791
+		},
+		{
+			"check": "deceased quartermaster remains silent during the reply",
+			"passed": true,
+			"time": 427.666666666791
+		},
+		{
+			"check": "truth is revealed before the salute prompt",
+			"passed": true,
+			"time": 431.433333333461
+		},
+		{
+			"check": "evaluated salute raises the right hand: Player",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: CommanderZhou",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: GuardAmu",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: Amu",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: Zhou",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: SnowMarcher0",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: SnowMarcher1",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: YoungAmu",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: VeteranZhou",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "evaluated salute raises the right hand: Donor",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "player and companions perform the salute together",
+			"passed": true,
+			"time": 437.266666666799
+		},
+		{
+			"check": "narrative action finishes and returns control",
+			"passed": true,
+			"time": 440.733333333468
+		},
+		{
+			"check": "one unscored salute returns the player to the marching column",
+			"passed": true,
+			"time": 440.733333333468
+		},
+		{
+			"check": "walk to (8.4, 47.0, -104.2)",
+			"passed": true,
+			"time": 444.800000000138
+		},
+		{
+			"check": "walk to (5.6, 49.0, -112.6)",
+			"passed": true,
+			"time": 448.200000000141
+		},
+		{
+			"check": "all surviving near companions reach the final pass by walking",
+			"passed": false,
+			"time": 526.000000000179
+		},
+		{
+			"check": "the original literary creation credit is displayed",
+			"passed": false,
+			"time": 554.866666666819
+		},
+		{
+			"check": "the requested dedication is displayed",
+			"passed": false,
+			"time": 572.600000000137
+		},
+		{
+			"check": "the memorial ending reaches its literary and historical credits",
+			"passed": false,
+			"time": 590.333333333454
+		},
+		{
+			"check": "the ending preserves the person left on the mountain",
+			"passed": false,
+			"time": 590.333333333454
+		},
+		{
+			"check": "the coats remain visible on the people who continue",
+			"passed": true,
+			"time": 590.333333333454
+		},
+		{
+			"check": "tiered column has measurable scale in actual camera views",
+			"passed": true,
+			"time": 590.333333333454
+		}
+	],
+	"climax": {
+		"audit": [
+			{
+				"phase": "衣物",
+				"time": 375.233333333416
+			},
+			{
+				"phase": "怒问",
+				"time": 385.700000000091
+			},
+			{
+				"phase": "保障",
+				"time": 390.733333333429
+			},
+			{
+				"phase": "第一次沉默",
+				"time": 395.766666666766
+			},
+			{
+				"phase": "再问",
+				"time": 399.800000000102
+			},
+			{
+				"phase": "迟疑",
+				"time": 405.400000000107
+			},
+			{
+				"phase": "身份",
+				"time": 408.433333333443
+			},
+			{
+				"phase": "震惊",
+				"time": 414.600000000114
+			},
+			{
+				"phase": "回应",
+				"time": 421.633333333453
+			}
+		],
+		"clock": 9.79999999999998,
+		"commander": {
+			"coat": false,
+			"moving": false,
+			"pose": "",
+			"position": [
+				6.21108293533325,
+				48.9978904724121,
+				-113.055686950684
+			],
+			"route": [],
+			"speed": 2.7,
+			"vertical_speed": -0.5,
+			"yaw": -2.89660000801086
+		},
+		"guard": {
+			"coat": false,
+			"moving": false,
+			"pose": "",
+			"position": [
+				5.00541830062866,
+				49.0008811950684,
+				-113.086929321289
+			],
+			"route": [],
+			"speed": 2.7,
+			"vertical_speed": -0.5,
+			"yaw": -2.76496624946594
+		},
+		"guard_summoned": true,
+		"marching": true,
+		"music_cut": false,
+		"phase": 8,
+		"reported": true
+	},
+	"completed_voice": [
+		"b93657c476943cf6fae91bc94f1545c6",
+		"275bdafa9d83d1b959d415d9a8c122bc",
+		"f563863a7a635304ed69b5bd3b6fcf8b",
+		"d5fff95c92e8c58afd84c1cc75c0157a",
+		"6ff9d38b90d86dc24bb5df155feaf1fa",
+		"d8a6ce7fefbf0553d26d6f6bf97284d3",
+		"c21fdf4566fdb0f892e3981c52172791",
+		"e334ef178eb8eebcca74d85d9f6ad81c",
+		"20815ec165875e9a9bab47ed9e021b5c",
+		"839c0ba0e87ca09ae03a9afef0f604f5",
+		"3ab8d858b38a0e18b0eebab38ee82c30",
+		"61a8f89458b4858226a4944f02102a6b",
+		"4279e6f2872ff7ffd80ae5e553b30eab",
+		"a6089b0099e7732991e4c057e85a0c0e",
+		"09a55a258b44848d756bc0561ea76a95",
+		"622a9baa05481c778ccda7f3827fadc2",
+		"5f83acd5f61e0864d208c59372bca61a",
+		"f2879919e4bb611df3d22b2f556a3905",
+		"c5c117ae033ab3c5a339b0b7c4203df0",
+		"ead96832fe9f8256034bc60f8d57ca0f",
+		"f6f1b17b256fbf3f59bdb3ba573465a0",
+		"b38a496121cf4b580605c88a831af3f1",
+		"7adb4f103ae9bca00cfc92732cfb932d",
+		"7323c5e60c67655c7953806188a5c290",
+		"b29acf8c7d245429fd6adcb58cfc1512",
+		"8268fdb50efe90c04ebfae45ff4fe75f",
+		"a7a337e8a040b9456232c7ff058ee519",
+		"389f80eebe396f8082c1c53eef698e38",
+		"d9a84cb980f185fd63870ed1f5fccdb5",
+		"4590acb6e1a8fe9b653002ee0b030659",
+		"626743a49f85cb5ef4273667d1d002ca",
+		"4b1cab2a97b18bcd3c48094422ebe0c8",
+		"b3bcc9f8285a66d0a115888197c73896",
+		"44cc91f483a248a3e303077369f2171c",
+		"ae1fdc59f4132dbf851f0ca16c053c9b",
+		"a00ae1400d20af1d32c3f191376d01b2",
+		"9c25d732019807ad015ad5c9dac7c828",
+		"e9ad407a79fba7459eca1fdf955010b9",
+		"1c6b34cdc1e2359cf7e373353a129118",
+		"11aac24622f394c63af3c69b87c4374e",
+		"2bef97b7ff979f1a51ecff2a129262e5",
+		"75f093fea5f1ae54781ecb4b88d36824",
+		"d5ebac308523475204f7e686c4858a24"
+	],
+	"crowd": {
+		"far": 48,
+		"mid": 24,
+		"near": 8,
+		"peak_in_camera_frustum": 35
+	},
+	"elapsed_seconds": 591.400000000119,
+	"failures": 5,
+	"flags": {
+		"at_pass": true,
+		"coat_seen": true,
+		"gave_amu": true,
+		"gave_giver": true,
+		"gave_veteran": true,
+		"gave_young": true,
+		"honored": true,
+		"identity_revealed": true,
+		"inspected": true,
+		"intro_done": true,
+		"ledger_found": true,
+		"march_exchange": true,
+		"march_started": true,
+		"obstacle_cleared": true,
+		"obstruction_notice": true,
+		"stock_seen": true,
+		"storm_signal": true,
+		"strap_found": true,
+		"warm_callback": true,
+		"wind_seen": true
+	},
+	"footprints": 1698,
+	"input_replay": true,
+	"movie_maker": true,
+	"music_cues": [
+		{
+			"cue": "m_camp",
+			"time": 0.0
+		},
+		{
+			"cue": "m_march",
+			"time": 120.466666666662
+		},
+		{
+			"cue": "m_storm",
+			"time": 194.466666666658
+		},
+		{
+			"cue": "m_search",
+			"time": 325.033333333376
+		},
+		{
+			"cue": "m_memorial",
+			"time": 340.166666666722
+		},
+		{
+			"cue": "m_continue",
+			"time": 440.700000000135
+		}
+	],
+	"navigation_replans": {
+		"Amu": [],
+		"CommanderZhou": [],
+		"Donor": [],
+		"GuardAmu": [],
+		"QuartermasterZhou": [],
+		"SnowMarcher0": [],
+		"SnowMarcher1": [],
+		"VeteranZhou": [],
+		"YoungAmu": [],
+		"Zhou": []
+	},
+	"pacing": {
+		"quiet_walk_peak": 15.316666666667,
+		"quiet_walk_total": 206.516666666723
+	},
+	"party": [
+		{
+			"coat": true,
+			"moving": false,
+			"name": "Amu",
+			"pose": "",
+			"position": "(5.081216, 48.8669, -111.5294)"
+		},
+		{
+			"coat": false,
+			"moving": false,
+			"name": "Zhou",
+			"pose": "",
+			"position": "(6.178995, 48.73923, -111.5401)"
+		},
+		{
+			"coat": false,
+			"moving": false,
+			"name": "SnowMarcher0",
+			"pose": "",
+			"position": "(5.062698, 48.58018, -110.4258)"
+		},
+		{
+			"coat": false,
+			"moving": false,
+			"name": "SnowMarcher1",
+			"pose": "",
+			"position": "(6.149978, 48.49352, -110.4189)"
+		},
+		{
+			"coat": false,
+			"moving": false,
+			"name": "QuartermasterZhou",
+			"pose": "seated",
+			"position": "(13.90943, 48.0009, -108.3156)"
+		},
+		{
+			"coat": true,
+			"moving": true,
+			"name": "YoungAmu",
+			"pose": "",
+			"position": "(5.60951, 48.6275, -110.8291)"
+		},
+		{
+			"coat": true,
+			"moving": false,
+			"name": "VeteranZhou",
+			"pose": "",
+			"position": "(5.11447, 47.95363, -108.2206)"
+		},
+		{
+			"coat": true,
+			"moving": false,
+			"name": "Donor",
+			"pose": "",
+			"position": "(6.19096, 47.67705, -108.2026)"
+		}
+	],
+	"reveal_music_silence_seconds": 23.0000000000003,
+	"speech_frames": [
+		{
+			"active_mouths": [
+				"GuardAmu"
+			],
+			"actor": "GuardAmu",
+			"camera_actor": "GuardAmu",
+			"key": "44cc91f483a248a3e303077369f2171c",
+			"phase": 0,
+			"time": 376.466666666751,
+			"who": "警卫员"
+		},
+		{
+			"active_mouths": [
+				"CommanderZhou"
+			],
+			"actor": "CommanderZhou",
+			"camera_actor": "CommanderZhou",
+			"key": "ae1fdc59f4132dbf851f0ca16c053c9b",
+			"phase": 0,
+			"time": 381.366666666754,
+			"who": "指挥员"
+		},
+		{
+			"active_mouths": [
+				"CommanderZhou"
+			],
+			"actor": "CommanderZhou",
+			"camera_actor": "CommanderZhou",
+			"key": "a00ae1400d20af1d32c3f191376d01b2",
+			"phase": 1,
+			"time": 386.900000000092,
+			"who": "指挥员"
+		},
+		{
+			"active_mouths": [
+				"CommanderZhou"
+			],
+			"actor": "CommanderZhou",
+			"camera_actor": "CommanderZhou",
+			"key": "9c25d732019807ad015ad5c9dac7c828",
+			"phase": 2,
+			"time": 391.93333333343,
+			"who": "指挥员"
+		},
+		{
+			"active_mouths": [
+				"CommanderZhou"
+			],
+			"actor": "CommanderZhou",
+			"camera_actor": "CommanderZhou",
+			"key": "e9ad407a79fba7459eca1fdf955010b9",
+			"phase": 4,
+			"time": 401.000000000103,
+			"who": "指挥员"
+		},
+		{
+			"active_mouths": [
+				"GuardAmu"
+			],
+			"actor": "GuardAmu",
+			"camera_actor": "GuardAmu",
+			"key": "1c6b34cdc1e2359cf7e373353a129118",
+			"phase": 6,
+			"time": 409.633333333444,
+			"who": "警卫员"
+		},
+		{
+			"active_mouths": [
+				"Zhou"
+			],
+			"actor": "Zhou",
+			"camera_actor": "Zhou",
+			"key": "11aac24622f394c63af3c69b87c4374e",
+			"phase": 8,
+			"time": 422.833333333454,
+			"who": "周班长"
+		},
+		{
+			"active_mouths": [
+				"CommanderZhou"
+			],
+			"actor": "CommanderZhou",
+			"camera_actor": "CommanderZhou",
+			"key": "2bef97b7ff979f1a51ecff2a129262e5",
+			"phase": 8,
+			"time": 427.666666666791,
+			"who": "指挥员"
+		}
+	],
+	"stage": "CONTINUE",
+	"stats": {
+		"clues": 5,
+		"delivered": 3,
+		"jumps": 0,
+		"signals": 1,
+		"walked_m": 393.057977258826
+	},
+	"subtitle_audit": [
+		{
+			"has_voice": true,
+			"key": "b93657c476943cf6fae91bc94f1545c6",
+			"text": "先别急着上山，帮着把最后几包棉衣送过去。",
+			"time": 10.0333333333333,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "275bdafa9d83d1b959d415d9a8c122bc",
+			"text": "只剩三包了。先看看谁还没领到。",
+			"time": 16.7,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "f563863a7a635304ed69b5bd3b6fcf8b",
+			"text": "手都冻僵了……谢谢，你也把领口扣上。",
+			"time": 27.4333333333339,
+			"volume_db": -1.0,
+			"who": "小田"
+		},
+		{
+			"has_voice": true,
+			"key": "d5fff95c92e8c58afd84c1cc75c0157a",
+			"text": "搁在我背包上吧。我先替他把绑腿系好。",
+			"time": 52.2999999999996,
+			"volume_db": -1.0,
+			"who": "老赵"
+		},
+		{
+			"has_voice": true,
+			"key": "6ff9d38b90d86dc24bb5df155feaf1fa",
+			"text": "我这件还挡风。把这包送给后面那位同志吧。",
+			"time": 76.6999999999982,
+			"volume_db": -1.0,
+			"who": "许成"
+		},
+		{
+			"has_voice": true,
+			"key": "d8a6ce7fefbf0553d26d6f6bf97284d3",
+			"text": "好，我替你送过去。",
+			"time": 81.2333333333313,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "c21fdf4566fdb0f892e3981c52172791",
+			"text": "我这一路都没暖过来。多谢，回头替我谢他。",
+			"time": 91.5999999999974,
+			"volume_db": -1.0,
+			"who": "阿木"
+		},
+		{
+			"has_voice": true,
+			"key": "e334ef178eb8eebcca74d85d9f6ad81c",
+			"text": "发下去了？",
+			"time": 101.699999999997,
+			"volume_db": -1.0,
+			"who": "老战士"
+		},
+		{
+			"has_voice": true,
+			"key": "20815ec165875e9a9bab47ed9e021b5c",
+			"text": "这三包都送到了。可后面还有人没领到。",
+			"time": 104.499999999997,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "839c0ba0e87ca09ae03a9afef0f604f5",
+			"text": "先顾着他们吧。山上风大，把包裹扎紧。",
+			"time": 108.499999999996,
+			"volume_db": -1.0,
+			"who": "老战士"
+		},
+		{
+			"has_voice": true,
+			"key": "3ab8d858b38a0e18b0eebab38ee82c30",
+			"text": "您也穿厚一点。",
+			"time": 113.733333333329,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "61a8f89458b4858226a4944f02102a6b",
+			"text": "我再查一遍，就跟上。",
+			"time": 116.499999999996,
+			"volume_db": -1.0,
+			"who": "老战士"
+		},
+		{
+			"has_voice": true,
+			"key": "4279e6f2872ff7ffd80ae5e553b30eab",
+			"text": "前面拐过弯，还有好长一队人。",
+			"time": 120.466666666662,
+			"volume_db": -1.0,
+			"who": "阿木"
+		},
+		{
+			"has_voice": true,
+			"key": "a6089b0099e7732991e4c057e85a0c0e",
+			"text": "脚下慢点。我这边腾出手了，你跟着我走。",
+			"time": 157.199999999994,
+			"volume_db": -1.0,
+			"who": "老赵"
+		},
+		{
+			"has_voice": true,
+			"key": "09a55a258b44848d756bc0561ea76a95",
+			"text": "前面的枝石压住路了。别挤，先把路让出来。",
+			"time": 163.16666666666,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "622a9baa05481c778ccda7f3827fadc2",
+			"text": "我来搬开这边的石头。后面先等等。",
+			"time": 169.433333333326,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "5f83acd5f61e0864d208c59372bca61a",
+			"text": "好了，顺着踩实的地方走。",
+			"time": 173.199999999993,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "f2879919e4bb611df3d22b2f556a3905",
+			"text": "风上来了！说话都听不清了！",
+			"time": 194.466666666658,
+			"volume_db": -1.0,
+			"who": "阿木"
+		},
+		{
+			"has_voice": true,
+			"key": "c5c117ae033ab3c5a339b0b7c4203df0",
+			"text": "靠岩石避一避。前面看稳了，再招呼后面的同志。",
+			"time": 197.699999999991,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "ead96832fe9f8256034bc60f8d57ca0f",
+			"text": "刚才分到的棉衣真顶用。要不然这山上可难熬。",
+			"time": 228.233333333323,
+			"volume_db": -1.0,
+			"who": "小田"
+		},
+		{
+			"has_voice": true,
+			"key": "f6f1b17b256fbf3f59bdb3ba573465a0",
+			"text": "这边背风，沿脚印过来！一个一个走！",
+			"time": 253.066666666655,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "b38a496121cf4b580605c88a831af3f1",
+			"text": "先在这儿歇口气，我点一下人。",
+			"time": 310.100000000031,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "7adb4f103ae9bca00cfc92732cfb932d",
+			"text": "那个管物资的老同志，谁看见了？",
+			"time": 315.566666666702,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "7323c5e60c67655c7953806188a5c290",
+			"text": "刚才还在后面，说要看看落下的包裹。",
+			"time": 319.900000000039,
+			"volume_db": -1.0,
+			"who": "小田"
+		},
+		{
+			"has_voice": true,
+			"key": "b29acf8c7d245429fd6adcb58cfc1512",
+			"text": "我沿来路找。您照看队伍。",
+			"time": 325.033333333376,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "8268fdb50efe90c04ebfae45ff4fe75f",
+			"text": "别一个人走远，我随后过来。",
+			"time": 328.500000000046,
+			"volume_db": -1.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "a7a337e8a040b9456232c7ff058ee519",
+			"text": "这根扎带……是他挎包上的。",
+			"time": 339.133333333388,
+			"volume_db": -1.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "389f80eebe396f8082c1c53eef698e38",
+			"text": "前面的同志停下了！岩壁下，有位老同志……叫不应了。",
+			"time": 345.033333333392,
+			"volume_db": -3.0,
+			"who": "警卫员"
+		},
+		{
+			"has_voice": true,
+			"key": "d9a84cb980f185fd63870ed1f5fccdb5",
+			"text": "前面怎么停下了？队伍还得往前走！",
+			"time": 355.366666666734,
+			"volume_db": -3.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "4590acb6e1a8fe9b653002ee0b030659",
+			"text": "老同志？我们在上面等您。",
+			"time": 358.90000000007,
+			"volume_db": -3.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "626743a49f85cb5ef4273667d1d002ca",
+			"text": "您听见了吗……",
+			"time": 363.000000000073,
+			"volume_db": -3.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "4b1cab2a97b18bcd3c48094422ebe0c8",
+			"text": "这衣服，已经湿透了。",
+			"time": 365.866666666742,
+			"volume_db": -3.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "b3bcc9f8285a66d0a115888197c73896",
+			"text": "挎包还扣着。是山下那本记录。",
+			"time": 369.300000000078,
+			"volume_db": -3.0,
+			"who": "林川"
+		},
+		{
+			"has_voice": true,
+			"key": "44cc91f483a248a3e303077369f2171c",
+			"text": "报告，人在这边。我们发现时，他已经没有回应了。",
+			"time": 375.86666666675,
+			"volume_db": -3.0,
+			"who": "警卫员"
+		},
+		{
+			"has_voice": true,
+			"key": "ae1fdc59f4132dbf851f0ca16c053c9b",
+			"text": "这么冷的天，他怎么只穿着单衣？",
+			"time": 380.766666666754,
+			"volume_db": -3.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "a00ae1400d20af1d32c3f191376d01b2",
+			"text": "把军需处长给我叫来！",
+			"time": 386.300000000092,
+			"volume_db": -1.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "9c25d732019807ad015ad5c9dac7c828",
+			"text": "御寒的衣物呢？为什么没送到他手上？",
+			"time": 391.333333333429,
+			"volume_db": -3.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "e9ad407a79fba7459eca1fdf955010b9",
+			"text": "怎么还站着？去叫他来，我要问清楚！",
+			"time": 400.400000000103,
+			"volume_db": -1.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "1c6b34cdc1e2359cf7e373353a129118",
+			"text": "他……就是军需处长。",
+			"time": 409.033333333443,
+			"volume_db": -3.0,
+			"who": "警卫员"
+		},
+		{
+			"has_voice": true,
+			"key": "11aac24622f394c63af3c69b87c4374e",
+			"text": "最后几包棉衣，是他让我们先送下去的。",
+			"time": 422.233333333454,
+			"volume_db": -3.0,
+			"who": "周班长"
+		},
+		{
+			"has_voice": true,
+			"key": "2bef97b7ff979f1a51ecff2a129262e5",
+			"text": "他把衣物留给了大家……",
+			"time": 427.066666666791,
+			"volume_db": -3.0,
+			"who": "指挥员"
+		},
+		{
+			"has_voice": true,
+			"key": "75f093fea5f1ae54781ecb4b88d36824",
+			"text": "走吧，前面的同志还等着我们。",
+			"time": 440.700000000135,
+			"volume_db": -1.0,
+			"who": "阿木"
+		},
+		{
+			"has_voice": true,
+			"key": "d5ebac308523475204f7e686c4858a24",
+			"text": "嗯。继续走。",
+			"time": 444.400000000138,
+			"volume_db": -1.0,
+			"who": "林川"
+		}
+	],
+	"timings": {
+		"camp": 120.466666666662,
+		"complete": 591.400000000119,
+		"march": 195.633333333325,
+		"reveal": 431.433333333461,
+		"salute": 440.733333333468,
+		"search": 325.033333333376,
+		"storm": 255.833333333321
+	}
+}

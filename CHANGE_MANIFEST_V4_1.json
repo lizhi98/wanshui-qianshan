@@ -1,0 +1,1034 @@
+[
+  {
+    "path": "assets/memorial/audio/m_camp.wav",
+    "bytes": 4320044,
+    "sha256": "1e21e228fb4220d221a6b9d644af602a40e35b8336ea3d85f3bd1f15754fd110",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_camp.wav.import",
+    "bytes": 498,
+    "sha256": "6343c2557eb730ae516ad4802833d8126a29a90c8dc6a6dd481ccf89ea6a774b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_continue.wav",
+    "bytes": 6355904,
+    "sha256": "b04617a76f2aedc753347e3cc6759313c475a0392e3513cc3f0bd830ed41e4a8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_continue.wav.import",
+    "bytes": 510,
+    "sha256": "ff534cdcad3fbaf2a8e6bd03678f53003b5385ff740b711f1d9b7f10df717d20",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_march.wav",
+    "bytes": 3949756,
+    "sha256": "03ad390dbf862517908a31d95ef263694eb8565eb325ab2ce960ac920abf386b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_march.wav.import",
+    "bytes": 501,
+    "sha256": "fc6079265d56db5c4c12ea0832981118702c7862922a5d74898627f90fe94ca5",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_memorial.wav",
+    "bytes": 5760044,
+    "sha256": "259eff01b1b520d35654cc75c29c7bef57f25aea55c35f7e41174684a5242711",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_memorial.wav.import",
+    "bytes": 510,
+    "sha256": "c92ff8084e2f26ee62fab3dcb125fe9dad55120e275b579a43b816f702860426",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_search.wav",
+    "bytes": 4800044,
+    "sha256": "8fd418e60b0bac656b536b8b20b6c282b190f4ca096a641aee27d987e39ee6ab",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_search.wav.import",
+    "bytes": 504,
+    "sha256": "a2d24046e4ab3330ac1cda8b16bf53063185254ab9c880e836fa336c97058720",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_storm.wav",
+    "bytes": 2953888,
+    "sha256": "5a27a5516e93c4ab374b538ad6db4eae9740eb51229cf488ebb9f930749458f8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/m_storm.wav.import",
+    "bytes": 501,
+    "sha256": "27ee57ff9be64b75344bcce1a1b7831b0d9e0e23a08bda9c73e603694bfc53a7",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/audio/score_manifest.json",
+    "bytes": 224,
+    "sha256": "7f3f63e98ecf4689d0500e2b074fa0af785945c4929355e548080dcaa9f137c2",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_mud.png",
+    "bytes": 22452,
+    "sha256": "d8db6313e7633bc266effb1ed8e38914f0f56b2df0af33d9668d29605da07c2c",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_mud.png.import",
+    "bytes": 955,
+    "sha256": "78da44d6e8e8c3d6b9f68eb37cd77de4b8c2797b61d3ad968d745188ed878848",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_mud_right.png",
+    "bytes": 22595,
+    "sha256": "5ecbfb316699eb880b49e26dff17f2e7905759169be6c192f07c5f87a9e07014",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_mud_right.png.import",
+    "bytes": 973,
+    "sha256": "618b9caa71a014b944f305c4be88af5ef18b47b289ec0f70bd69efa19e14b7b8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_normal.png",
+    "bytes": 6739,
+    "sha256": "b33a551bf266484b3885247a9ca447c0df4ffef6e84bf05708df726cd356868f",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_normal.png.import",
+    "bytes": 964,
+    "sha256": "35ddfe5da2406eb48c3b6bc8495d65b173d10c8df28d2671a65799acb2d068fc",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_normal_right.png",
+    "bytes": 6794,
+    "sha256": "3ad50d9082e039720456a09087041c66b8a7cc8d54708f0e5099e0eec12c2f78",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_normal_right.png.import",
+    "bytes": 982,
+    "sha256": "70b8e3cee5bdcb920f108b3f2e8929c9a53d4a7a601bd594e23759ca5ebf5d60",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_snow.png",
+    "bytes": 22458,
+    "sha256": "908a2deb903d55522500c450e10b71891afcdf657d864cf2420d1e758c88be5d",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_snow.png.import",
+    "bytes": 958,
+    "sha256": "9cdca2e6c419dbca5e3fda4ae69845377df698a75714000312423d2fd85f1f6e",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_snow_right.png",
+    "bytes": 22598,
+    "sha256": "dc928cd34c649719d5d8e20803ad826a100d85f5695cac63fd78e10e4baf03e5",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/footprints/sole_snow_right.png.import",
+    "bytes": 976,
+    "sha256": "7ebd8433d11436f652acf5cc36e90a69bcfe11ef3604fdd7e74d629d8de30c31",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain/ground_mesh.res",
+    "bytes": 5623076,
+    "sha256": "7327e11255267cfa53e29163784f81cec14497e3a49b14381901a880c83cbdfc",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain/ground_shape.res",
+    "bytes": 7200351,
+    "sha256": "cd26b219962a64311336401c760fefcf1a968abe430102588c6a94abb2fa2068",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain/trail_mesh.res",
+    "bytes": 936356,
+    "sha256": "e8493ed7e83a05a29ee9eb30144435638b0bc3bc212f3a46aedebc4a4b3622b2",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/terrain/trail_shape.res",
+    "bytes": 1403487,
+    "sha256": "053b95350aaebd249db17d45169faebdf2974afbdaf5694e967b9f86f9a19721",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/09a55a258b44848d756bc0561ea76a95.wav",
+    "bytes": 264876,
+    "sha256": "11ffad43ac43ca8928bd1578afb4cbacb25307ac15aa9efb25493a2b4d7db23a",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/09a55a258b44848d756bc0561ea76a95.wav.import",
+    "bytes": 577,
+    "sha256": "7037a51822083b76ff18bfb2032898e6325b4bf87a27a3cc04eb0fda00d844e3",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/20815ec165875e9a9bab47ed9e021b5c.wav",
+    "bytes": 153260,
+    "sha256": "95944ee2b6cc210cca8ac8ea4303ab67910040a82e87ce78cb12a176d1a5b602",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/20815ec165875e9a9bab47ed9e021b5c.wav.import",
+    "bytes": 577,
+    "sha256": "14371acc5a2bbb262cd25d75278786ad31e649249e83daa02b2d96c8d42ac43b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/275bdafa9d83d1b959d415d9a8c122bc.wav",
+    "bytes": 134290,
+    "sha256": "54a9a0eff0a5fe908f0ca42d28eae78c1236dcc457a71b1c2339ece77b86d4e2",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/275bdafa9d83d1b959d415d9a8c122bc.wav.import",
+    "bytes": 577,
+    "sha256": "25a53586c74a4878a293a470ca0aa093269c44f53a4822eae7137989369e4993",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/30c89a38c94dbecddcda168b35f88e00.wav",
+    "bytes": 137800,
+    "sha256": "0711577ec70aa59568610f08087dafa39807bda81c9beb0df221ef0eea823956",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/30c89a38c94dbecddcda168b35f88e00.wav.import",
+    "bytes": 577,
+    "sha256": "ee5378e85f0c9db00b001cc1b280bdf8b286d2b897b77590c70a22f7aabd8c76",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/3ab8d858b38a0e18b0eebab38ee82c30.wav",
+    "bytes": 64938,
+    "sha256": "035efb280c5e46206d9d33cb9dd9ebafe4f8d72a59c63f3a9677cd11523d2287",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/3ab8d858b38a0e18b0eebab38ee82c30.wav.import",
+    "bytes": 577,
+    "sha256": "640fc904f4e09583a9bb7069c29a1f1b445307cdba354182d9b912331ee133c9",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4126ed3ada2c9265bf1a3577d99a7f37.wav",
+    "bytes": 65254,
+    "sha256": "995c5b24ddd49061ed1516a18d2cc9dc2e798beaa42078e13d790311c13667d2",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4126ed3ada2c9265bf1a3577d99a7f37.wav.import",
+    "bytes": 577,
+    "sha256": "0403d50c45456e282b950cd9f346766730d53a47b428ec5692eb917f749b4202",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4279e6f2872ff7ffd80ae5e553b30eab.wav",
+    "bytes": 165036,
+    "sha256": "2b068692ed2741e9f5cbbdeaf207d8e370278423dc5ab22e7ab8b9ebda70e347",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4279e6f2872ff7ffd80ae5e553b30eab.wav.import",
+    "bytes": 577,
+    "sha256": "4e31106b6145d922eabac93778031f64dbbcdf4e66c54d49db52ebe22f636bb1",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4590acb6e1a8fe9b653002ee0b030659.wav",
+    "bytes": 118480,
+    "sha256": "e5ca50ae0b7013907284f078604aeee52bda0c1fad5626c10389ed58525db80c",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4590acb6e1a8fe9b653002ee0b030659.wav.import",
+    "bytes": 577,
+    "sha256": "7f1ed5143e79fccbe8a40e39160c98a3806de9685672c67cc08afcdf4e53d926",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4b1cab2a97b18bcd3c48094422ebe0c8.wav",
+    "bytes": 95970,
+    "sha256": "37432a5f65ede7543b0929a0a5352d6164fa41866e156a103f1d8b300df0aa6a",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/4b1cab2a97b18bcd3c48094422ebe0c8.wav.import",
+    "bytes": 577,
+    "sha256": "1f5fd1887afcc1ca2388ea9aa53767d6e060cc1ac097fbd67c50d7bf62010068",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/5f83acd5f61e0864d208c59372bca61a.wav",
+    "bytes": 161256,
+    "sha256": "b8d67df0829361000c38ce8f795c7354411aa3ad689549e16ec19f537f124692",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/5f83acd5f61e0864d208c59372bca61a.wav.import",
+    "bytes": 577,
+    "sha256": "0f3050e7bd6d92bd1e8a7169f4aaf309e000ba0708ef871ebe20360820f008a5",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/61a8f89458b4858226a4944f02102a6b.wav",
+    "bytes": 153582,
+    "sha256": "d942595546071b9a846d0d40c4a3bc215272abab2ec516e1e3112d9ae7142257",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/61a8f89458b4858226a4944f02102a6b.wav.import",
+    "bytes": 577,
+    "sha256": "9dd5c41a48459e974827fbcbe9cd048065d9e48e3defa02cac6648a35a1b9365",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/622a9baa05481c778ccda7f3827fadc2.wav",
+    "bytes": 145786,
+    "sha256": "295976115873c8830d2778198b1fa740202bfcbc27f5530e6005924731de95ff",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/622a9baa05481c778ccda7f3827fadc2.wav.import",
+    "bytes": 576,
+    "sha256": "443c2ca47f896a1eb7070ef4ef03dcb8ab67d236ab9161549d0b41cccff3ba33",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/626743a49f85cb5ef4273667d1d002ca.wav",
+    "bytes": 60946,
+    "sha256": "c6e0a7671df78b92e53878466ed7f32e3eef5ad03e5556e61bfa2a58eabcc707",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/626743a49f85cb5ef4273667d1d002ca.wav.import",
+    "bytes": 577,
+    "sha256": "1948d8863496c72fdb51937a148fe646ddba0726a808faa2cbc5efaba79916ff",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/6ff9d38b90d86dc24bb5df155feaf1fa.wav",
+    "bytes": 161210,
+    "sha256": "bebbb148c6a67b12c28858e6494514e11b65aa9f7c19b72334e20bb9269effb6",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/6ff9d38b90d86dc24bb5df155feaf1fa.wav.import",
+    "bytes": 576,
+    "sha256": "23797376ecd4a06cba52b8e95c95dab9a6fe957583e29edd45cffc38a076536b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7323c5e60c67655c7953806188a5c290.wav",
+    "bytes": 191892,
+    "sha256": "10430297dbc1f43a09f9e1215322e31e00898686460531fd951b949b768051fd",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7323c5e60c67655c7953806188a5c290.wav.import",
+    "bytes": 577,
+    "sha256": "4a347a8e822b32f7773af3951625433582a2a94b5270608d652872715c071f52",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/75f093fea5f1ae54781ecb4b88d36824.wav",
+    "bytes": 122700,
+    "sha256": "5195135a489e55b874c3f5f55983d26df2671dee1f7a79734a0ec253fd880b83",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/75f093fea5f1ae54781ecb4b88d36824.wav.import",
+    "bytes": 577,
+    "sha256": "d0bd3ac84954023a529ef54f8a24da60080993831948a8c855dfa0b5bada3779",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7adb4f103ae9bca00cfc92732cfb932d.wav",
+    "bytes": 153570,
+    "sha256": "12318026550a9d230be2a0a418a9b7156690921b3e458c9048af82497c201985",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7adb4f103ae9bca00cfc92732cfb932d.wav.import",
+    "bytes": 576,
+    "sha256": "e5705b35d648888a687844bf04b5f378f5306f95e0a577cd70d0867f061dc840",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7e70c5dd7e13282959706dec8090d295.wav",
+    "bytes": 429726,
+    "sha256": "42d6c92511bdca4107218a59cb8b3df3222fddaebf5e0ddc8ecf69350f5174e5",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/7e70c5dd7e13282959706dec8090d295.wav.import",
+    "bytes": 577,
+    "sha256": "2a0fcb6dc4c6b7768da2b278b74e21c94abe14fd58557b16a85e83a77d0d4522",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/8268fdb50efe90c04ebfae45ff4fe75f.wav",
+    "bytes": 164322,
+    "sha256": "0d96b8c0694d10349c843e58cb75b7f498c604d72081e58a4d43000a24d5b2c7",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/8268fdb50efe90c04ebfae45ff4fe75f.wav.import",
+    "bytes": 577,
+    "sha256": "d2ce69afd4080d7690587d7c286c917f0f6bb4510843eaa8a7f1499a6a6cc277",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/839c0ba0e87ca09ae03a9afef0f604f5.wav",
+    "bytes": 215014,
+    "sha256": "a7a7627f810a1556820f1bed6096e1c7b02cb4c062c0706fd52678362583e59d",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/839c0ba0e87ca09ae03a9afef0f604f5.wav.import",
+    "bytes": 576,
+    "sha256": "dc1a666eb2cc5ccb2d785255424e63e1fc2bf3ada5184b6f1cae450128e0cf44",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/98796921003510e634c24ee0f8489485.wav",
+    "bytes": 56976,
+    "sha256": "8b4d42620dad3c5160c05df8391bd5d7f235c80edc3014055e12043b367b938e",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/98796921003510e634c24ee0f8489485.wav.import",
+    "bytes": 576,
+    "sha256": "b837ff4836905b516e5cb1afb3feeac8c389589a204d14ca9e901226926f34c3",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/a6089b0099e7732991e4c057e85a0c0e.wav",
+    "bytes": 245522,
+    "sha256": "28934fff4711a9678119404677eebdbe5cc2a56c586ee7baa74ebc436590acb8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/a6089b0099e7732991e4c057e85a0c0e.wav.import",
+    "bytes": 577,
+    "sha256": "260d877fdcf44e28fe55393db20dbb76d25b5993660b617af4e122bf5edc1162",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/a7a337e8a040b9456232c7ff058ee519.wav",
+    "bytes": 115168,
+    "sha256": "5a09aec70f112774687031b0220c0f880118917876bcb388d4b5e2fff5f038ee",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/a7a337e8a040b9456232c7ff058ee519.wav.import",
+    "bytes": 577,
+    "sha256": "f62a81445eca5de6e94c5fb7f51ea821d2c2fa5733e1fdfcc763d0a894f56dc5",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b29acf8c7d245429fd6adcb58cfc1512.wav",
+    "bytes": 110702,
+    "sha256": "a6c2972ce3caf857fb8452e820c99e1da015d738e732e3410791bb22b37e913c",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b29acf8c7d245429fd6adcb58cfc1512.wav.import",
+    "bytes": 577,
+    "sha256": "d1ed798a921c2ade0bac67d0e036016eac8f72c5c7bdad6e05a828b2e025f9f8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b38a496121cf4b580605c88a831af3f1.wav",
+    "bytes": 207330,
+    "sha256": "7dee4ea7d1aea44561f9a3a81377d1f53cf62b3eb99640bf7c4c0d91e35f294b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b38a496121cf4b580605c88a831af3f1.wav.import",
+    "bytes": 577,
+    "sha256": "06eb63b6d9b20a281694a861e3cb13539400a02e5573914dd68c0c221a2d3d8b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b3bcc9f8285a66d0a115888197c73896.wav",
+    "bytes": 230370,
+    "sha256": "2c70546e9d9cfd1f7ba055e1f628e14f2daa567fda8c7f27ab890d13189c5a63",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b3bcc9f8285a66d0a115888197c73896.wav.import",
+    "bytes": 577,
+    "sha256": "87a2f00671fdb2e491db3cf394c7b57ade696a60534c7a5b80748ab0146d0182",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b93657c476943cf6fae91bc94f1545c6.wav",
+    "bytes": 230374,
+    "sha256": "3807105b8d382ddc3ecc15f7854beaa7d935366f4d1b534392f76538df0a8fbc",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/b93657c476943cf6fae91bc94f1545c6.wav.import",
+    "bytes": 577,
+    "sha256": "cc138d005be31bb9c7c7c21c953a7b09b1a73fa20690b316a2f701127140c92b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/c21fdf4566fdb0f892e3981c52172791.wav",
+    "bytes": 260830,
+    "sha256": "3cc362c6d67c6c6c806014e3d4c8307b4bde4f6a36038870d2d3c8df08714b03",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/c21fdf4566fdb0f892e3981c52172791.wav.import",
+    "bytes": 577,
+    "sha256": "fdd317a773e490658cad8ecb3b6d4d8c1b8550039fd312e0165b2b42883ad362",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/c5c117ae033ab3c5a339b0b7c4203df0.wav",
+    "bytes": 230082,
+    "sha256": "ef60a24cc35301a83a657b43cc62684b9035fac5c876fb9ff981f111d52a863d",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/c5c117ae033ab3c5a339b0b7c4203df0.wav.import",
+    "bytes": 577,
+    "sha256": "1079181c1d6be284cfe1b25b27f691c4f2e5625fef953357feada0ae34a5841a",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d5ebac308523475204f7e686c4858a24.wav",
+    "bytes": 88294,
+    "sha256": "64bf4de6f65f488b4dcbd41ad0ed3a2b1658b99e5acf6d2c68665d018dbb0058",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d5ebac308523475204f7e686c4858a24.wav.import",
+    "bytes": 577,
+    "sha256": "74df91403f7a62c45346479923980fcdd5a08a51035c85fb9b822e6715981042",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d5fff95c92e8c58afd84c1cc75c0157a.wav",
+    "bytes": 257136,
+    "sha256": "1cabfd846d1cc6e0c2adbf1743e56f7b97352eda7d75a094d196dfa4ba8f9c04",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d5fff95c92e8c58afd84c1cc75c0157a.wav.import",
+    "bytes": 577,
+    "sha256": "475b07915dca1cb13fb99d962d9812396131850b4afb7e3745ea08a1acf136d0",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d8a6ce7fefbf0553d26d6f6bf97284d3.wav",
+    "bytes": 88294,
+    "sha256": "195ce01884cbd9b5adb805f4dd1d598d00e48a58b2aa6252c859bdc7d12b1aeb",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/d8a6ce7fefbf0553d26d6f6bf97284d3.wav.import",
+    "bytes": 577,
+    "sha256": "1385a7ecbca51bf41e39b78e11d0270b35101f0f70b471097e5f1e53bfad6fd3",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/e334ef178eb8eebcca74d85d9f6ad81c.wav",
+    "bytes": 53730,
+    "sha256": "6a16c6e576cd411f0b6708e381f7db37442fcb2d25f160c77dcc8527ce613765",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/e334ef178eb8eebcca74d85d9f6ad81c.wav.import",
+    "bytes": 577,
+    "sha256": "aea8a6cca8ce2912e0f259dd592531409371a9b9e2c9be6c384e1f437111b22f",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/ea07f93e045aa6192c523c48eddee8cc.wav",
+    "bytes": 261088,
+    "sha256": "344fde1105e515291cb7c6557ccfb39c59f52c56e56ed4f35f80a9ce15593ad8",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/ea07f93e045aa6192c523c48eddee8cc.wav.import",
+    "bytes": 577,
+    "sha256": "98d20da619f4cfaa6cb33ab07fcf08245eeed13e39b0ee6d206f1bd5cb282d93",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/ead96832fe9f8256034bc60f8d57ca0f.wav",
+    "bytes": 176098,
+    "sha256": "f889e33f3cee6607c840aee6e41d422b1a2c6b37f83e613ebcac1cdfaf36b90e",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/ead96832fe9f8256034bc60f8d57ca0f.wav.import",
+    "bytes": 577,
+    "sha256": "4f0d50c548f83ccb441e0b19dc6a8dbc231e094abeef0b765bda296951a3c53b",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f2879919e4bb611df3d22b2f556a3905.wav",
+    "bytes": 119030,
+    "sha256": "deca3bcb9624bd32f25568db2b16ac1f4251d0ec3299529a1a9205704a760617",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f2879919e4bb611df3d22b2f556a3905.wav.import",
+    "bytes": 577,
+    "sha256": "fb1e632852f21e9163c8f299161a894d9ecfccc59d4b3e53968ba7fa0d13677f",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f563863a7a635304ed69b5bd3b6fcf8b.wav",
+    "bytes": 180454,
+    "sha256": "6e3056f22c78735071b02244116ebc4b01e42c45d9878e4ef901e38f6bcfeb8a",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f563863a7a635304ed69b5bd3b6fcf8b.wav.import",
+    "bytes": 577,
+    "sha256": "9e0923802abff8525c0c5cf04d9c9b0536d62d8cee407a92fa080a72c896da47",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f6f1b17b256fbf3f59bdb3ba573465a0.wav",
+    "bytes": 138130,
+    "sha256": "99a9de8787c023a774bd6493d6a9fbc2eae3a4cb3a15728bcbd1112dd2374173",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/f6f1b17b256fbf3f59bdb3ba573465a0.wav.import",
+    "bytes": 577,
+    "sha256": "45de2a0de058e3e7fa7f4cfd370cd86bf0c4e841b35e9ef14f92c4f9ccd3247d",
+    "change": "new"
+  },
+  {
+    "path": "assets/memorial/voices/manifest.json",
+    "bytes": 49362,
+    "sha256": "547d1ed5fc0a4cc359e9d87f5b9972063ecf177236e49c6a1e7c69d68169a434",
+    "change": "new"
+  },
+  {
+    "path": "Build_Windows.cmd",
+    "bytes": 339,
+    "sha256": "06ffb9c870431662c6218f9f011915c86360945e8d73cbce0ec22998e0830750",
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "bytes": 1027,
+    "sha256": "d82df08eeaa0f93f0016f14e63de8d1abaae736b12369581fe8aa813202d4a92",
+    "change": "modified"
+  },
+  {
+    "path": "game/chapters/manager.gd",
+    "bytes": 3120,
+    "sha256": "49b928d54e865780c2d70e3f2315a47f0e4d52cc88e72fb3296914900ca0be88",
+    "change": "modified"
+  },
+  {
+    "path": "game/memorial/audio.gd",
+    "bytes": 2489,
+    "sha256": "2f1d1e40952b0e349b6e575576c4b441050fce0a6040bdc1185577ec5e5bc096",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/audio.gd.uid",
+    "bytes": 20,
+    "sha256": "fefc92d028d74970164ca53eb41ffd5b35ff119d641313792f72a06439ca4687",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/campaign.gd",
+    "bytes": 25020,
+    "sha256": "a307eb8f927dc699351333cea7aed87eddeb87830d46535345fc493f3d9e0637",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/campaign.gd.uid",
+    "bytes": 19,
+    "sha256": "2056e92e3ae93483e9a246183b89b1ec5287b11dfb569e5e551ad9986d8045e8",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/crowd.gd",
+    "bytes": 5008,
+    "sha256": "b11b816b34c3d0a8e68cbef9e01834df18f7a4c663eeb50aea2223cd1e261c91",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/crowd.gd.uid",
+    "bytes": 20,
+    "sha256": "2c773d616046d6c6f5a8e94781c14af5bf0595938a59def1715e7ac8ea370142",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/footprints.gd",
+    "bytes": 3551,
+    "sha256": "3cdb97afb69d3c650a95ec684e84beb9febc9fa83274cdaaec576d37d67218ae",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/footprints.gd.uid",
+    "bytes": 20,
+    "sha256": "6f70a6dc8aefca3461442904d54e789ea777dc0878d922141c8763bb65e81cc1",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/hud.gd",
+    "bytes": 639,
+    "sha256": "fe9c62cdc421fba94e619b524655f4de7cd2be161f4607e11060d7defa1563ee",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/hud.gd.uid",
+    "bytes": 18,
+    "sha256": "fda8a6401ced96cee2f4d70d45b1a24bb939f3f9b226d7c59204c21dc8ccf4e2",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/main.tscn",
+    "bytes": 177,
+    "sha256": "5325d4e27be816528de9377724f0341c99883633a55761e5e32fc08aaad733a4",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/npc.gd",
+    "bytes": 1655,
+    "sha256": "7fc17d01dfd2cd5697ef669a16ad1aa44a7fff0586a59b6e9599fca77e4f2beb",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/npc.gd.uid",
+    "bytes": 20,
+    "sha256": "683a7a9c7c2d64f6651f96317d578e544a0cc0146974aec33df9f1bd2ccec903",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/observation.gd",
+    "bytes": 766,
+    "sha256": "ce0feac51fdad43abccab04cfffd733f50517351e264adc8612ffd4eb5947208",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/observation.gd.uid",
+    "bytes": 19,
+    "sha256": "ed6fd8638ae0053bd9a2c5745bce92b7a5b89b39b49d7a4180e2398e0025b785",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/props.gd",
+    "bytes": 1324,
+    "sha256": "7ae44ecfa433edb9cfb2449382891ab5c63b6e4bb378fd5051633cd221bdccf0",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/props.gd.uid",
+    "bytes": 19,
+    "sha256": "15681ae680c901955f900582c38b3c7d6cc18d15aceae06038f35065f7b6c202",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/save_store.gd",
+    "bytes": 2584,
+    "sha256": "5260b5009647b272a48a629f4f1b1b2e8c486a225c85a28896a8bacd62587546",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/save_store.gd.uid",
+    "bytes": 20,
+    "sha256": "c5e10d7eb3142ce727b0b376c9cf219fc92f5c95c84592d1498a58c9880c0640",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/terrain.gdshader",
+    "bytes": 1624,
+    "sha256": "0f106895aa245068d76eb973d64e3a04a6b32e5cd7112aac7925eaae35f6ad0b",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/terrain.gdshader.uid",
+    "bytes": 20,
+    "sha256": "92b5d30eefde77a0a7381b00bef1a45b1824a6aacec18f11881be6950a3d0e09",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/terrain_build.gd.part",
+    "bytes": 3744,
+    "sha256": "b1c5a3909ac1ca12b6f16bd3cc110bc91b43e2f91557f098849a3fc0e28e06c2",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/visual.gd",
+    "bytes": 4716,
+    "sha256": "5f216a850c88defd9e490d53e712542b1aa01f166d488764cb1a86628b0a1dd7",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/visual.gd.uid",
+    "bytes": 20,
+    "sha256": "f8452916344a4f2a9f04db8fb1cc922efb5150f11828278a54a8fb2c107478c7",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/weather.gd",
+    "bytes": 484,
+    "sha256": "47b7f6a614eff06215d2ed705f4e5220a5fae0858eff43cd32b40a60ecf89409",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/weather.gd.uid",
+    "bytes": 19,
+    "sha256": "9cf480d248948f72e3a94cf69c93e91a8c5d70af5397e27254b68d87c2209518",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/world.gd",
+    "bytes": 10071,
+    "sha256": "211b32f181792c5d0b8d8f0c0ea396b44306e594a897618874a52bff5a3b5e52",
+    "change": "new"
+  },
+  {
+    "path": "game/memorial/world.gd.uid",
+    "bytes": 19,
+    "sha256": "4fd7e4f9fe2e3952f0744ae7d7ad78b1eab4363253cc8c09744b4d2732254923",
+    "change": "new"
+  },
+  {
+    "path": "game/snow/campaign.gd",
+    "bytes": 21216,
+    "sha256": "1f06ab153a921e7f4c2e7c5faca6d47e75226bf3d01f0cf65a74c53f9a158489",
+    "change": "modified"
+  },
+  {
+    "path": "game/snow/world.gd",
+    "bytes": 16636,
+    "sha256": "bc2ab64e40e4acb13e4a007bc3da2be22d6d6a55d9b56da06f28ae0a7ca27b37",
+    "change": "modified"
+  },
+  {
+    "path": "qa/memorial_replay.gd",
+    "bytes": 8908,
+    "sha256": "5141502e89d25f29b5356434ceb3e0e39c93f7f544bf526a5990097fb8160b94",
+    "change": "new"
+  },
+  {
+    "path": "qa/memorial_replay.gd.uid",
+    "bytes": 19,
+    "sha256": "2df882a4b5c09e62c770f22d3dd5ce9159d64c7052a4dd24ff08eb7b1318f6d2",
+    "change": "new"
+  },
+  {
+    "path": "README_V4_1.md",
+    "bytes": 2436,
+    "sha256": "26dc18d93021e194e5a0056fdb11854bd33b76c738443cf5aad644f427fabc7d",
+    "change": "new"
+  },
+  {
+    "path": "Record_Memorial.cmd",
+    "bytes": 230,
+    "sha256": "72579303e33eb7b53f2d47e1249edb3e1192d370961f3af9068e79a288c3a846",
+    "change": "new"
+  },
+  {
+    "path": "Run_Memorial.cmd",
+    "bytes": 118,
+    "sha256": "d451f0b867a3deb0de50ac4fd245c0bff349a2d210ef4ce4ec24d50971e304c5",
+    "change": "new"
+  },
+  {
+    "path": "Run_Memorial_Replay.cmd",
+    "bytes": 125,
+    "sha256": "07052a9deda262e8b1545cc10f386691d61bf88c02625a71c5903bb3d6c76c76",
+    "change": "new"
+  },
+  {
+    "path": "Run_Memorial_Tests.cmd",
+    "bytes": 388,
+    "sha256": "a4a0dbfa6b98720391d7bf0b4e6aa3f128d9c33e82c10b58a45ebd8c7c3809b5",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/camera_review.gd",
+    "bytes": 1270,
+    "sha256": "b3c1549d187947d1c36832c496c4b142f9b1b24bf8d8717f65aa2a08c441c12e",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/camera_review.gd.uid",
+    "bytes": 19,
+    "sha256": "93319812052fedf09b018f8accf7ff621e4317ffee1e359bbea90df0281275ff",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/crowd_checks.gd",
+    "bytes": 689,
+    "sha256": "4b08edb603210f26ab99bde0cf9babb9ab1d61a4376e38dc7bbb29278ae5d3bd",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/crowd_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "56042982469b4bbd90919b2bbcda11c87e525a5257dd44e39e90650e2c86e401",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/focus_probe.gd",
+    "bytes": 1351,
+    "sha256": "82ede4828ebb245e7a7afb4a4845a98a2f5a2f6863f3ec93f3d7cdbbd0233dac",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/focus_probe.gd.uid",
+    "bytes": 20,
+    "sha256": "d8b1b36c7abda50e607509dc7388df75873eaa1ee64e79f7c05254b6e3030864",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/footprint_checks.gd",
+    "bytes": 1363,
+    "sha256": "3b60e1835d934272db48440db3d72522b66b60b70ca7cbef969a7624a0a8d702",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/footprint_checks.gd.uid",
+    "bytes": 19,
+    "sha256": "49ec8c5cf79750e9033aa18642f0c52a566ddce78cdd59b1d9f16280e79684be",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/gait_checks.gd",
+    "bytes": 1017,
+    "sha256": "e6e661f43dc658f9a4a44bd659411032aa069b8c723a46d7e57c33cb297ff4d1",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/gait_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "a116247cff3ee33017421f81fa24559face598f4650d2ee426f89134d0768336",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/pose_probe.gd",
+    "bytes": 753,
+    "sha256": "f271dfa851c11085d7353c9f7b60f0106e0f9827e09dc5f4c1fff6893e2c25ce",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/pose_probe.gd.uid",
+    "bytes": 19,
+    "sha256": "bd4f2fac228e16af37fabffd308076997479f807b7a7c458daf5957218686277",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/render_benchmark.gd",
+    "bytes": 1833,
+    "sha256": "107f72f069970162d671f8ad995df1bcd6020844d8859bb8f8f3331d0c643ad3",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/render_benchmark.gd.uid",
+    "bytes": 20,
+    "sha256": "1e8e96c964b1fd55889f5d631d4467326f90b8519ffc436fc22f9391f907bac9",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/story_checks.gd",
+    "bytes": 6674,
+    "sha256": "f9943dfaddbe2b14dba01fb3c870f22ebf1361d8fb8e53eb7e2309eab2d5db22",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/story_checks.gd.uid",
+    "bytes": 20,
+    "sha256": "8f50b61c3aee94ebd1b0a3b1f5448bb6400c6f2d542e5930e0c7ebb57cf05a33",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/visual_review.gd",
+    "bytes": 3083,
+    "sha256": "5c4fd39e270dfcb84effb09ee5f1a756b008c48aa46d87ce0bff9f6580a1441c",
+    "change": "new"
+  },
+  {
+    "path": "tests/v41/visual_review.gd.uid",
+    "bytes": 20,
+    "sha256": "8b20a8c334cbb3bbb2a44a3778cffead981812ba2b673c936c795516bfd35e78",
+    "change": "new"
+  },
+  {
+    "path": "tools/compose_memorial_score.py",
+    "bytes": 2410,
+    "sha256": "d48c893781909c50f25d00eabad0c54cb88f7d77cb5972e7b5f2986672e9b929",
+    "change": "new"
+  },
+  {
+    "path": "tools/Generate_Memorial_Footprints.py",
+    "bytes": 1786,
+    "sha256": "5b359f85a5d13ccfcf0e3112cfa06c6df4ddb9cbdc5f75c2f260a898f3fc7e65",
+    "change": "new"
+  },
+  {
+    "path": "tools/Generate_Memorial_Voices.py",
+    "bytes": 6062,
+    "sha256": "f390eaea8c9ae73cd0a631f6a0e7db27d51aa4d0e11b51c6c3cc478df18b129a",
+    "change": "new"
+  },
+  {
+    "path": "V4.1_ASSET_LICENSES.md",
+    "bytes": 3609,
+    "sha256": "2dbe60092f0d1e1e339aacbc771e053f002eefb9773ca919bd3de80705888f10",
+    "change": "new"
+  },
+  {
+    "path": "V4.1_AUDIO_DIRECTOR.md",
+    "bytes": 5519,
+    "sha256": "1b6847532e00711ff006b4db6fc9d8b7dbf6fa2b1b48bad35ae6394653e77273",
+    "change": "new"
+  },
+  {
+    "path": "V4.1_REWORK_REPORT.md",
+    "bytes": 7815,
+    "sha256": "d2e961c0fbab18a3f71937821b78bb7929779448335dc8cad9f4ad6c70386aeb",
+    "change": "new"
+  },
+  {
+    "path": "V4.1_TEST_REPORT.md",
+    "bytes": 4793,
+    "sha256": "4971b10cc4d1553e8408b26aa9c3dd60b41d9c3d315e04f086eab16d777a6157",
+    "change": "new"
+  },
+  {
+    "path": "V4.1_WORKLOG.md",
+    "bytes": 5542,
+    "sha256": "cb6c28274e6b3275a6883143406409dd4784a2c790d653397aa0be7af9471574",
+    "change": "new"
+  }
+]

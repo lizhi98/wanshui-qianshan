@@ -1,0 +1,524 @@
+[
+  {
+    "path": "ASSET_MANIFEST.md",
+    "sha256": "cc735e76c4014a0ae6e72b748a0623ebffcdbac8a9b076e3ae8641b16d1c653c",
+    "bytes": 8148,
+    "change": "modified"
+  },
+  {
+    "path": "Build_Windows.cmd",
+    "sha256": "6f88301e6cd495529d9c3f46cc69f2601faea82a8e6c68c8af75072d23df11a6",
+    "bytes": 341,
+    "change": "modified"
+  },
+  {
+    "path": "export_presets.cfg",
+    "sha256": "1b5bd5d17bdc83ebbebd49ae5eb713b6ad33272ae20aec992f6423b12754a0f9",
+    "bytes": 973,
+    "change": "modified"
+  },
+  {
+    "path": "project.godot",
+    "sha256": "b5fbfcbefe253f1498d1bed3d77d9201a3d03eaa6770610f2e6ca4802186a1d4",
+    "bytes": 6680,
+    "change": "modified"
+  },
+  {
+    "path": "README.md",
+    "sha256": "090e55a63468742d820c4ec21f8093a6b66bab575a1f4aad0a4b18f675b7927f",
+    "bytes": 6706,
+    "change": "modified"
+  },
+  {
+    "path": "README_V3_0.md",
+    "sha256": "0b2f43a7b3516b25367f30cfb6a2d44007213d2b99efd740e43b96440b9c18a7",
+    "bytes": 3065,
+    "change": "new"
+  },
+  {
+    "path": "Run_Tests.cmd",
+    "sha256": "882bf2de90b100f3cbaf79f3b6c199048de17fb52e47cce0cedb97c18f1484a3",
+    "bytes": 957,
+    "change": "modified"
+  },
+  {
+    "path": "UPDATE_REPORT_V3_0.md",
+    "sha256": "2cdd7afcfe69eb1b79b105c2438dc476f782ee53f8f89d6846687b8a9fafbfc8",
+    "bytes": 3441,
+    "change": "new"
+  },
+  {
+    "path": "game/camera.gd",
+    "sha256": "312b0966cf99b0ae862408d416e5b1551d381623f31d789228ab1369423d2367",
+    "bytes": 3226,
+    "change": "modified"
+  },
+  {
+    "path": "game/combat.gd",
+    "sha256": "5001853fc7d9767efe4a4e4ccc0a2a178e771b9a9a24ce5b3d099f4accbb5f9a",
+    "bytes": 6532,
+    "change": "modified"
+  },
+  {
+    "path": "licenses/Chinese_Voices_Provenance.txt",
+    "sha256": "74b03a150324b34c556cbc0c059dece2dbf3ae3272f635472472ff83af9d408d",
+    "bytes": 3192,
+    "change": "modified"
+  },
+  {
+    "path": "licenses/Qwen3_TTS_Apache_2_0.txt",
+    "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+    "bytes": 11343,
+    "change": "new"
+  },
+  {
+    "path": "qa/v2_replay.gd",
+    "sha256": "f20069072fbd8fa586c8fb54807df36d3467e1b2d79d3aa54f1f0186d2aee3b5",
+    "bytes": 17361,
+    "change": "modified"
+  },
+  {
+    "path": "tools/Generate_Chinese_Voices.ps1",
+    "sha256": "ff8e176763e1338a7984d4279d13e5928e96af5f579f25ac46a4bf5b3298ea50",
+    "bytes": 1036,
+    "change": "modified"
+  },
+  {
+    "path": "tools/Generate_Expressive_Voices.py",
+    "sha256": "d6757be2ba7b09530e555c8dfafaf06638b7c563af8b0fb2597bd65be666d321",
+    "bytes": 5827,
+    "change": "new"
+  },
+  {
+    "path": "tools/requirements-expressive.txt",
+    "sha256": "7893f839749794452f7fdfb08cde79b5548188e2157d770971a0e1cb85ea6e39",
+    "bytes": 140,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/02a9165312367d973e3de9ab3fd4f691.wav",
+    "sha256": "2a99b87c164da7f434248937d38c87f8382cf2f438aacc7f888f465d2da4b033",
+    "bytes": 264934,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/082732909117541532ebc0c4befc357a.wav",
+    "sha256": "c4b7aad71dc43e19e931145b698249bcce10ce035a7f921cafa8122860767fc7",
+    "bytes": 103654,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/0834afc726b9b9eed3326e3ff188c1c0.wav",
+    "sha256": "d3bd23f50644a079e742c0e671b35c60227559e1fa6674f41749fabb311a35bb",
+    "bytes": 176062,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/1394e36642e492a620597ba3679f36ef.wav",
+    "sha256": "f6e98182bf3dce7386d2da7a6ae2d6880bee27be7287ffe208945a080562caf6",
+    "bytes": 268770,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/16923ff3550382dd376dfcfe40989ef8.wav",
+    "sha256": "a96e8ac4ad46d8689f6c6c92acc7474f1c59a42752985343d7a95f4f13f5dee0",
+    "bytes": 142048,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/24a76baddbf00f523075cfdf781617d3.wav",
+    "sha256": "bda9092ac4be79f25b76feecde14df2482280a5a8fa23077003fb0e6b03aad13",
+    "bytes": 353260,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/28d47bcacf45d9127d5aaf4ee677b8a1.wav",
+    "sha256": "0aa45b42ca982e89a114747018bc6ab0fa91a1d773a6b9e58435b04b0d138a4d",
+    "bytes": 195814,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/3063e4036062b8af4e12bc6f0d707ea1.wav",
+    "sha256": "efeca0a75416915b8480a8c93923a99f174562e0fb8820a69568dc15d765d6a8",
+    "bytes": 276450,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/402cf2ef5934bdaafb748c50d46a5b06.wav",
+    "sha256": "ac21c07cbce8382e6a7390774cb68ef28f66b14fd3fea8b51a3dc410c65c4aae",
+    "bytes": 103530,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/412389c08d106a9a42d09e267939cf0d.wav",
+    "sha256": "7a59d38b41fede75b37ef11e8ef7cd98264f7e86a1e4a6c330c52ac50bb9dbe7",
+    "bytes": 314562,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/49ecd9d80213d0b1c6ced17b04357301.wav",
+    "sha256": "0fb18ab31b7165ecb566a43624f3a8097276f533d0565ccad46d21deea8e306f",
+    "bytes": 111336,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/4f5d1a296de254b689acc853b9a7c19a.wav",
+    "sha256": "21deff8061bddedf2c9dbe64116f0956a315cb40744e33e8e9d9c05bb5e5ceaa",
+    "bytes": 207334,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/51dc0e1ab2b938e0384f50214c9c9e5a.wav",
+    "sha256": "89e8500f5ee265bf4985eadeca8ace6552579bfac9cbf8b6006bf23c433673ae",
+    "bytes": 180372,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/5e439ef5445f912636afd2736c36beaf.wav",
+    "sha256": "9b3b793803cc0e5c237d0e03fa26206742c3100b412fcca89e1ddf2e95517639",
+    "bytes": 176620,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/6421a612bf16a17bb9f109ab559fccd2.wav",
+    "sha256": "3dca81ac179e779bde38425a157a6705c2e6f846314d880636b7479b53a82c87",
+    "bytes": 211100,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/65e3c0a0db213bbb3ba1adff6195360d.wav",
+    "sha256": "92a55ed7959e6e8e87b2921c0785d6c9802c5c030e3efde1beb33b8792061a82",
+    "bytes": 122600,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/669d5e5411669ca8672f55d95c50bbdc.wav",
+    "sha256": "224204159f0a33d53a5d9eb517a65223eae60a7658344b00139a35be6c386d58",
+    "bytes": 191970,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/669d5e5411669ca8672f55d95c50bbdc.wav.import",
+    "sha256": "a408420b2fa497df5454735d437caafecfbfe729e9aadf9fe9a0b998b1507759",
+    "bytes": 568,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/6b136465d9830a8d1cf8020c11fee5c5.wav",
+    "sha256": "34661977d1ce1f2fbd2611bd6c8c5c69f504d698b2b014559a8bb9f678663659",
+    "bytes": 30674,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/6b67c4446510fa8265b32051ae2a37dc.wav",
+    "sha256": "8a297978b03998a24001b3cac45408e7699b0668592251ed0735009f29453989",
+    "bytes": 253424,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/7cbad651d101be096994da6b3ed0c358.wav",
+    "sha256": "0f85b5252e1900cd2e62f0a0cdb298f2af693e87347cbccb329fd961cca9d049",
+    "bytes": 84384,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/7ccfa5aae61de8a98759a11b8f6691db.wav",
+    "sha256": "498c9bee203e77c37ca4c25c5297c7e59c10a9288b0c3ba64e915293a6b9f43c",
+    "bytes": 130534,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/8693d8c239bc62d5837b5eb4f165ab3a.wav",
+    "sha256": "29bc660775b6fd9312a54e5e8987d6c2ced5955c19150bfa44d575c7093ef3e6",
+    "bytes": 61414,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/878eda610ffad5ae39a288c26b72897c.wav",
+    "sha256": "5658d9c5b2a1bbf8d9e6f9441dd701b8b36b3e32f2360850d82c108892b93c20",
+    "bytes": 142034,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/892e1aa030d180de3612e749b52100be.wav",
+    "sha256": "4a2bac62c4eebd8886523dbce9046184aa4fc7ad56f16f1c5140cfe23874ab5a",
+    "bytes": 364778,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/8c3878738ee942e57d244a72a373fec8.wav",
+    "sha256": "5728ddd8eff4f2813a645188202a16fdabfeca4a6f17b04b4546fbd16638fd3b",
+    "bytes": 157356,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/8c4789ed8a5f042cba8c8b7c5ce4a586.wav",
+    "sha256": "05cdb931cef14663fcbd9b33fbf16096777402fa1d80c286aa3efc9b3d732688",
+    "bytes": 306922,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/8d9ecb9353ea835f5eefea5007595f0b.wav",
+    "sha256": "3154be005c5b117594efb62cadc23338ae68b19c54b0df3138b758262a6fd4b5",
+    "bytes": 95934,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/8fe671af6b0e600807132220dca1b441.wav",
+    "sha256": "d1fda9425947ccbb3178ea34c13d3f19f6c0d0bc89d9bd4af8dcd82bdf2d3f0c",
+    "bytes": 264810,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/91e07dc3515732fba5b9044a84e4d28f.wav",
+    "sha256": "470d398f8606ea75fee1dc7a6b85c4a371d0703d5e3f276ac1f532692b7cb18b",
+    "bytes": 95662,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/925e93d69324c1a10e1d6ddc267153ec.wav",
+    "sha256": "bbdae753503a5be3c6a1053e62a1523254386063e86fcd1b94a3314996441a33",
+    "bytes": 122726,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/93ed51e0aaba08b4385f02b885a19fa2.wav",
+    "sha256": "d090879f758b38af0f23f2b28650b18d14b5f7712ce76fbf65d9a40dab75dcbe",
+    "bytes": 276448,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/9cd048b85748085d6561fe53889ae900.wav",
+    "sha256": "2dc1b6c7899c00d6ba92ce4008b7aad24e7b487a0f5fce6f81b68016325fd72f",
+    "bytes": 84406,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/a1cb24b37b1e5b1a792e77c27d0dff22.wav",
+    "sha256": "06c5a876815e9643195bc7ab27590c040fae3b14f36e324bc96386faab63a074",
+    "bytes": 92064,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/a782f06d935f373b74ebc0e4cf1aff55.wav",
+    "sha256": "5ec3325ff406d869917d17ed2e38b3e1b84dcb2ab4ad6d2047cb7c529f824ee4",
+    "bytes": 264334,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/a782f06d935f373b74ebc0e4cf1aff55.wav.import",
+    "sha256": "b1a1fdd9083f4a2af87ac2fa612c7e9d56cc6a6adec35942b94cfd8763085d45",
+    "bytes": 568,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/a7ae178675a2408abbd44cbf9829a3d5.wav",
+    "sha256": "aede7c4902b67677e18047fd231fb9968e6f7699910c769b90fbc92f1a22df36",
+    "bytes": 103188,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/b101d4f1caba317d24cc1ef1af98e852.wav",
+    "sha256": "11203ef9eaa4a678f54ed3075fbde5cd9caa7399014fa2eac3e69e484c2c11d4",
+    "bytes": 376288,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/b57b87e6434126f62828dac6fe240835.wav",
+    "sha256": "eb69ce29309326b0935e38ac5095b3f12de895ac882eb9ec27a5bce90d69a3d0",
+    "bytes": 53728,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/b84f6f800b02dc6c017732d64158cc7c.wav",
+    "sha256": "0829c60829dc4f3a3a86f99ab7e7e887aab2735f3e617a88fb556fb96c50c39a",
+    "bytes": 119022,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/b84f6f800b02dc6c017732d64158cc7c.wav.import",
+    "sha256": "6d88ab8a3a957f1bdf6998672d2601c97882aa419e54a6ea2a0f711c34966f40",
+    "bytes": 568,
+    "change": "new"
+  },
+  {
+    "path": "assets/voices/b8e8cdd157e0a65edda5a3f9e87274bd.wav",
+    "sha256": "530e2e8e1cb8619e7057b60a93d126228f9d9486ef9ec11c5885e5bb065c16ab",
+    "bytes": 199156,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/b975270e27e9909d5d271aeba455903f.wav",
+    "sha256": "9baf099c5c1763b077d7bf5b27663e327dbbd7726de1cf245e12cff06691ef58",
+    "bytes": 334058,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/bbffe680f5a1b56a861210d5ec71626f.wav",
+    "sha256": "01414792d45a0642e90ae3501b0889427e423fbbcf3b3473e5931a8db0b2ae34",
+    "bytes": 222644,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/bf74992bdcde106cbdb936f036b7628b.wav",
+    "sha256": "f6a542198f4660bda86b4eaae692111a995d53c0655c59af7dd2de11257b55ba",
+    "bytes": 238052,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/c67465e0dd5ff51b94ba52a9d44e2ee2.wav",
+    "sha256": "9bc9659cb8192cd1b2c70e9981b8f79f56768e7257e5b29df45ceadb32f6cf1e",
+    "bytes": 211176,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/cc683b60b01db420b41537e8db75b237.wav",
+    "sha256": "34278864b313227edcc768444735958d1179562347195d36913e4b5d2bd6a8d8",
+    "bytes": 249608,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/dca687f09295a9b0c4f9a6c0ff2c6ec3.wav",
+    "sha256": "397e8315504f495dcbcf5f099154547a663d452a9303bf253f61613371efeec5",
+    "bytes": 211190,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/dcf2b098ec21b4b56625c7e6847e0857.wav",
+    "sha256": "4f75ca9d8a0c1b6b8976278befca1239ce0b145b424bf0339730c62024338085",
+    "bytes": 72930,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/df21c6312b705286ae16c54c9689ecde.wav",
+    "sha256": "95a01c1a3a8bfcc7d90ef73559bd6de0434aeaa63d81e4df42a9ed1997f462f6",
+    "bytes": 230398,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/e0776e06f1ccaedf7146d8fcf6ac1ff5.wav",
+    "sha256": "8e5c0f21b29b70f02defcb94dfdb0735c88a6098bb17d525ab358135ed7739f0",
+    "bytes": 165088,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/efd680796a3c8a194416f017f962a80c.wav",
+    "sha256": "b5d7d8d24368b93daf20b70644a44027bb5bc11c1a3db0cb08b8049978b07e62",
+    "bytes": 141760,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/f8417639492db0a6765c74dc3663a167.wav",
+    "sha256": "b3a50121f4e9615636aaf570d9f273a3870343b5d7791e3295715b315e725459",
+    "bytes": 230368,
+    "change": "modified"
+  },
+  {
+    "path": "assets/voices/manifest.json",
+    "sha256": "b15e1cdf7c9555639f506db10814bceefc0b7e46d0f0e5141312ffe4145c205b",
+    "bytes": 44169,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/audio.gd",
+    "sha256": "e749e7bece833304da430f5b90c0f1fe0621224f803ae407f2719a2d1d7826b9",
+    "bytes": 4096,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/campaign.gd",
+    "sha256": "56bec9662e862396c443a22fe781e81b0c908e409f39068c949fc7f39bdb5c3e",
+    "bytes": 25899,
+    "change": "modified"
+  },
+  {
+    "path": "game/remaster/world.gd",
+    "sha256": "64baac9a866ce7b1c75293383c01f68575e1190cedfd725cdd3902fe74e73ad6",
+    "bytes": 14690,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/assault.gd",
+    "sha256": "44877c2afaa69af61533c38797025c63c215481e88c5fd79f2833b0bbaf2bdc9",
+    "bytes": 8173,
+    "change": "new"
+  },
+  {
+    "path": "game/v2/assault.gd.uid",
+    "sha256": "5eee49794ceac6f317d95fe82d1c91eb44532c9160fb61571aee749e9a0cbc41",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "game/v2/campaign.gd",
+    "sha256": "90f09588b41ee1679973cb7fb28dc61c21b122f1552e5da1e674b8ba88437e09",
+    "bytes": 15671,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/guidance.gd",
+    "sha256": "8869a4b73b8e1de4ccf4902fa30cf8c3b16bd4061a5f63083e46dd58ddc240c9",
+    "bytes": 12033,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/hud.gd",
+    "sha256": "41c804be140f497606d01cddd2cf251eb0c26e9c498a0ec36c20d662188f922f",
+    "bytes": 11893,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/repair.gd",
+    "sha256": "bd8e71013ab0425a7b0f36023f619aa305947f2114743d9d3309097a84b837cf",
+    "bytes": 30567,
+    "change": "modified"
+  },
+  {
+    "path": "game/v2/save_store.gd",
+    "sha256": "b879d88219067b174392ee541e2d43c77d1a42d5589885baaa92ccc6502eacad",
+    "bytes": 5487,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v2/carry_acceptance.gd",
+    "sha256": "8ce4a8a4fe70f722ea70dd19d91877beb63a3c4746dff9759f17dc19d669a55c",
+    "bytes": 7204,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v2/guidance_checks.gd",
+    "sha256": "ec1927155a4b3504916ad93cff640db7c8a2f707d25d49e88876dd880f539294",
+    "bytes": 3511,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v2/voice_checks.gd",
+    "sha256": "3dd0ee53472413c6e3048bdf4210ab0338afd19187b0e8a0d50a19b1514ab06c",
+    "bytes": 2212,
+    "change": "modified"
+  },
+  {
+    "path": "tests/v3/assault_checks.gd",
+    "sha256": "aa57c812b24a812019ee66e9875152f8479e7448d7f397ebef6ba4e488640d36",
+    "bytes": 4491,
+    "change": "new"
+  },
+  {
+    "path": "tests/v3/assault_checks.gd.uid",
+    "sha256": "208a031e11b7d62becce64cd328e8f94f6aa05a4b2a1094abccef015808d72fb",
+    "bytes": 20,
+    "change": "new"
+  },
+  {
+    "path": "tests/v3/visual_review.gd",
+    "sha256": "f2f39271153a81299299c631892ad4ced8b662b8aa12ea54405aa54a83e42df1",
+    "bytes": 2546,
+    "change": "new"
+  },
+  {
+    "path": "tests/v3/visual_review.gd.uid",
+    "sha256": "b746b93002fa953cf13eda8c72763ea1036c92ffe0ab2d48088bc8b751e7cd8e",
+    "bytes": 20,
+    "change": "new"
+  }
+]
