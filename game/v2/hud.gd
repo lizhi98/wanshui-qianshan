@@ -6,6 +6,9 @@ var place_buttons:Array[Button]=[]
 var point_buttons:Array[Button]=[]
 var compare_button:Button
 var guidance=preload("res://game/v2/guidance.gd").new()
+var ammo_row: HBoxContainer
+var loaded_rounds: Label
+var ammo_note: Label
 var guide_panel:PanelContainer
 var guide_tag:Label
 var guide_title:Label
@@ -40,6 +43,7 @@ func _process(delta):
 	super._process(delta)
 	if not guide_panel: _make_guidance()
 	if not compact_shell_done: _compact_shell()
+	_update_ammo_display()
 	var visible_task=mission.started and not overlay.visible and not dialogue_panel.visible and not mission.paused
 	task_detail.hide(); task_progress.hide(); hint.hide(); marker.hide()
 	objective.get_parent().get_parent().hide()
@@ -59,8 +63,6 @@ func _process(delta):
 	guide_body.visible=detail; guide_tag.visible=detail; guide_progress.visible=detail
 	_anchor(guide_panel,Vector4(.70,.02,.985,.32) if detail else Vector4(.70,.02,.985,.145))
 	target_panel.hide()
-	if mission.get("assault") and mission.assault.active:
-		ammo.text="弹药 %02d  · 通过 %d"%[mission.combat.ammo,mission.assault.passed]
 	for i in enemy_markers.size():
 		var pin=enemy_markers[i]; pin.hide()
 		var enemy=mission.enemies[i]
@@ -167,8 +169,26 @@ func _compact_shell():
 		label.add_theme_font_size_override("font_size",15)
 		for child in label.get_parent().get_children():
 			if child!=label: child.hide()
+	ammo_row = HBoxContainer.new()
+	ammo_row.add_theme_constant_override("separation", 8)
+	ammo.get_parent().add_child(ammo_row)
+	ammo.get_parent().get_parent().grow_vertical = Control.GROW_DIRECTION_BEGIN
+	_label(ammo_row, "弹药", 15, MUTED)
+	loaded_rounds = _label(ammo_row, "", 24, Color("f3d49d"))
+	ammo_note = _label(ammo_row, "", 15, PAPER)
 	_anchor(modern_panel,Vector4(.015,.13,.31,.90))
 	for button in modern_panel.find_children("*","Button",true,false): button.add_theme_font_size_override("font_size",14)
+
+func _update_ammo_display():
+	var assault_active = mission.assault and mission.assault.active
+	ammo_row.visible = mission.started and (mission.phase == mission.Phase.COMBAT or assault_active)
+	ammo.visible = not ammo_row.visible
+	if not ammo_row.visible:
+		return
+	loaded_rounds.text = "%02d" % mission.combat.ammo
+	ammo_note.text = "装填中…" if mission.combat.reloading else "/ %02d" % mission.combat.reserve
+	if assault_active:
+		ammo_note.text += "   ·   通过 %d" % mission.assault.passed
 
 func _exit_tree():
 	if is_instance_valid(beacon): beacon.queue_free()
