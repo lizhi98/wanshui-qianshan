@@ -9,6 +9,8 @@
 [ext_resource type="Script" path="res://game/chapters/chapter_preview.gd" id="preview"]
 [ext_resource type="Texture2D" path="res://game/chapters/snow_cover.png" id="snow_cover"]
 
+[ext_resource type="Texture2D" path="res://game/chapters/fishhook_cover.png" id="fishhook_cover"]
+
 [node name="ChapterMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -31,6 +33,16 @@ texture = ExtResource("snow_cover")
 expand_mode = 1
 stretch_mode = 6
 
+[node name="FishhookCover" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture_filter = 4
+texture = ExtResource("fishhook_cover")
+expand_mode = 1
+stretch_mode = 6
+
 [node name="Masthead" type="VBoxContainer" parent="."]
 anchor_left = 0.065
 anchor_top = 0.095
@@ -50,7 +62,7 @@ text = "万水千山"
 [node name="Subtitle" type="Label" parent="Masthead"]
 theme_override_colors/font_color = Color(0.2118, 0.2980, 0.2510, 1)
 theme_override_font_sizes/font_size = 21
-text = "同一段长征，两次不同的接力。"
+text = "跟随行军的脚步，走进三段长征故事。"
 
 [node name="Caption" type="Label" parent="."]
 anchor_left = 0.065
@@ -66,12 +78,12 @@ anchor_left = 0.585
 anchor_right = 0.935
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -211.0
-offset_bottom = 211.0
+offset_top = -247.0
+offset_bottom = 247.0
 
 [node name="Column" type="VBoxContainer" parent="Folio"]
 alignment = 1
-theme_override_constants/separation = 11
+theme_override_constants/separation = 8
 
 [node name="Index" type="Label" parent="Folio/Column"]
 theme_override_colors/font_color = Color(0.8353, 0.7294, 0.5333, 1)
@@ -107,6 +119,17 @@ text = "夹金山   /   风雪"
 custom_minimum_size = Vector2(0, 51)
 theme_override_font_sizes/font_size = 22
 text = "第二关　丰碑 · 雪线之上"
+alignment = 0
+
+[node name="Three" type="Label" parent="Folio/Column"]
+theme_override_colors/font_color = Color(0.7686, 0.8118, 0.7255, 1)
+theme_override_font_sizes/font_size = 15
+text = "草地   /   章节预告"
+
+[node name="Fishhook" type="Button" parent="Folio/Column"]
+custom_minimum_size = Vector2(0, 51)
+theme_override_font_sizes/font_size = 22
+text = "第三关　金色的鱼钩"
 alignment = 0
 
 [node name="Exit" type="Button" parent="Folio/Column"]

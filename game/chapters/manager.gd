@@ -1,5 +1,5 @@
 extends Node
-const CHAPTERS={"bridge":"res://game/v2/main.tscn","snow":"res://game/memorial/main.tscn","legacy":"res://game/snow/main.tscn"}
+const CHAPTERS={"bridge":"res://game/v2/main.tscn","snow":"res://game/memorial/main.tscn","legacy":"res://game/snow/main.tscn","fishhook":"res://game/fishhook/main.tscn"}
 static func open_chapter(tree:SceneTree,id:String)->Error:
 	if not CHAPTERS.has(id):return ERR_DOES_NOT_EXIST
 	return tree.change_scene_to_file(CHAPTERS[id])
@@ -18,5 +18,6 @@ func _ready():
 	var entries = menu.get_node("Folio/Column")
 	entries.get_node("Bridge").pressed.connect(launch.bind("bridge"))
 	entries.get_node("Snow").pressed.connect(launch.bind("snow"))
+	entries.get_node("Fishhook").pressed.connect(launch.bind("fishhook"))
 	entries.get_node("Exit").pressed.connect(get_tree().quit)
 func launch(id:String):open_chapter(get_tree(),id)

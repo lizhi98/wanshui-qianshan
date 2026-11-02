@@ -1,0 +1,56 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://game/fishhook/preview.gd" id="script"]
+[ext_resource type="Theme" path="res://game/chapters/menu_theme.tres" id="theme"]
+[ext_resource type="Texture2D" path="res://game/chapters/fishhook_cover.png" id="art"]
+[ext_resource type="FontFile" path="res://assets/remaster/fonts/MaShanZheng-Regular.ttf" id="ink"]
+
+[node name="Fishhook" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("theme")
+script = ExtResource("script")
+
+[node name="Art" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture_filter = 4
+mouse_filter = 2
+texture = ExtResource("art")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchor_left = 0.585
+anchor_right = 0.935
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -144.0
+offset_bottom = 144.0
+
+[node name="Content" type="VBoxContainer" parent="Panel"]
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="Kicker" type="Label" parent="Panel/Content"]
+theme_override_colors/font_color = Color(0.84, 0.74, 0.54, 1)
+text = "第三关   /   章节预告"
+
+[node name="Title" type="Label" parent="Panel/Content"]
+theme_override_fonts/font = ExtResource("ink")
+theme_override_font_sizes/font_size = 46
+text = "金色的鱼钩"
+
+[node name="Note" type="Label" parent="Panel/Content"]
+autowrap_mode = 3
+text = "1935 年秋，草地深处。一根缝衣针弯成的鱼钩，系着三个年轻战士的希望。"
+
+[node name="Status" type="Label" parent="Panel/Content"]
+theme_override_font_sizes/font_size = 15
+text = "本章正在制作，敬请期待。"
+
+[node name="Back" type="Button" parent="Panel/Content"]
+custom_minimum_size = Vector2(0, 44)
+text = "返回章节选择"
+
+[connection signal="pressed" from="Panel/Content/Back" to="." method="_return_to_chapters"]
