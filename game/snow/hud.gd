@@ -10,17 +10,19 @@ func _ready():
 	for child in modern_panel.get_children():child.free()
 	modern_panel.hide();objective.get_parent().get_parent().hide();balance.hide()
 	var branding=chapter.get_parent().get_parent();_anchor(branding,Vector4(.025,.025,.27,.105))
-	for label in branding.find_children("*","Label",true,false):label.add_theme_font_size_override("font_size",16)
+	var heading = chapter.get_parent().get_child(0)
+	heading.add_theme_font_override("font", preload("res://assets/remaster/fonts/MaShanZheng-Regular.ttf"))
+	heading.add_theme_font_size_override("font_size",25)
 	for label in bottom_bar.find_children("*","Label",true,false):
 		if "右键" in label.text:label.text="F 观察　Q 发信号"
 		if "WASD" in label.text:label.text="WASD 移动　Shift 奔跑　空格 跳跃"
-	chapter.add_theme_font_size_override("font_size",13);health.add_theme_font_size_override("font_size",14);ammo.add_theme_font_size_override("font_size",14)
-	guide=_panel(root_control,Vector4(.68,.025,.982,.145),Color(.025,.045,.065,.48));guide.mouse_filter=Control.MOUSE_FILTER_IGNORE
-	var box=_vbox(guide);guide_title=_label(box,"",16,PAPER);guide_title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;guide_body=_label(box,"",13,GOLD);guide_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	chapter.add_theme_font_size_override("font_size",15);health.add_theme_font_size_override("font_size",14);ammo.add_theme_font_size_override("font_size",14)
+	guide=_panel(root_control,Vector4(.68,.025,.982,.145),Color(.07,.13,.115,.83));guide.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	var box=_vbox(guide);guide_title=_label(box,"",22,PAPER);guide_title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;guide_body=_label(box,"",18,GOLD);guide_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	weather_text=_label(root_control,"",14,PAPER);_anchor(weather_text,Vector4(.035,.88,.32,.93))
 	phase_text=_label(root_control,"",13,MUTED);_anchor(phase_text,Vector4(.035,.07,.35,.12))
 	bark_label.add_theme_font_size_override("font_size",16);_anchor(bark_label,Vector4(.18,.84,.82,.91));bark_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;bark_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-	top_bar.modulate.a=.60;bottom_bar.modulate.a=.45
+	bottom_bar.modulate.a=.88
 	center_title.add_theme_font_size_override("font_size",26)
 func _process(delta):
 	super._process(delta)

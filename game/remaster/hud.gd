@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 const PAPER = Color("ece4cf")
+const HUD_CARD = preload("res://game/remaster/hud_card.tres")
 const GOLD = Color("d7b778")
 const MUTED = Color("b2c0b8")
 var mission
@@ -39,11 +40,7 @@ var finish_button: Button
 var enemy_markers: Array[Label]=[]
 
 func _ready():
-	var weighted=FontVariation.new()
-	weighted.base_font=font
-	weighted.variation_opentype={"wght":450.0}
-	weighted.variation_embolden=.4
-	font=weighted
+	font = preload("res://game/chapters/menu_theme.tres").default_font
 	root_control = Control.new()
 	root_control.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	root_control.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -87,14 +84,14 @@ func _ready():
 	center_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	center_title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	center_title.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	dialogue_panel = _panel(root_control,Vector4(.10,.76,.90,.97),Color(.025,.035,.035,.95))
+	dialogue_panel = _panel(root_control,Vector4(.10,.76,.90,.97),Color(.07,.13,.115,.90))
 	var dialogue_box = _vbox(dialogue_panel)
-	speaker = _label(dialogue_box,"",19,GOLD)
+	speaker = _label(dialogue_box,"",18,GOLD)
 	subtitle = RichTextLabel.new()
 	subtitle.fit_content = true
 	subtitle.scroll_active = false
 	subtitle.custom_minimum_size.y = 65
-	subtitle.add_theme_font_size_override("normal_font_size",22)
+	subtitle.add_theme_font_size_override("normal_font_size",24)
 	subtitle.add_theme_color_override("default_color",PAPER)
 	subtitle.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	dialogue_box.add_child(subtitle)
@@ -188,7 +185,7 @@ func _panel(parent: Control, edges: Vector4, color := Color(.025,.04,.038,.83)) 
 	var panel = PanelContainer.new()
 	parent.add_child(panel)
 	_anchor(panel,edges)
-	var style = StyleBoxFlat.new()
+	var style = HUD_CARD.duplicate()
 	style.bg_color = color
 	style.border_color = Color(.67,.55,.32,.7)
 	style.border_width_left = 2

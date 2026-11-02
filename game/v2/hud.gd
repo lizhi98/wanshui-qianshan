@@ -74,26 +74,23 @@ func _process(delta):
 func _card(parent:Node,pos:Vector4)->PanelContainer:
 	var card=PanelContainer.new(); parent.add_child(card); _anchor(card,pos)
 	card.mouse_filter=Control.MOUSE_FILTER_IGNORE
-	var style=StyleBoxFlat.new(); style.bg_color=Color(.025,.04,.045,.38)
-	style.border_color=Color(.78,.7,.5,.32); style.set_border_width_all(1); style.set_corner_radius_all(4)
-	style.content_margin_left=8; style.content_margin_right=8; style.content_margin_top=5; style.content_margin_bottom=5
-	card.add_theme_stylebox_override("panel",style)
+	card.add_theme_stylebox_override("panel",HUD_CARD)
 	return card
 
 func _make_guidance():
 	guide_panel=_card(root_control,Vector4(.70,.02,.985,.145))
 	var box=_vbox(guide_panel); box.add_theme_constant_override("separation",3)
-	guide_tag=_label(box,"",11,Color("f5ca72"))
-	guide_title=_label(box,"",16,Color.WHITE); guide_title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-	guide_body=_label(box,"",13,Color("e3edf0")); guide_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-	guide_action=_label(box,"",13,Color("ffe293")); guide_action.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	guide_tag=_label(box,"",14,Color("f5ca72"))
+	guide_title=_label(box,"",22,PAPER); guide_title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	guide_body=_label(box,"",16,Color("d2ddd4")); guide_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	guide_action=_label(box,"",18,Color("f3d49d")); guide_action.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	guide_progress=ProgressBar.new(); guide_progress.max_value=1; guide_progress.show_percentage=false; guide_progress.custom_minimum_size.y=6; box.add_child(guide_progress)
 	target_panel=_card(root_control,Vector4(0,0,0,0))
 	target_text=_label(target_panel,"",12,Color.WHITE); target_text.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	direction_panel=_card(root_control,Vector4(.33,.951,.67,.985))
-	direction_text=_label(direction_panel,"",12,Color("fff0b8")); direction_text.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	direction_panel=_card(root_control,Vector4(.33,.94,.67,.985))
+	direction_text=_label(direction_panel,"",15,Color("fff0b8")); direction_text.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	speech_panel=_card(root_control,Vector4(.26,.865,.74,.932))
-	bark_label.reparent(speech_panel); _anchor(bark_label,Vector4(0,0,1,1)); bark_label.add_theme_font_size_override("font_size",16)
+	bark_label.reparent(speech_panel); _anchor(bark_label,Vector4(0,0,1,1)); bark_label.add_theme_font_size_override("font_size",20)
 	beacon=Node3D.new(); beacon.name="TutorialGoalBeacon"; mission.add_child(beacon)
 	var mat=StandardMaterial3D.new(); mat.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED; mat.albedo_color=Color(1,.82,.42,.42); mat.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA
 	var ring=MeshInstance3D.new(); ring.mesh=TorusMesh.new(); ring.mesh.inner_radius=.28; ring.mesh.outer_radius=.31; ring.mesh.rings=32; ring.material_override=mat; beacon.add_child(ring)
@@ -159,17 +156,15 @@ func hide_modern():
 func _compact_shell():
 	compact_shell_done=true
 	var brand=chapter.get_parent().get_parent()
-	_anchor(brand,Vector4(.015,.018,.25,.088))
-	var brand_style=StyleBoxFlat.new(); brand_style.bg_color=Color(.02,.03,.035,.22)
-	brand_style.content_margin_left=7; brand_style.content_margin_top=2
-	brand.add_theme_stylebox_override("panel",brand_style)
+	_anchor(brand,Vector4(.015,.02,.215,.105))
+	brand.add_theme_stylebox_override("panel",HUD_CARD)
 	var labels=brand.find_children("*","Label",true,false)
-	if not labels.is_empty(): labels[0].text="飞夺泸定桥"; labels[0].add_theme_font_size_override("font_size",18)
-	chapter.add_theme_font_size_override("font_size",11)
+	if not labels.is_empty(): labels[0].text="飞夺泸定桥"; labels[0].add_theme_font_size_override("font_size",25); labels[0].add_theme_font_override("font", preload("res://assets/remaster/fonts/MaShanZheng-Regular.ttf"))
+	chapter.add_theme_font_size_override("font_size",15)
 	for pair in [[health,Vector4(.015,.94,.23,.99)],[ammo,Vector4(.775,.94,.985,.99)]]:
 		var label=pair[0]; var card=label.get_parent().get_parent()
-		_anchor(card,pair[1]); card.add_theme_stylebox_override("panel",brand_style.duplicate())
-		label.add_theme_font_size_override("font_size",13)
+		_anchor(card,pair[1]); card.add_theme_stylebox_override("panel",HUD_CARD)
+		label.add_theme_font_size_override("font_size",15)
 		for child in label.get_parent().get_children():
 			if child!=label: child.hide()
 	_anchor(modern_panel,Vector4(.015,.13,.31,.90))

@@ -28,7 +28,7 @@ func run():
 	await create_timer(.4).timeout
 	check(not game.hud.target_panel.visible and game.hud.direction_panel.visible,"target behind camera uses a slim direction bar without covering actors")
 	check("取板" in game.hud.direction_text.text or "路标" in game.hud.direction_text.text,"direction bar includes the target name")
-	check(game.hud.guide_title.get_theme_font_size("font_size")==16,"compact tutorial uses a 16px title at 720p")
+	check(game.hud.guide_title.get_theme_font_size("font_size")==22,"compact tutorial uses a 22px title at 720p")
 	check(game.hud.guide_panel.get_rect().get_area()/game.hud.root_control.size.x/game.hud.root_control.size.y<.05,"default guide occupies less than five percent of the screen")
 	check(not game.hud.guide_body.visible,"details stay collapsed during ordinary play")
 	Input.action_press("guide_detail"); await process_frame; await process_frame
