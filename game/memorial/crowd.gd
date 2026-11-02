@@ -46,9 +46,9 @@ func _color(part:int,i:int)->Color:
 func _part(part:int,phase:float,moving:bool)->Transform3D:
 	var p=[Vector3(0,1.0,0),Vector3(0,1.50,0),Vector3(0,1.63,0),Vector3(-.215,1.05,0),Vector3(.215,1.05,0),Vector3(-.10,.36,0),Vector3(.10,.36,0),Vector3(0,1.10,-.21)][part]
 	var swing=sin(phase)*.37 if moving else sin(phase*.2)*.015
-	var rotation=swing*(-1 if part in [3,6] else 1) if part in [3,4,5,6] else 0.0
+	var limb_angle=swing*(-1 if part in [3,6] else 1) if part in [3,4,5,6] else 0.0
 	if part in [5,6]:p.y=.34+absf(swing)*.055
-	return Transform3D(Basis(Vector3.RIGHT,rotation),p)
+	return Transform3D(Basis(Vector3.RIGHT,limb_angle),p)
 func _physics_process(delta):
 	if not mission.started or mission.paused or mission.failed:return
 	clock+=delta*(.35 if mission.stage=="CAMP" else 1.0);frame_clock+=delta
@@ -77,7 +77,7 @@ func _update(delta):
 		if s<60 or s>route.total:p.y=mission.world.height_at(p)
 		var heading=float(unit.get("heading",atan2(forward.x,forward.z)))
 		heading=rotate_toward(heading,atan2(forward.x,forward.z),delta*2.8);unit.heading=heading
-		var basis=Basis(Vector3.UP,heading);var base=Transform3D(basis,p)
+		var heading_basis=Basis(Vector3.UP,heading);var base=Transform3D(heading_basis,p)
 		var active=s> -46 and s<route.total+28;var phase=clock*(3.1+unit.pace)+unit.phase
 		var distance=mission.view.camera.global_position.distance_to(p)
 		if rig_assignments.has(i) and (distance>72 or not active):
@@ -106,9 +106,9 @@ func _update(delta):
 			for part in 8:unit.parts[part].transform=_part(part,phase,not wait)
 		else:
 			for part in 8:
-				var transform=base*_part(part,phase,not wait)
-				if not active:transform.origin.y=-1000
-				batches[part].multimesh.set_instance_transform(i-mid_count,transform);batches[part].multimesh.set_instance_color(i-mid_count,_color(part,i))
+				var part_transform=base*_part(part,phase,not wait)
+				if not active:part_transform.origin.y=-1000
+				batches[part].multimesh.set_instance_transform(i-mid_count,part_transform);batches[part].multimesh.set_instance_color(i-mid_count,_color(part,i))
 		if active and mission.view.camera.is_position_in_frustum(p+Vector3.UP):visible_count+=1
 	for i in rig_pool.size():
 		if not used_slots.has(i):rig_pool[i].hide()

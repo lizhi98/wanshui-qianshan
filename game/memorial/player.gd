@@ -37,14 +37,14 @@ func handle_controls(delta):
  super.handle_controls(delta)
  if not carrying and not aiming:
   var wind=mission.weather.force_at(position) if mission.weather else Vector3.ZERO
-  var scale=run_speed/4.8 if Input.is_action_pressed("sprint") else walk_speed/(3.1*.83)
-  movement_velocity=(movement_velocity-wind)*scale+wind
+  var speed_scale=run_speed/4.8 if Input.is_action_pressed("sprint") else walk_speed/(3.1*.83)
+  movement_velocity=(movement_velocity-wind)*speed_scale+wind
 
 func _ready():
  super._ready();collision_mask=1|16
  avoidance_presence=NavigationAgent3D.new();add_child(avoidance_presence);avoidance_presence.radius=.34;avoidance_presence.height=1.7;avoidance_presence.neighbor_distance=3.0;avoidance_presence.max_speed=4.0;avoidance_presence.avoidance_priority=1.0;avoidance_presence.avoidance_enabled=true;avoidance_presence.target_position=global_position+Vector3(1000,0,1000)
 
-func avoid_people(wanted:Vector3,delta:float)->Vector3:
+func avoid_people(wanted:Vector3,_delta:float)->Vector3:
  if not mission or not mission.get("director"):return wanted
  for other in mission.actors()+[mission.director.commander,mission.director.guard]:
   if absf(other.position.y-position.y)>.9:continue

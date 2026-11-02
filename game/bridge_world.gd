@@ -186,8 +186,8 @@ func _bridge():
 		var y = -0.16 if c<9 else (0.78 if c%2==1 else 1.48)
 		for i in 135:
 			var z = -i*0.194
-			var basis = Basis(Vector3.RIGHT, PI/2 if i%2==0 else 0.0).scaled(Vector3(0.58,1,1.75))
-			transforms.append(Transform3D(basis, Vector3(x,y-sin(float(i)/134*PI)*0.12,z)))
+			var link_basis = Basis(Vector3.RIGHT, PI/2 if i%2==0 else 0.0).scaled(Vector3(0.58,1,1.75))
+			transforms.append(Transform3D(link_basis, Vector3(x,y-sin(float(i)/134*PI)*0.12,z)))
 	var multi = MultiMesh.new()
 	multi.transform_format = MultiMesh.TRANSFORM_3D
 	multi.mesh = torus

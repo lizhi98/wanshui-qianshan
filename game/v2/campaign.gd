@@ -54,10 +54,10 @@ func main_menu():
 	ending_active=false; ending_clock=0
 	if not hud or not modern: return
 	super.main_menu()
-	var checkpoint = save_store.read()
-	var finished = not checkpoint.is_empty() and checkpoint.ledger.current in ["complete", "modern"]
+	var saved_story = save_store.read()
+	var finished = not saved_story.is_empty() and saved_story.ledger.current in ["complete", "modern"]
 	var actions = []
-	if not checkpoint.is_empty() and not finished:
+	if not saved_story.is_empty() and not finished:
 		actions.append(["继续故事", continue_story])
 	actions.append(["开始新故事", begin])
 	if finished:
@@ -251,7 +251,7 @@ func settings_menu():
 	super.settings_menu()
 	hud._button(hud.buttons,"精细修桥："+("开" if not simple_repair else "关（默认快捷铺板）"),func(): simple_repair=not simple_repair; settings_menu())
 	hud._button(hud.buttons,"切换铁索辅助："+("开" if player.balance_assist else "关"),func(): player.balance_assist=not player.balance_assist; settings_menu())
-func start_modern(state:Dictionary={}):
+func start_modern(_state:Dictionary={}):
 	finish_story()
 func finish_modern():
 	finish_story()
@@ -264,7 +264,7 @@ func finish_story():
 	if vanguard:vanguard.stop()
 	if assault:assault.stop()
 	save_checkpoint();pause_lock=true;paused=true
-	var duration="%02d:%02d"%[int(elapsed)/60,int(elapsed)%60]
+	var duration="%02d:%02d"%[floori(elapsed / 60.0),int(elapsed)%60]
 	hud.show_menu("飞夺泸定桥 · 通道已打通","V3.3 故事完成\n\n用时 %s · 重试 %d 次\n前方掩护 · 协作铺板 · 铁索突进 · 接应后续部队\n\n铭记牺牲的同志，向夺桥英雄致敬。\n林川、阿木、周班长为虚构人物。"%[duration,retries],[["继续第二关 · 雪线之上",func():get_tree().change_scene_to_file("res://game/snow/main.tscn")],["返回标题",main_menu],["退出",quit_game]])
 func _start_release_replay():
 	if ResourceLoader.exists("res://qa/v2_replay.gd"):
@@ -283,4 +283,6 @@ func _export_smoke():
 		RenderingServer.force_draw(false)
 		get_viewport().get_texture().get_image().save_png(OS.get_executable_path().get_base_dir().path_join("v2_export_smoke.png"))
 	for node in find_children("*","AudioStreamPlayer",true,false): node.stop(); node.stream=null
+	# Allow the audio mixer to release stopped WAV playbacks before teardown.
+	await get_tree().create_timer(0.35).timeout
 	get_tree().quit(0 if valid else 1)

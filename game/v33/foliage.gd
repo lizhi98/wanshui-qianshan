@@ -38,12 +38,12 @@ func _at(p:Vector3,near:bool,scale_value:float)->Transform3D:
 func _instances(label:String,mesh:ArrayMesh,points:Array,material:Material,range_end:float):
 	var node=MultiMeshInstance3D.new();node.name=label;add_child(node);node.multimesh=MultiMesh.new();node.multimesh.transform_format=MultiMesh.TRANSFORM_3D;node.multimesh.mesh=mesh;node.multimesh.instance_count=points.size();node.material_override=material
 	var center=Vector3.ZERO
-	for transform in points:center+=transform.origin
+	for instance_transform in points:center+=instance_transform.origin
 	center/=maxi(1,points.size());node.position=center
 	node.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
 	node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;node.visibility_range_end=range_end;node.visibility_range_end_margin=12;node.visibility_range_fade_mode=GeometryInstance3D.VISIBILITY_RANGE_FADE_SELF
 	for i in points.size():
-		var transform:Transform3D=points[i];transform.origin-=center;node.multimesh.set_instance_transform(i,transform)
+		var instance_transform:Transform3D=points[i];instance_transform.origin-=center;node.multimesh.set_instance_transform(i,instance_transform)
 	groups.append(node)
 func set_quality(high:bool):
 	for node in groups:node.multimesh.visible_instance_count=node.multimesh.instance_count if high else int(node.multimesh.instance_count*.42)

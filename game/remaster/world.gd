@@ -233,8 +233,8 @@ func _bridge():
 		var x=-1.6+c*.4 if c<9 else (-1.86 if c<11 else 1.86)
 		var y=-.16 if c<9 else (.78 if c%2==1 else 1.48)
 		for i in count:
-			var basis=Basis(Vector3.RIGHT,PI/2 if i%2==0 else 0.0).scaled(Vector3(.58,1,1.75))
-			multi.set_instance_transform(c*count+i,Transform3D(basis,Vector3(x,y-sin(float(i)/(count-1)*PI)*.12,-i*.194)))
+			var link_basis=Basis(Vector3.RIGHT,PI/2 if i%2==0 else 0.0).scaled(Vector3(.58,1,1.75))
+			multi.set_instance_transform(c*count+i,Transform3D(link_basis,Vector3(x,y-sin(float(i)/(count-1)*PI)*.12,-i*.194)))
 	var chains=MultiMeshInstance3D.new()
 	chains.multimesh=multi
 	chains.material_override=chain_material
@@ -271,7 +271,7 @@ func _cover():
 			capsule.radial_segments=12
 			capsule.rings=5
 			sack.mesh=capsule
-			sack.position=pos+Vector3((i%3-1)*.56,(i/3)*.22-.22,.03)
+			sack.position=pos+Vector3((i%3-1)*.56,floori(i / 3.0)*.22-.22,.03)
 			sack.rotation.z=PI/2
 			sack.scale.z=2.2
 			sack.material_override=material(Color("7d7964").lightened(rng.randf()*.08))
@@ -288,17 +288,17 @@ func _cover():
 	support_rope=Node3D.new()
 	support.add_child(support_rope)
 	for i in 5:
-		var wrap=MeshInstance3D.new()
+		var rope_wrap=MeshInstance3D.new()
 		var ring=TorusMesh.new()
 		ring.inner_radius=.071
 		ring.outer_radius=.082
 		ring.rings=16
 		ring.ring_segments=6
-		wrap.mesh=ring
-		wrap.material_override=material(Color("948362"))
-		wrap.rotation.z=PI/2
-		wrap.position.x=(i-2)*.025
-		support_rope.add_child(wrap)
+		rope_wrap.mesh=ring
+		rope_wrap.material_override=material(Color("948362"))
+		rope_wrap.rotation.z=PI/2
+		rope_wrap.position.x=(i-2)*.025
+		support_rope.add_child(rope_wrap)
 	support_rope.hide()
 
 func _props():

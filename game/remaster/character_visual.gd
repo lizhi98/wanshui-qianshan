@@ -61,9 +61,9 @@ func _ready():
 	_make_tree()
 	load("res://game/v33/character_detail.gd").apply(self,variant)
 
-func _clip(name: String) -> AnimationNodeAnimation:
+func _clip(clip_name: String) -> AnimationNodeAnimation:
 	var node = AnimationNodeAnimation.new()
-	node.animation = name if animator.has_animation(name) else name.trim_suffix("_Loop")
+	node.animation = clip_name if animator.has_animation(clip_name) else clip_name.trim_suffix("_Loop")
 	return node
 
 func _make_tree():
@@ -357,8 +357,8 @@ func _relax_conversation_fingers():
 				if finger=="thumb": opening=.40
 				if gesture=="point" and conversation_role==1 and side=="r": opening=1.0 if finger=="index" else .25
 				if gesture=="resolve" and conversation_role==1: opening=.28
-				var rotation=skeleton.get_bone_pose_rotation(index).slerp(Quaternion.IDENTITY,opening)
-				var pose=Transform3D(parent_pose.basis*rest.basis*Basis(rotation),parent_pose*rest.origin)
+				var finger_rotation=skeleton.get_bone_pose_rotation(index).slerp(Quaternion.IDENTITY,opening)
+				var pose=Transform3D(parent_pose.basis*rest.basis*Basis(finger_rotation),parent_pose*rest.origin)
 				skeleton.set_bone_global_pose_override(index,pose,1.0,true)
 				updated[index]=pose
 

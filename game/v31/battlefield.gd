@@ -121,7 +121,7 @@ func _cylinder(parent:Node,radius:float,height:float,p:Vector3,mat:Material)->Me
 	node.position=p; node.material_override=mat; parent.add_child(node); return node
 
 func _make_gun(point:Vector3,side:int,index:int):
-	var root=Node3D.new(); add_child(root); root.position=_ground(point); root.rotation.y=PI if side==0 else 0
+	var root=Node3D.new(); add_child(root); root.position=_ground(point); root.rotation.y=PI if side==0 else 0.0
 	var iron=_material(Color("363a32")); var wood=_material(Color("514b34"))
 	_box(root,Vector3(.8,.36,1.2),Vector3(0,.63,-.30),iron)
 	for x in [-.72,.72]:
@@ -259,14 +259,14 @@ func _update_far_force():
 	for row in far_rows:
 		var phase=clock*3.1+row.phase; var p:Vector3=row.base
 		p.z+=sin(clock*.16+row.phase)*2.8; p.x+=sin(clock*.12+row.phase)*.6; p=_ground(p)
-		var basis=Basis(Vector3.UP,PI if row.side==0 else 0)
+		var facing_basis=Basis(Vector3.UP,PI if row.side==0 else 0.0)
 		for part in 5:
-			var local=Vector3(0,1.0,0); var b=basis
+			var local=Vector3(0,1.0,0); var b=facing_basis
 			if part==1: local=Vector3(0,1.55,0)
 			elif part in [2,3]:
-				local=Vector3(-.12 if part==2 else .12,.42,0); b=basis*Basis(Vector3.RIGHT,sin(phase+(PI if part==2 else 0))*.35)
-			elif part==4: local=Vector3(.25,1.15,.27); b=basis*Basis(Vector3.RIGHT,-.2)
-			far_meshes[row.side][part].multimesh.set_instance_transform(row.index,Transform3D(b,p+basis*local+Vector3.UP*(absf(sin(phase))*.025)))
+				local=Vector3(-.12 if part==2 else .12,.42,0); b=facing_basis*Basis(Vector3.RIGHT,sin(phase+(PI if part==2 else 0.0))*.35)
+			elif part==4: local=Vector3(.25,1.15,.27); b=facing_basis*Basis(Vector3.RIGHT,-.2)
+			far_meshes[row.side][part].multimesh.set_instance_transform(row.index,Transform3D(b,p+facing_basis*local+Vector3.UP*(absf(sin(phase))*.025)))
 
 func diagnostics()->Dictionary:
 	return {"near_artillery_shots":shots_near,"far_artillery_shots":shots_far,"impacts":impacts,"infantry_shots":infantry_shots,"full_rig_soldiers":soldiers.size(),"far_soldiers":far_rows.size(),"active_shells":shells.size(),"active_effects":effects.size()}
