@@ -158,10 +158,13 @@ func _ready():
 	tint.color = Color(.5,.04,.02,0)
 	tint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	overlay = _panel(root_control,Vector4(.20,.12,.80,.90),Color(.025,.04,.038,.98))
+	overlay.theme = preload("res://game/chapters/menu_theme.tres")
+	overlay.remove_theme_stylebox_override("panel")
 	overlay.mouse_filter = Control.MOUSE_FILTER_STOP
 	var menu_box = _vbox(overlay)
 	menu_box.add_theme_constant_override("separation",14)
-	overlay_title = _label(menu_box,"",30,GOLD)
+	overlay_title = _label(menu_box,"",38,GOLD)
+	overlay_title.add_theme_font_override("font", preload("res://assets/remaster/fonts/MaShanZheng-Regular.ttf"))
 	overlay_title.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	overlay_body = RichTextLabel.new()
 	overlay_body.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -225,18 +228,19 @@ func _button(parent,text_value: String,callback: Callable) -> Button:
 	button.text = text_value
 	button.custom_minimum_size.y = 34
 	button.add_theme_color_override("font_color",PAPER)
-	var style = StyleBoxFlat.new()
-	style.bg_color = Color("253c37")
-	style.border_color = Color("88734b")
-	style.set_border_width_all(1)
-	style.content_margin_left = 14
-	style.content_margin_right = 14
-	style.content_margin_top = 5
-	style.content_margin_bottom = 5
-	button.add_theme_stylebox_override("normal",style)
-	var hover = style.duplicate()
-	hover.bg_color = Color("456252")
-	button.add_theme_stylebox_override("hover",hover)
+	if parent != buttons:
+		var style = StyleBoxFlat.new()
+		style.bg_color = Color("253c37")
+		style.border_color = Color("88734b")
+		style.set_border_width_all(1)
+		style.content_margin_left = 14
+		style.content_margin_right = 14
+		style.content_margin_top = 5
+		style.content_margin_bottom = 5
+		button.add_theme_stylebox_override("normal",style)
+		var hover = style.duplicate()
+		hover.bg_color = Color("456252")
+		button.add_theme_stylebox_override("hover",hover)
 	parent.add_child(button)
 	button.pressed.connect(callback)
 	return button

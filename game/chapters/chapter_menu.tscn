@@ -1,0 +1,99 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://game/chapters/menu_landscape.gd" id="bg"]
+
+[ext_resource type="Theme" path="res://game/chapters/menu_theme.tres" id="theme"]
+
+[ext_resource type="FontFile" path="res://assets/remaster/fonts/MaShanZheng-Regular.ttf" id="ink"]
+
+[node name="ChapterMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("theme")
+
+[node name="Landscape" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("bg")
+
+[node name="Masthead" type="VBoxContainer" parent="."]
+anchor_left = 0.065
+anchor_top = 0.095
+theme_override_constants/separation = 2
+
+[node name="Edition" type="Label" parent="Masthead"]
+theme_override_colors/font_color = Color(0.3216, 0.2353, 0.1882, 1)
+theme_override_font_sizes/font_size = 18
+text = "长 征 纪 行     /     1935"
+
+[node name="Title" type="Label" parent="Masthead"]
+theme_override_fonts/font = ExtResource("ink")
+theme_override_colors/font_color = Color(0.1490, 0.2431, 0.2078, 1)
+theme_override_font_sizes/font_size = 88
+text = "万水千山"
+
+[node name="Subtitle" type="Label" parent="Masthead"]
+theme_override_colors/font_color = Color(0.2118, 0.2980, 0.2510, 1)
+theme_override_font_sizes/font_size = 21
+text = "同一段长征，两次不同的接力。"
+
+[node name="Caption" type="Label" parent="."]
+anchor_left = 0.065
+anchor_top = 0.885
+theme_override_colors/font_color = Color(0.9333, 0.8941, 0.8000, 1)
+theme_override_font_sizes/font_size = 16
+text = "大渡河畔   ·   泸定桥"
+
+[node name="Folio" type="PanelContainer" parent="."]
+anchor_left = 0.585
+anchor_right = 0.935
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -211.0
+offset_bottom = 211.0
+
+[node name="Column" type="VBoxContainer" parent="Folio"]
+alignment = 1
+theme_override_constants/separation = 11
+
+[node name="Index" type="Label" parent="Folio/Column"]
+theme_override_colors/font_color = Color(0.8353, 0.7294, 0.5333, 1)
+theme_override_font_sizes/font_size = 15
+text = "行 军 手 记     /     卷 一"
+
+[node name="Heading" type="Label" parent="Folio/Column"]
+theme_override_fonts/font = ExtResource("ink")
+theme_override_colors/font_color = Color(0.9608, 0.9137, 0.8314, 1)
+theme_override_font_sizes/font_size = 44
+text = "选择章节"
+
+[node name="Rule" type="HSeparator" parent="Folio/Column"]
+mouse_filter = 2
+
+[node name="One" type="Label" parent="Folio/Column"]
+theme_override_colors/font_color = Color(0.7686, 0.8118, 0.7255, 1)
+theme_override_font_sizes/font_size = 15
+text = "大渡河   /   夺桥"
+
+[node name="Bridge" type="Button" parent="Folio/Column"]
+custom_minimum_size = Vector2(0, 51)
+theme_override_font_sizes/font_size = 22
+text = "第一关　飞夺泸定桥"
+alignment = 0
+
+[node name="Two" type="Label" parent="Folio/Column"]
+theme_override_colors/font_color = Color(0.7686, 0.8118, 0.7255, 1)
+theme_override_font_sizes/font_size = 15
+text = "夹金山   /   风雪"
+
+[node name="Snow" type="Button" parent="Folio/Column"]
+custom_minimum_size = Vector2(0, 51)
+theme_override_font_sizes/font_size = 22
+text = "第二关　丰碑 · 雪线之上"
+alignment = 0
+
+[node name="Exit" type="Button" parent="Folio/Column"]
+size_flags_horizontal = 0
+flat = true
+text = "退出游戏"

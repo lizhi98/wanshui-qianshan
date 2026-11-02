@@ -1,0 +1,102 @@
+[gd_resource type="Theme" format=3]
+
+[ext_resource type="FontFile" path="res://assets/remaster/fonts/NotoSansSC.ttf" id="1"]
+
+[sub_resource type="FontVariation" id="ReadingFont"]
+base_font = ExtResource("1")
+variation_opentype = {2003265652: 510.0}
+variation_embolden = 0.35
+
+[sub_resource type="StyleBoxFlat" id="Panel"]
+bg_color = Color(0.1373, 0.2431, 0.2157, 1)
+border_color = Color(0.4392, 0.5059, 0.4196, 1)
+content_margin_left = 26.0
+border_width_left = 1
+content_margin_top = 18.0
+border_width_top = 1
+content_margin_right = 26.0
+border_width_right = 1
+content_margin_bottom = 18.0
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+corner_radius_bottom_right = 10
+shadow_size = 9
+shadow_color = Color(0.04, 0.10, 0.08, 0.24)
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="Normal"]
+bg_color = Color(0.1922, 0.3059, 0.2627, 1)
+border_color = Color(0.3961, 0.4745, 0.3882, 1)
+content_margin_left = 15.0
+border_width_left = 1
+content_margin_top = 4.0
+border_width_top = 1
+content_margin_right = 15.0
+border_width_right = 1
+content_margin_bottom = 4.0
+border_width_bottom = 1
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="Hover"]
+bg_color = Color(0.2706, 0.3961, 0.3176, 1)
+border_color = Color(0.7843, 0.6784, 0.4706, 1)
+content_margin_left = 15.0
+border_width_left = 1
+content_margin_top = 4.0
+border_width_top = 1
+content_margin_right = 15.0
+border_width_right = 1
+content_margin_bottom = 4.0
+border_width_bottom = 1
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="Pressed"]
+bg_color = Color(0.1373, 0.2431, 0.2118, 1)
+border_color = Color(0.8980, 0.7882, 0.5843, 1)
+content_margin_left = 15.0
+border_width_left = 1
+content_margin_top = 4.0
+border_width_top = 1
+content_margin_right = 15.0
+border_width_right = 1
+content_margin_bottom = 4.0
+border_width_bottom = 1
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="Focus"]
+bg_color = Color(0.1922, 0.3059, 0.2627, 1)
+border_color = Color(0.9412, 0.8314, 0.6196, 1)
+draw_center = false
+content_margin_left = 15.0
+border_width_left = 2
+content_margin_top = 4.0
+border_width_top = 2
+content_margin_right = 15.0
+border_width_right = 2
+content_margin_bottom = 4.0
+border_width_bottom = 2
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[resource]
+default_font = SubResource("ReadingFont")
+default_font_size = 17
+PanelContainer/styles/panel = SubResource("Panel")
+Button/colors/font_color = Color(0.9451, 0.9098, 0.8314, 1)
+Button/styles/normal = SubResource("Normal")
+Button/styles/hover = SubResource("Hover")
+Button/styles/pressed = SubResource("Pressed")
+Button/styles/focus = SubResource("Focus")
