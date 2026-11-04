@@ -92,11 +92,16 @@ func _process(delta):
 	collapse_clock=collapse_clock+delta if posture=="collapsed" else 0.0
 	turning=absf(angle_difference(previous_yaw,owner_actor.rotation.y))/maxf(delta,.0001); previous_yaw=owner_actor.rotation.y
 	var measured=speed
-	var running=measured>2.3
-	var rate=clampf(measured/3.8,.65,1.25) if running else clampf(measured/.95,.35,2.15)
-	if measured<.1: rate=.65 if turning>.2 else 1.0
-	animation_tree.set("parameters/LocomotionRate/scale",rate)
-	if posture in ["standing","weak"] and mode in ["idle","walk","run"]: speed=3.2 if running else (1.8 if measured>.1 or turning>.2 else 0.0)
+	if is_instance_valid(owner_actor.mission) and owner_actor == owner_actor.mission.player:
+		# The shared blend space interpolates idle, walk, jog and sprint by speed.
+		# Keep the clips at their authored tempo as the player crosses surfaces.
+		animation_tree.set("parameters/LocomotionRate/scale", 1.0)
+	else:
+		var running=measured>2.3
+		var rate=clampf(measured/3.8,.65,1.25) if running else clampf(measured/.95,.35,2.15)
+		if measured<.1: rate=.65 if turning>.2 else 1.0
+		animation_tree.set("parameters/LocomotionRate/scale",rate)
+		if posture in ["standing","weak"] and mode in ["idle","walk","run"]: speed=3.2 if running else (1.8 if measured>.1 or turning>.2 else 0.0)
 	if held_node and not external_grip:
 		var h=.48 if posture=="kneel" else (.61 if posture=="seated" else 1.05)
 		var goal=Vector3(-.015,h,.34)
