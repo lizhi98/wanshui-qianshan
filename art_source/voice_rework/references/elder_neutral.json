@@ -1,0 +1,12 @@
+{
+  "profile": "elder",
+  "variant": "neutral",
+  "seed": 7919,
+  "reference_text": "醒了？先坐稳，别急着起身。夜里的雨已经停了。",
+  "design": "四十多岁中国男性，标准普通话，温厚的低男声，轻微自然沙哑，炊事班长的朴实亲切，说话平稳、清楚、可信。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "",
+  "file": "art_source/voice_rework/references/elder_neutral.wav",
+  "sha256": "1c7c4832c6190d0f4ef6092324036475730d57691a93bcd5a295cb6408752e1a",
+  "duration_seconds": 5.085,
+  "real_person_reference": false
+}

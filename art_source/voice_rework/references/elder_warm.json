@@ -1,0 +1,12 @@
+{
+  "profile": "elder",
+  "variant": "warm",
+  "seed": 7919,
+  "reference_text": "鱼不大，够熬一锅汤了。先让他们喝点热的。",
+  "design": "四十多岁中国男性，标准普通话，温厚的低男声，轻微自然沙哑，炊事班长的朴实亲切，说话平稳、清楚、可信。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "终于有了食物，松一口气，带一点宽慰的笑意安慰身边病号。",
+  "file": "art_source/voice_rework/references/elder_warm.wav",
+  "sha256": "48adf412096adb68fe6722acbd7f9342b5c8ac5efff4ddbcf1b15438f75be91a",
+  "duration_seconds": 4.605,
+  "real_person_reference": false
+}

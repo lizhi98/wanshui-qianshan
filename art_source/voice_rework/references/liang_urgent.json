@@ -1,0 +1,12 @@
+{
+  "profile": "liang",
+  "variant": "urgent",
+  "seed": 8923,
+  "reference_text": "班长！听得见我们吗？你看看我，汤已经好了。",
+  "design": "十九岁中国男性，标准普通话，清秀明亮的中音男声，成年青年嗓音，诚恳而坚韧，和面前长辈自然说话。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "焦急地呼唤长辈，声音有力量，清楚、连贯地把话说完，情绪真实克制。",
+  "file": "art_source/voice_rework/references/liang_urgent.wav",
+  "sha256": "8fbc498e8743622b1fcd1f8ab6028c035c13d1c1db78d27df5ca5fcb1f26ad5c",
+  "duration_seconds": 4.352,
+  "real_person_reference": false
+}

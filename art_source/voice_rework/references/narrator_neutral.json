@@ -1,0 +1,12 @@
+{
+  "profile": "narrator",
+  "variant": "neutral",
+  "seed": 12401,
+  "reference_text": "那天傍晚，风慢慢停了下来。几个人围在火边，谁也没有急着说话。",
+  "design": "四十岁中国男性，标准普通话，温润干净的中低男声，平静有分量，像讲一段亲历的往事，有清晰的叙事节奏。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "",
+  "file": "art_source/voice_rework/references/narrator_neutral.wav",
+  "sha256": "86c1d454ae7c400e06e551f7d652d2e25bb0009c10de83caf71110a99f4f6593",
+  "duration_seconds": 6.1595,
+  "real_person_reference": false
+}

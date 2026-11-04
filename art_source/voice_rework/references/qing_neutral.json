@@ -1,0 +1,12 @@
+{
+  "profile": "qing",
+  "variant": "neutral",
+  "seed": 11213,
+  "reference_text": "我还能拿自己的东西。别都让班长背着。",
+  "design": "二十岁中国男性，标准普通话，清澈稍高的成年青年男声，清醒细心，说话清楚利落、镇定有主见。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "",
+  "file": "art_source/voice_rework/references/qing_neutral.wav",
+  "sha256": "889b954b33f81402b391b1f91533b9abd62c58acdea7b38bde565e6ad8a3ad2c",
+  "duration_seconds": 3.565,
+  "real_person_reference": false
+}

@@ -1,0 +1,12 @@
+{
+  "profile": "shi",
+  "variant": "neutral",
+  "seed": 10103,
+  "reference_text": "我听见外头有人走路，以为是队伍回来了。",
+  "design": "二十一岁中国男性，标准普通话，年轻男声偏低且厚，略有鼻腔共鸣，朴实直率，语句收尾干脆，有坚定的精神气。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "",
+  "file": "art_source/voice_rework/references/shi_neutral.wav",
+  "sha256": "21079a9746cff82510f3add86cee853e5a40a42f2c20f9ba17a2ee94676f5d55",
+  "duration_seconds": 2.765,
+  "real_person_reference": false
+}

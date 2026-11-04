@@ -1,0 +1,12 @@
+{
+  "profile": "elder",
+  "variant": "weak",
+  "seed": 7919,
+  "reference_text": "别费力了，把鱼汤留给他们。你们还年轻，还要走下去。",
+  "design": "四十多岁中国男性，标准普通话，温厚的低男声，轻微自然沙哑，炊事班长的朴实亲切，说话平稳、清楚、可信。电视剧人物对白，连贯地说完完整句子，语流自然衔接，发音清楚、有力量，正常口语语速。",
+  "direction": "临终时声音放轻，意志仍然坚定，清楚、连贯地交代身后事，完整语句之后才短暂换气。",
+  "file": "art_source/voice_rework/references/elder_weak.wav",
+  "sha256": "0ba7e3a63def4124aea62edd472ecc6a7a8f5c16c8f99a767e1ef11a63d87580",
+  "duration_seconds": 5.645,
+  "real_person_reference": false
+}

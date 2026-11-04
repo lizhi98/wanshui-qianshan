@@ -1,0 +1,21 @@
+[
+  {
+    "id": "5e439ef5445f912636afd2736c36beaf",
+    "original": "收到！你来引绳，我们托住横档。",
+    "revised": "收到！你来拉稳绳子，我们托住横木。",
+    "reason": "clear, connected spoken instruction; original event ID and audio filename retained"
+  },
+  {
+    "id": "a782f06d935f373b74ebc0e4cf1aff55",
+    "original": "对岸还有火力！铺板的抓紧，拿枪的掩护！",
+    "revised": "对岸还有火力！铺桥板的抓紧，拿枪的同志掩护！",
+    "reason": "clear, connected spoken instruction; original event ID and audio filename retained"
+  },
+  {
+    "chapter": "memorial",
+    "id": "3ab8d858b38a0e18b0eebab38ee82c30",
+    "original": "您也穿厚一点。",
+    "revised": "您也多穿一点，山上风大。",
+    "reason": "complete conversational phrase clarifies the respectful form of address; event ID and audio filename unchanged"
+  }
+]
