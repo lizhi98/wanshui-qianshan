@@ -119,7 +119,7 @@ func _process(delta):
 	if not recover_requested and narrative_pose=="" and previous_mode!=mode and (previous_mode in ["carry","aim","reload"] or mode in ["carry","aim","reload"]):
 		layer_dirty=true;recover_requested=true;recover_full_body=false
 	var entering_run=speed>2.3 and mode not in ["carry","aim"]
-	if not recover_requested and entering_run!=previous_run_motion:recover_requested=true;recover_full_body=false
+	if owner != m.player and not recover_requested and entering_run!=previous_run_motion:recover_requested=true;recover_full_body=false
 	previous_run_motion=entering_run
 	if recover_requested:_capture_recovery(recover_full_body);recover_requested=false
 	previous_mode=mode
@@ -131,11 +131,18 @@ func _process(delta):
 	elif narrative_pose=="clear":mode="hit"
 	var measured_speed=speed
 	var run_motion=measured_speed>2.3 and mode not in ["carry","aim"]
-	var rate=clampf(measured_speed/.95,.35,2.15) if not run_motion else clampf(measured_speed/3.8,.65,1.25)
-	if measured_speed<.10:rate=.65 if turning>.20 else 1.0
-	animation_tree.set("parameters/LocomotionRate/scale",rate)
-	# Select a complete authored clip; walk/run do not free-run at unrelated phases.
-	speed=3.2 if run_motion else 1.8 if measured_speed>.10 or turning>.20 else 0.0
+	if owner == m.player and mode in ["idle", "walk", "run"] and narrative_pose == "":
+		# Drive the player's gait continuously, including acceleration through 2.3 m/s.
+		animation_tree.set("parameters/LocomotionRate/scale", 1.0)
+		if measured_speed < .10 and turning > .20:
+			speed = 1.8
+			animation_tree.set("parameters/LocomotionRate/scale", .65)
+	else:
+		var rate=clampf(measured_speed/.95,.35,2.15) if not run_motion else clampf(measured_speed/3.8,.65,1.25)
+		if measured_speed<.10:rate=.65 if turning>.20 else 1.0
+		animation_tree.set("parameters/LocomotionRate/scale",rate)
+		# Select a complete authored clip; walk/run do not free-run at unrelated phases.
+		speed=3.2 if run_motion else 1.8 if measured_speed>.10 or turning>.20 else 0.0
 	super._process(0.0 if narrative_pose=="seated" and narrative_clock>1.2 else delta)
 	speed=measured_speed
 	if not skeleton or (get_parent().mission and get_parent().mission.paused):return
