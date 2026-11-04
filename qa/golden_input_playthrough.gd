@@ -40,7 +40,7 @@ func run(scene):
 	var candidates=game.hud.menu_buttons.get_children()
 	var start_button
 	for button in candidates:
-		if str(button.text).begins_with("走进草地"): start_button=button
+		if str(button.text).begins_with("开始 · 金色的鱼钩"): start_button=button
 	if not start_button: _abort("new-chapter UI button missing"); return
 	print("START_UI ",start_button.get_global_rect()," viewport=",get_viewport().get_visible_rect())
 	await _click(start_button.get_global_rect().get_center())

@@ -59,11 +59,27 @@ func _ready():
 	speaker=label("",17,GOLD); dialog_v.add_child(speaker)
 	subtitle=label("",23); subtitle.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; subtitle.custom_minimum_size=Vector2(800,57); dialog_v.add_child(subtitle)
 	dialogue_hint=label("E / 空格 继续    ·    自动随语音推进",13,Color("94a58f")); dialogue_hint.horizontal_alignment=HORIZONTAL_ALIGNMENT_RIGHT; dialog_v.add_child(dialogue_hint)
-	menu=panel(Color(.035,.06,.052,.97)); root.add_child(menu); menu.position=Vector2(42,40); menu.size=Vector2(625,640); menu.hide()
-	menu_body=VBoxContainer.new(); menu_body.add_theme_constant_override("separation",13); menu.add_child(menu_body)
-	menu_title=label("",34,GOLD); menu_body.add_child(menu_title)
-	menu_copy=label("",17); menu_copy.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; menu_copy.custom_minimum_size=Vector2(570,100); menu_body.add_child(menu_copy)
-	menu_buttons=VBoxContainer.new(); menu_buttons.add_theme_constant_override("separation",8); menu_body.add_child(menu_buttons)
+	menu = PanelContainer.new()
+	menu.theme = preload("res://game/chapters/menu_theme.tres")
+	root.add_child(menu)
+	menu.anchor_left = .20
+	menu.anchor_top = .12
+	menu.anchor_right = .80
+	menu.anchor_bottom = .90
+	menu.hide()
+	menu_body = VBoxContainer.new()
+	menu_body.add_theme_constant_override("separation", 14)
+	menu.add_child(menu_body)
+	menu_title = label("", 38, GOLD)
+	menu_title.add_theme_font_override("font", preload("res://assets/remaster/fonts/MaShanZheng-Regular.ttf"))
+	menu_body.add_child(menu_title)
+	menu_copy = label("", 17)
+	menu_copy.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	menu_copy.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	menu_body.add_child(menu_copy)
+	menu_buttons = VBoxContainer.new()
+	menu_buttons.add_theme_constant_override("separation", 8)
+	menu_body.add_child(menu_buttons)
 	map_panel=panel(Color(.04,.065,.06,.96)); root.add_child(map_panel); map_panel.position=Vector2(150,95); map_panel.size=Vector2(980,430); map_panel.hide()
 	var mapv=VBoxContainer.new(); map_panel.add_child(mapv)
 	mapv.add_child(label("长征叙事地图 · 转向另一支队伍",28,GOLD))
@@ -77,6 +93,7 @@ func _ready():
 	charge=_bar(fv,"抛竿蓄力",Color("c4b580")); tension=_bar(fv,"鱼线张力  绿色区域为宜",Color("93ad80")); progress=_bar(fv,"收线进度",Color("bdac72"))
 	for y in [0,690]:
 		var bar=ColorRect.new(); root.add_child(bar); bar.color=Color.BLACK; bar.position=Vector2(0,y); bar.size=Vector2(1280,30); bar.mouse_filter=Control.MOUSE_FILTER_IGNORE; bar.hide(); bars.append(bar)
+	root.move_child(menu, -1)
 func _bar(parent,text:String,color:Color)->ProgressBar:
 	var row=VBoxContainer.new();row.add_theme_constant_override("separation",1);parent.add_child(row);row.add_child(label(text,11,Color("aebba4")))
 	var n=ProgressBar.new(); n.custom_minimum_size=Vector2(315,6); n.show_percentage=false; n.max_value=1
@@ -94,14 +111,15 @@ func hide_dialogue(): dialogue_panel.hide(); hint.show()
 func toast(text:String,seconds:=3.0): toast_label.text=text; toast_time=seconds
 func show_menu(title:String,copy:String,actions:Array):
 	menu_title.text=title; menu_copy.text=copy
-	for child in menu_buttons.get_children(): child.queue_free()
+	for child in menu_buttons.get_children():
+		menu_buttons.remove_child(child)
+		child.queue_free()
 	for entry in actions:
-		var b=Button.new(); b.text=entry[0]; b.custom_minimum_size=Vector2(565,43); b.alignment=HORIZONTAL_ALIGNMENT_LEFT
-		var face=FontVariation.new(); face.base_font=FONT; face.variation_embolden=.8
-		b.add_theme_font_override("font",face); b.add_theme_font_size_override("font_size",19); b.add_theme_color_override("font_color",INK)
-		var s=StyleBoxFlat.new(); s.bg_color=Color("192d25"); s.content_margin_left=16; b.add_theme_stylebox_override("normal",s)
-		var h=s.duplicate(); h.bg_color=Color("3c4935"); b.add_theme_stylebox_override("hover",h); b.add_theme_stylebox_override("focus",h)
-		b.pressed.connect(entry[1]); menu_buttons.add_child(b)
+		var button = Button.new()
+		button.text = entry[0]
+		button.custom_minimum_size.y = 40
+		button.pressed.connect(entry[1])
+		menu_buttons.add_child(button)
 	menu.show(); Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
 func show_fishing(f):
 	fishing_panel.show()

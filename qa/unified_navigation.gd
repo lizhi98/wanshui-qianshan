@@ -29,7 +29,7 @@ func run():
 		if pair[0]!="第三关":
 			var count=get_tree().current_scene.audio.voice_manifest.size();print("NAV_VOICE_MANIFEST ",pair[0]," ",count)
 			if count==0:failures+=1
-		if not await click("章节与长征路线" if pair[0]=="第三关" else "章节选择"):break
+		if not await click("章节选择"):break
 		assert_scene("res://game/chapters/manager.gd")
 	print("UNIFIED WINDOWS NAVIGATION ","PASS" if failures==0 else "FAIL", " actual_mouse_events=true")
 	await wait_frames(3);OS.delay_msec(80);get_tree().quit(0 if failures==0 else 1)

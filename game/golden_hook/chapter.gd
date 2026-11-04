@@ -51,7 +51,6 @@ var pause_lock:=false
 var demo_rod:Node3D
 var demo_float:Node3D
 var demo_line:Node3D
-var settings_return:=false
 var session_epoch:=0
 var demo_clock:=0.0
 var demo_active:=false
@@ -121,20 +120,23 @@ func return_to_menu():
 	for n in actors: n.moving=false
 	_scenic_camera(); hud.map_panel.hide(); hud.fishing_panel.hide(); hud.hide_dialogue(); audio.set_mood("shortage"); audio.set_paused(false)
 	var actions=[]
-	if store.exists(): actions.append(["继续第三章",continue_chapter])
-	actions.append_array([["走进草地 · 开始第三章",begin_chapter],["章节与长征路线",chapter_menu],["操作与辅助",settings_menu],["创作来源与制作说明",source_menu],["退出",func(): get_tree().quit()]])
-	hud.show_menu("万水千山","第三章  /  金色的鱼钩\n草地上的守护\n\n一枚缝衣针，一只搪瓷碗，\n和一段不能忘却的同行。",actions)
+	var saved = store.read() if store.exists() else {}
+	var completed = saved.get("chapter", {}).get("step", "") == "archive"
+	if not saved.is_empty() and not completed:
+		actions.append(["继续上次进度", continue_chapter])
+	actions.append(["开始 · 金色的鱼钩", begin_chapter])
+	if completed:
+		actions.append(["回看本章结尾", continue_chapter])
+	actions.append_array([["操作与画质", settings_menu], ["章节选择", chapter_menu]])
+	hud.show_menu("金色的鱼钩", "1935年秋，草地深处。\n跟随老班长寻找食物，把一碗热汤送到战友手中。\n\nWASD 移动 · 鼠标转向 · E 交互", actions)
 func chapter_menu():
 	if started: save_checkpoint()
 	get_tree().change_scene_to_file("res://game/chapters/main.tscn")
-func open_first_chapter():
-	if started: save_checkpoint()
-	get_tree().change_scene_to_file("res://game/v2/main.tscn")
 func _back_menu():
-	if started and paused: toggle_pause()
+	if started and paused: _show_pause_menu()
 	else: return_to_menu()
 func settings_menu():
-	hud.show_menu("操作与辅助","WASD 移动 · 鼠标转动视角 · E 交互\n钓鱼：左键蓄力后松开抛竿；浮标明显下沉时按空格；\n按住左键收线、松开缓线。Q 收竿，E 立即再试。\n制作：左键加热；按住 D 弯钩；E 拴线、装竿。\nEsc 暂停 · 对话可随语音推进，也可 E / 空格继续。",[["咬钩反应窗口：%.2f秒 · 点击切换"%reaction_window,func(): reaction_window=1.2 if reaction_window<1.2 else .9; _save_preferences(); settings_menu()],["音乐：%d%% · 点击切换"%int(audio.music_volume*100),func(): audio.music_volume=_next_volume(audio.music_volume); _save_preferences(); settings_menu()],["音效：%d%% · 点击切换"%int(audio.effects_volume*100),func(): audio.effects_volume=_next_volume(audio.effects_volume); _save_preferences(); settings_menu()],["配音：%d%% · 点击切换"%int(audio.voice_volume*100),func(): audio.voice_volume=_next_volume(audio.voice_volume); _save_preferences(); settings_menu()],["画质："+("性能" if performance_mode else "标准")+" · 点击切换",func(): set_performance_mode(not performance_mode); _save_preferences(); settings_menu()],["全屏 / 窗口",func(): DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN)],["返回",_back_menu]])
+	hud.show_menu("操作与画质","制钩　左键加热，按住 D 弯钩，E 拴线。\n钓鱼　左键蓄力后松开抛竿，浮标下沉时按空格，再按住左键收线。\nQ 收竿 · E 重试 · Esc 暂停",[["咬钩反应窗口：%.2f秒"%reaction_window,func(): reaction_window=1.2 if reaction_window<1.2 else .9; _save_preferences(); settings_menu()],["音乐：%d%%"%int(audio.music_volume*100),func(): audio.music_volume=_next_volume(audio.music_volume); _save_preferences(); settings_menu()],["音效：%d%%"%int(audio.effects_volume*100),func(): audio.effects_volume=_next_volume(audio.effects_volume); _save_preferences(); settings_menu()],["配音：%d%%"%int(audio.voice_volume*100),func(): audio.voice_volume=_next_volume(audio.voice_volume); _save_preferences(); settings_menu()],["画质："+("性能" if performance_mode else "标准")+"",func(): set_performance_mode(not performance_mode); _save_preferences(); settings_menu()],["全屏 / 窗口",func(): DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN)],["返回",_back_menu]])
 func _next_volume(value:float)->float: return .0 if value>.85 else (.5 if value<.1 else (1.0 if value>.6 else .85))
 func set_performance_mode(low:bool):
 	performance_mode=low; world.set_performance_mode(low); get_viewport().scaling_3d_scale=.75 if low else 1.0
@@ -150,22 +152,22 @@ func _save_preferences():
 	var cfg=ConfigFile.new(); cfg.set_value("audio","volume",audio.master); cfg.set_value("play","reaction",reaction_window); cfg.set_value("graphics","performance",performance_mode); 
 	for pair in [["music",audio.music_volume],["effects",audio.effects_volume],["voice",audio.voice_volume]]:cfg.set_value("audio",pair[0],pair[1])
 	cfg.save("user://golden_hook_preferences.cfg")
-func source_menu():
-	hud.show_menu("创作与史料","文学创作来源：杨旭《金色的鱼钩》。\n本章采用原创对白和互动演出；老班长为文学人物。\n\n王玉清于1935年11月参加红军，1936年草地行军时\n曾以针制钩、与战友分享鱼汤。他走出了草地，\n于2023年逝世，不能等同于本章牺牲的老班长。\n\n声音为可替换的离线合成试听版；正式情绪配音需录制。\n来源：中国军网、退役军人事务部。完整链接见交付文档。\n文学改编对外发布前需确认相应授权。",[["返回",_back_menu]])
 func archive_menu():
-	hud.show_menu("一枚鱼钩，一段征途","谨以此作，铭记长征途中守护战友、坚定前行的人。\n\n1935 · 中央红军到达陕北。\n1936 · 红军三大主力胜利会师。\n\n文学档案：杨旭《金色的鱼钩》，1935年秋草地叙事。\n历史档案：王玉清1936年过草地，亲手以针制钩，\n把鱼汤分给战友；他活着走出草地，于2023年逝世。\n\n三章已接入统一章节选择，可继续回看。\n终章以历史路线档案呈现。",[["查看创作来源",source_menu],["返回章节选择",chapter_menu],["返回主菜单",return_to_menu]])
+	hud.show_menu("金色的鱼钩", "第三关完成。\n\n小梁把鱼钩包好，和战友们继续向前。\n那只盛过鱼汤的碗，那位守着他们走过草地的老班长，大家都记得。\n\n文学主题取自杨旭《金色的鱼钩》。", [["章节选择", chapter_menu], ["返回标题", return_to_menu]])
 func _reset_camera():
 	view.cinematic=false; view.camera_rotation=Vector3(-16,0,0); view.rotation_degrees=Vector3(-16,0,0)
 	view.position=player.position+Vector3(0,1.35,0); view.camera.position=Vector3(.38,.12,4.6); view.camera.rotation=Vector3.ZERO; view.camera.fov=66
 func _scenic_camera():
 	view.cinematic=true; view.camera.global_position=Vector3(-24,12,30); view.camera.look_at(Vector3(4,0,-10)); view.camera.fov=57
 func toggle_pause():
-	if not started: return
+	if not started or (story.step == "archive" and hud.menu.visible): return
 	if not paused:
 		pause_lock=player.locked; paused=true; player.locked=true; audio.set_paused(true); save_checkpoint()
-		hud.show_menu("暂歇片刻","已保存当前章节进度。\n钓鱼重试不损失鱼钩；泥沼失足可回到附近安全位置。",[["继续",toggle_pause],["操作与辅助",settings_menu],["从最近检查点继续",continue_chapter],["返回主菜单",return_to_menu]])
+		_show_pause_menu()
 	else:
 		paused=false; player.locked=pause_lock; hud.menu.hide(); audio.set_paused(false); Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
+func _show_pause_menu():
+	hud.show_menu("金色的鱼钩 · 暂停", "已保存当前章节进度。", [["继续", toggle_pause], ["从检查点重试", continue_chapter], ["操作与画质", settings_menu], ["返回标题", return_to_menu]])
 func _unhandled_input(event):
 	if event is InputEventKey and event.pressed and not event.echo and InputKeys.matches(event,KEY_ESCAPE):
 		if started: toggle_pause(); get_viewport().set_input_as_handled()
