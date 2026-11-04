@@ -128,7 +128,6 @@ func show_menu(title:String,copy:String,actions:Array,highlight_first:=true):
 		var button = Button.new()
 		button.text = entry[0]
 		button.custom_minimum_size.y = 40
-		button.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		if highlight_first and menu_buttons.get_child_count() == 0:
 			button.add_theme_color_override("font_color", GOLD)
 			button.add_theme_font_size_override("font_size", 20)
