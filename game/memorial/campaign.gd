@@ -62,7 +62,7 @@ func main_menu():
 	started=false;paused=false;failed=false;outro_active=false;camera_observing=false;player.locked=true
 	audio.clear_voice();action=""
 	for a in actors():a.moving=false
-	view.cinematic=true;view.camera.global_position=Vector3(-20,16,57);view.camera.look_at(Vector3(0,4,23));hud.center_title.text=""
+	_use_cinematic_camera();view.camera.global_position=Vector3(-20,16,57);view.camera.look_at(Vector3(0,4,23));hud.center_title.text=""
 	var actions=[]
 	if save_store.exists():actions.append(["继续行军",continue_story])
 	actions.append_array([["开始 · 丰碑·雪线之上",begin],["操作与画质",settings_menu],["章节选择",chapter_menu],["退出",quit_game]])
@@ -76,7 +76,7 @@ func begin():
 	for i in actors().size():
 		var a=actors()[i];a.restore();a.position=spawns[i]+Vector3.UP*.1;a.vertical_speed=0;a.pose_name="";a.visual.pose("");a.visual.set_coat(false);a.reset_physics_interpolation()
 	young.pose_name="shiver";veteran.pose_name="pack";giver.visual.set_coat(true)
-	world.reset_obstacle();world._footprints().clear_dynamic();previous_position=player.position;safe_point=player.position;hud.hide_menu();hud.center_title.text="1935年6月，夹金山。";view.cinematic=true;Input.mouse_mode=Input.MOUSE_MODE_CAPTURED;save_checkpoint()
+	world.reset_obstacle();world._footprints().clear_dynamic();previous_position=player.position;safe_point=player.position;hud.hide_menu();hud.center_title.text="1935年6月，夹金山。";_use_cinematic_camera();Input.mouse_mode=Input.MOUSE_MODE_CAPTURED;save_checkpoint()
 func _process(delta):
 	var now=Input.is_action_pressed("interact");var interact_press=now and not interact_held;interact_held=now
 	var f=Input.is_action_pressed("observe");var q=Input.is_action_pressed("signal");var fp=f and not observe_held;var qp=q and not signal_held;observe_held=f;signal_held=q
@@ -119,7 +119,7 @@ func _physics_process(delta):
 	if stage=="DISCOVERY" and flags.get("ledger_found",false) and _honor_gathered() and director.ready_for_core() and action=="" and not audio.voice_busy and audio.voice_queue.is_empty() and audio.voice_wait<=0:_start_action("reveal","",0)
 	if stage=="CONTINUE" and player.position.distance_to(world.route.POINTS[END_INDEX])<4:
 		flags.at_pass=true;player.locked=true
-		if _memorial_gathered():outro_active=true;outro_clock=0;outro_lines=0;view.cinematic=true
+		if _memorial_gathered():outro_active=true;outro_clock=0;outro_lines=0;_use_cinematic_camera()
 func can_observe(id:String)->bool:
 	return {"stock":stage=="CAMP" and not flags.get("stock_seen",false),"wind_mark":stage=="STORM" and not flags.get("wind_seen",false),"strap":stage=="SEARCH" and not flags.get("strap_found",false),"coat":stage=="DISCOVERY" and flags.get("inspected",false) and not flags.get("coat_seen",false),"ledger":stage=="DISCOVERY" and flags.get("coat_seen",false) and not flags.get("ledger_found",false)}.get(id,false)
 func clue_found(id:String):
@@ -192,7 +192,7 @@ func _start_action(kind:String,target:String,duration:float):
 		var recipient=_recipient(target);recipient.pose_name="handover";recipient.visual.pose("handover");_face(player,recipient.position);_face(recipient,player.position)
 	if kind=="inspect":_face(player,quartermaster.position)
 	if kind=="reveal":_face(player,quartermaster.position);director.start()
-	if kind in ["old_talk","count","inspect","reveal","salute"]:view.cinematic=true
+	if kind in ["old_talk","count","inspect","reveal","salute"]:_use_cinematic_camera()
 	if kind=="salute":
 		director.music_cut=false
 		for a in actors():
@@ -270,8 +270,20 @@ func _finish_action():
 			flags.honored=true;_enter("CONTINUE");_group_walk(12,END_INDEX);director.depart();say("阿木","走吧，前面的同志还等着我们。");say("林川","嗯。继续走。")
 	if finished in ["old_talk","count","inspect","reveal","salute"]:_reset_camera()
 	safe_point=player.position+Vector3.UP*.08;save_checkpoint()
+# Scripted shots move on render frames. Free follow moves on physics ticks,
+# so interpolate it together with the player and discard history after a cut.
+func _use_cinematic_camera():
+	view.cinematic = true
+	if view.physics_interpolation_mode != Node.PHYSICS_INTERPOLATION_MODE_OFF:
+		view.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_OFF
+
+func _reset_camera():
+	super._reset_camera()
+	view.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_ON
+	view.reset_physics_interpolation()
+
 func _cinematic(focus:Vector3,eye:Vector3,delta:float):
-	view.cinematic=true
+	_use_cinematic_camera()
 	var hit=get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(focus,eye,1))
 	if not hit.is_empty():eye=hit.position+(focus-hit.position).normalized()*.3
 	view.camera.global_position=view.camera.global_position.lerp(eye,1-exp(-delta*2.8));view.camera.look_at(focus)
@@ -323,7 +335,7 @@ func save_checkpoint():
 	if save_store.write(data):last_checkpoint=data.duplicate(true)
 func restore_checkpoint(data:Dictionary):
 	audio.clear_voice();stage=data.stage;flags=data.flags.duplicate(true);stats=data.stats.duplicate(true);stock=int(data.stock);elapsed=float(data.elapsed);retries=int(data.retries);weather.clock=float(data.weather_clock);crowd.restore_clock(float(data.crowd_clock));observation.reset();observation.found=data.get("observed",{}).duplicate(true);weather.shelter_visits=data.get("shelters",{}).duplicate(true)
-	var p=data.position;safe_point=Vector3(p[0],p[1],p[2]);player.restore(safe_point);player.carrying=data.carrying;parcel.visible=player.carrying;parcel.position=Vector3(0,1.04,.35);previous_position=player.position
+	var p=data.position;safe_point=Vector3(p[0],p[1],p[2]);player.restore(safe_point);player.reset_physics_interpolation();player.carrying=data.carrying;parcel.visible=player.carrying;parcel.position=Vector3(0,1.04,.35);previous_position=player.position
 	for i in actors().size():actors()[i].restore_snow(data.actors[i])
 	crowd.restore_state(float(data.crowd_clock),data.get("crowd_s",[]));world.reset_parcels(stock)
 	if not flags.get("obstacle_cleared",false):world.reset_obstacle()
