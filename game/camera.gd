@@ -67,7 +67,7 @@ func _physics_process(delta):
 	camera.global_position=_sweep_to(smoothed)
 	shake = move_toward(shake, 0.0, delta*4.0)
 	camera.rotation.x = sin(Time.get_ticks_msec()*0.07)*shake*0.02
-	camera.fov = lerpf(camera.fov, aim_fov if aim else 66, minf(delta*8, 1.0))
+	camera.fov = lerpf(camera.fov, aim_fov if aim else 66.0, minf(delta*8, 1.0))
 	handle_input(delta)
 	_fade_occluding_allies(delta)
 

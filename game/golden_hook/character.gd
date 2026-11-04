@@ -63,7 +63,11 @@ func _make_tree():
 		if kind not in [Animation.TYPE_POSITION_3D,Animation.TYPE_ROTATION_3D,Animation.TYPE_SCALE_3D]: continue
 		var target=held_pose.add_track(kind); held_pose.track_set_path(target,source.track_get_path(track))
 		var sample=1.25
-		var value=source.position_track_interpolate(track,sample) if kind==Animation.TYPE_POSITION_3D else (source.rotation_track_interpolate(track,sample) if kind==Animation.TYPE_ROTATION_3D else source.scale_track_interpolate(track,sample))
+		var value: Variant
+		match kind:
+			Animation.TYPE_POSITION_3D: value = source.position_track_interpolate(track, sample)
+			Animation.TYPE_ROTATION_3D: value = source.rotation_track_interpolate(track, sample)
+			Animation.TYPE_SCALE_3D: value = source.scale_track_interpolate(track, sample)
 		held_pose.track_insert_key(target,0,value)
 	animator.get_animation_library("").add_animation("Grass_Kneel_Hold",held_pose)
 	for key in ["pickup","place","brace"]:
@@ -117,7 +121,7 @@ func _process(delta):
 	if is_instance_valid(held_node) and not external_grip: contact.apply(held,held_node,delta)
 	elif is_instance_valid(contact_prop): contact.apply(contact_profile,contact_prop,delta)
 func set_contact(profile:String,prop:Node3D): contact_profile=profile; contact_prop=prop
-func set_emotion(mood:String,voice_active:bool): emotion=mood; speaking=voice_active
+func set_emotion(mood:String,is_speaking:bool): emotion=mood; speaking=is_speaking
 func release_emotion(): emotion=""; speaking=false; speech_energy=0
 func _can_whisper()->bool:
 	var actor=get_parent()

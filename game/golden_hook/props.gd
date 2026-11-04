@@ -50,19 +50,19 @@ static func hook(parent:Node3D,curvature:=1.0,worn:=false)->Node3D:
 	var n=load("res://game/golden_hook/needle_hook.gd").new();n.name="PersistentNeedleHook";n.bend=curvature;n.worn=worn;parent.add_child(n);return n
 static func parcel(parent:Node3D)->Node3D:
 	var n=load("res://assets/golden_hook/models/keepsake_cloth.glb").instantiate();n.name="KeepsakeCloth";parent.add_child(n);return n
-static func set_wrap(parcel:Node3D,value:float):
-	for mesh in parcel.find_children("*","MeshInstance3D",true,false):
-		var shape=mesh.find_blend_shape_by_name("Wrapped")
-		if shape>=0:mesh.set_blend_shape_value(shape,clampf(value,0,1))
+static func set_wrap(cloth_parcel:Node3D,value:float):
+	for mesh_instance in cloth_parcel.find_children("*","MeshInstance3D",true,false):
+		var shape=mesh_instance.find_blend_shape_by_name("Wrapped")
+		if shape>=0:mesh_instance.set_blend_shape_value(shape,clampf(value,0,1))
 
 static func camp_model(parent:Node3D,id:String,pos:=Vector3.ZERO)->Node3D:
 	var n=load("res://assets/golden_hook/models/"+id+".glb").instantiate();parent.add_child(n);n.position=pos
-	for mesh in n.find_children("*","MeshInstance3D",true,false):
-		var source=mesh.get_active_material(0)
+	for mesh_instance in n.find_children("*","MeshInstance3D",true,false):
+		var source=mesh_instance.get_active_material(0)
 		if source is StandardMaterial3D:
 			var label=str(source.resource_name).to_lower()
 			if "cotton" in label or "canvas" in label or "blanket" in label or "wool" in label:
-				var cloth=ShaderMaterial.new();cloth.shader=load("res://game/golden_hook/prop_cloth.gdshader");cloth.set_shader_parameter("cloth_color",source.albedo_color);cloth.set_shader_parameter("use_normal",0.0);mesh.material_override=cloth
+				var cloth=ShaderMaterial.new();cloth.shader=load("res://game/golden_hook/prop_cloth.gdshader");cloth.set_shader_parameter("cloth_color",source.albedo_color);cloth.set_shader_parameter("use_normal",0.0);mesh_instance.material_override=cloth
 	return n
 static func sack(parent:Node3D,pos:Vector3)->Node3D:return camp_model(parent,"ration_sack",pos)
 

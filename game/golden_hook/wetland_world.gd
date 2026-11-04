@@ -210,7 +210,7 @@ func _camp():
 	for i in 2:
 		var fish=Fish.new(); pot_fish.add_child(fish); fish.position=Vector3((i-.5)*.15,0,0); fish.rotation.y=i*1.6
 	pot_greens=P.greens(pot,Vector3(0,.42,0)); pot_greens.scale=Vector3.ONE*.6; pot_greens.hide()
-	var final_pot=_pot(Vector3(-.8,0,-34.5))
+	_pot(Vector3(-.8,0,-34.5))
 	work_parts=Node3D.new(); add_child(work_parts); work_parts.position=at_ground(Vector3(-8.4,0,7.8))+Vector3(0,.05,0)
 	P.box(work_parts,Vector3(.72,.06,.46),Vector3.ZERO,"81775e")
 	work_hook=P.hook(work_parts); work_hook.position=Vector3(0,.06,0); work_hook.scale=Vector3.ONE*1.25; work_hook.rotation.z=PI/2; work_hook.hide()

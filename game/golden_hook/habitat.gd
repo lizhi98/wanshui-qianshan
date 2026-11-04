@@ -53,8 +53,8 @@ func _batch(id:String,entries:Array,near:float,far:float):
 		var fit=minf(4.0,target/maxf(box.size.y,.015))
 		for e in entries:
 			if e.index%list.size()!=variant:continue
-			var basis=Basis(Vector3.UP,e.angle).scaled(Vector3.ONE*e.scale*fit)
-			transforms.append(Transform3D(basis,e.point-basis*Vector3(box.get_center().x,box.position.y,box.get_center().z)))
+			var plant_basis=Basis(Vector3.UP,e.angle).scaled(Vector3.ONE*e.scale*fit)
+			transforms.append(Transform3D(plant_basis,e.point-plant_basis*Vector3(box.get_center().x,box.position.y,box.get_center().z)))
 		if transforms.is_empty():continue
 		var mm=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=model.mesh;mm.instance_count=transforms.size()
 		for i in transforms.size():mm.set_instance_transform(i,transforms[i])

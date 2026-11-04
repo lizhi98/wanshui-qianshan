@@ -293,7 +293,9 @@ func _cast_snapshot()->Dictionary:
 	for pair in [["elder",elder],["shi",shi],["qing",qing]]:
 		var actor=pair[1];var route=[]
 		if actor.moving:
-			for i in range(actor.route_index,actor.route.size()):var p=actor.route[i];route.append([p.x,p.y,p.z])
+			for i in range(actor.route_index,actor.route.size()):
+				var waypoint=actor.route[i]
+				route.append([waypoint.x,waypoint.y,waypoint.z])
 		var p=actor.position
 		result[pair[0]]={"position":[p.x,p.y,p.z],"yaw":actor.rotation.y,"posture":"weak" if actor.visual.posture=="rising" else actor.visual.posture,"held":actor.visual.held if actor.visual.held in ["bowl","scraps"] else "","route":route,"speed":actor.moving_speed}
 	return result
@@ -654,7 +656,7 @@ func _demo_tick(delta):
 	demo_float.visible=demo_clock>1.3
 	if demo_clock<2:
 		var t=clampf((demo_clock-1.3)/.7,0,1); demo_float.global_position=start.lerp(finish,t)+Vector3(0,sin(t*PI)*1.1,0)
-	else: demo_float.global_position=finish+Vector3(0,sin(demo_clock*6)*.012-(.18 if fmod(demo_clock,12)>10.7 else 0),0)
+	else: demo_float.global_position=finish+Vector3(0,sin(demo_clock*6)*.012-(.18 if fmod(demo_clock,12)>10.7 else 0.0),0)
 	var line=demo_line.get_child(0); var direction=demo_float.global_position-start
 	line.visible=direction.length()>.0001 and demo_float.visible
 	if line.visible:
