@@ -68,10 +68,10 @@ func tick(delta):
    offset=previous.move_toward(offset,delta*.75)
    state.plant_offset=offset
    goal.x=raw.x+offset.x;goal.z=raw.z+offset.z
-   var lift=maxf(0.0,hit.position.y+visual.sole_offset(side)-raw.y)
-   var vertical=move_toward(float(state.get("plant_height_offset",0.0)),goal.y-raw.y,delta*.50)
+   var floor_offset=hit.position.y+visual.sole_offset(side)-raw.y
+   var vertical=move_toward(float(state.get("plant_height_offset",0.0)),goal.y-raw.y,delta*.85)
    state.plant_height_offset=vertical
-   goal.y=raw.y+maxf(vertical,lift)
+   goal.y=raw.y+maxf(vertical,floor_offset)
    if offset.length_squared()>.000001 or absf(vertical)>.001:weight=1.0
   else:
    state.erase("plant_offset");state.erase("plant_height_offset")
