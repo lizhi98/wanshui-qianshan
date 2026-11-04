@@ -88,7 +88,7 @@ theme_override_constants/separation = 8
 [node name="Index" type="Label" parent="Folio/Column"]
 theme_override_colors/font_color = Color(0.8353, 0.7294, 0.5333, 1)
 theme_override_font_sizes/font_size = 15
-text = "行 军 手 记     /     卷 一"
+text = "行 军 手 记"
 
 [node name="Heading" type="Label" parent="Folio/Column"]
 theme_override_fonts/font = ExtResource("ink")
@@ -124,7 +124,7 @@ alignment = 0
 [node name="Three" type="Label" parent="Folio/Column"]
 theme_override_colors/font_color = Color(0.7686, 0.8118, 0.7255, 1)
 theme_override_font_sizes/font_size = 15
-text = "草地   /   章节预告"
+text = "草地   /   鱼汤"
 
 [node name="Fishhook" type="Button" parent="Folio/Column"]
 custom_minimum_size = Vector2(0, 51)
