@@ -29,6 +29,8 @@ func hud_type(): return load("res://game/v2/hud.gd")
 func modern_type(): return load("res://game/v33/retired_epilogue.gd")
 func _ready():
 	super._ready()
+	player.free_walk_speed = 1.4
+	player.visual.motion_space.set_blend_point_position(1, player.free_walk_speed)
 	process_physics_priority=20
 	DisplayServer.window_set_title("飞夺泸定桥 · V3.3")
 	for entry in [["observe",KEY_F],["signal",KEY_Q]]:
