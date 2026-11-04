@@ -112,6 +112,10 @@ zoom_out={
 ]
 }
 
+[mcp_toolkit]
+
+updates/check_for_updates=false
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
