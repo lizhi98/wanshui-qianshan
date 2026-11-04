@@ -63,12 +63,15 @@ func _physics_process(delta):
 		damage(1000)
 	previously_floored = is_on_floor()
 
+var free_walk_speed := 3.1
+var free_run_speed := 4.8
+
 func handle_controls(_delta):
 	var input = Vector3(Input.get_axis("move_left", "move_right"), 0, Input.get_axis("move_forward", "move_back"))
 	input = input.rotated(Vector3.UP, view.rotation.y).limit_length(1.0)
-	var speed = 3.1
+	var speed = free_walk_speed
 	if Input.is_action_pressed("sprint") and not aiming and not carrying:
-		speed = 4.8
+		speed = free_run_speed
 	if carrying: speed = 1.65
 	if aiming: speed = 1.8
 	movement_velocity = input*speed

@@ -1,6 +1,10 @@
 # Preserve the verified controller; V2 only delegates its special chain state.
 extends "res://game/player.gd"
 var balance_assist := true
+func _init():
+	free_walk_speed = 1.8
+	free_run_speed = 3.8
+
 func _physics_process(delta):
 	super._physics_process(delta)
 func jump():
