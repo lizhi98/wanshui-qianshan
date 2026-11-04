@@ -1,0 +1,95 @@
+[
+  {
+    "cue": "shortage",
+    "seconds": 99.31,
+    "bars": 24,
+    "bpm": 58,
+    "GM_programs_zero_based": [
+      42,
+      0,
+      48
+    ],
+    "source_midi": "art_source\\V1_1_score\\shortage.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  },
+  {
+    "cue": "hope",
+    "seconds": 83.48,
+    "bars": 24,
+    "bpm": 69,
+    "GM_programs_zero_based": [
+      42,
+      24,
+      48,
+      73
+    ],
+    "source_midi": "art_source\\V1_1_score\\hope.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  },
+  {
+    "cue": "warm",
+    "seconds": 90.0,
+    "bars": 24,
+    "bpm": 64,
+    "GM_programs_zero_based": [
+      42,
+      24,
+      48,
+      71
+    ],
+    "source_midi": "art_source\\V1_1_score\\warm.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  },
+  {
+    "cue": "urgent",
+    "seconds": 88.42,
+    "bars": 28,
+    "bpm": 76,
+    "GM_programs_zero_based": [
+      42,
+      0,
+      45,
+      73
+    ],
+    "source_midi": "art_source\\V1_1_score\\urgent.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  },
+  {
+    "cue": "memory",
+    "seconds": 124.44,
+    "bars": 28,
+    "bpm": 54,
+    "GM_programs_zero_based": [
+      42,
+      0,
+      48,
+      60
+    ],
+    "source_midi": "art_source\\V1_1_score\\memory.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  },
+  {
+    "cue": "fishing",
+    "seconds": 96.0,
+    "bars": 24,
+    "bpm": 60,
+    "GM_programs_zero_based": [
+      42,
+      24
+    ],
+    "source_midi": "art_source\\V1_1_score\\fishing.mid",
+    "composition": "original for this project",
+    "render": "FluidSynth 2.6.1 / GeneralUser GS 2.0.3",
+    "human_listening": "pending; technical rendering is not emotional approval"
+  }
+]

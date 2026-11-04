@@ -1,0 +1,185 @@
+[
+  {
+    "asset": "grass_medium_01",
+    "source": "https://polyhaven.com/a/grass_medium_01",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "art_source/V1_1_vendor/grass_medium_01/grass_medium_01.bin",
+        "sha256": "f4587cabdb96a2e96d8be644923dc954a248edfaaa717a0ff224cacb898bee1f"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_medium_01/grass_medium_01.gltf",
+        "sha256": "3e5e2a314c94e16de54fd7c28e41709731fbd2b1613ab539f1544f622ddb6a85"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_medium_01/textures/grass_medium_01_arm_1k.jpg",
+        "sha256": "9a3a30f72bc02f4398967c5b08f2d20cce30bd423a2613b42a727034296fa3ae"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_medium_01/textures/grass_medium_01_diff_1k.jpg",
+        "sha256": "71495bd6a11fddcab0aaff38246fea1a7b802a705483f1c7cbca53955daa8050"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_medium_01/textures/grass_medium_01_nor_gl_1k.jpg",
+        "sha256": "cae298d3d1d7ff7c7e210ad8ac772b96706e356f9315a6b04fde373ce01ccf1e"
+      }
+    ],
+    "authors": {
+      "Rob Tuytel": "Photography",
+      "Rico Cilliers": "Modeling"
+    }
+  },
+  {
+    "asset": "grass_bermuda_01",
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "art_source/V1_1_vendor/grass_bermuda_01/grass_bermuda_01.bin",
+        "sha256": "b98be48b43afb9d57f6c722d918a49996635064b829b16dc14ef4a48c0f04dae"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_bermuda_01/grass_bermuda_01.gltf",
+        "sha256": "a1e5bb7fcf33721dc4844d7acacab80759fccec659f1ea643f8701afc542e207"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_bermuda_01/textures/grass_bermuda_01_arm_1k.jpg",
+        "sha256": "38190d342fe951c33ff8c37dd2e3de37aca4cc7633e91be8b0d1c1f71057a641"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_bermuda_01/textures/grass_bermuda_01_diff_1k.jpg",
+        "sha256": "ef202eeb8f8fb3312446009acecc87e5679a7d612e4dee859d8a849e00af5fcb"
+      },
+      {
+        "path": "art_source/V1_1_vendor/grass_bermuda_01/textures/grass_bermuda_01_nor_gl_1k.jpg",
+        "sha256": "4475b37d6e4d217ce03547216f62d1ef6e65cafda2355fd0cb2aeb6d919b9338"
+      }
+    ],
+    "authors": {
+      "Rico Cilliers": "All"
+    }
+  },
+  {
+    "asset": "shrub_02",
+    "source": "https://polyhaven.com/a/shrub_02",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "art_source/V1_1_vendor/shrub_02/shrub_02.bin",
+        "sha256": "5c1b79da1cfdbac90599542ccd1f75ba433a3a4d356b1ea03655adb39b0e2c96"
+      },
+      {
+        "path": "art_source/V1_1_vendor/shrub_02/shrub_02.gltf",
+        "sha256": "99de0a70fe88ad414615cc8d8e020617c8512e2abfe08b911b153a6fcc40d93e"
+      },
+      {
+        "path": "art_source/V1_1_vendor/shrub_02/textures/shrub_02_arm_1k.jpg",
+        "sha256": "7186bf604d5c02f873aef6de2346cc06b6fa48f47d054edbef36d2c3772c0890"
+      },
+      {
+        "path": "art_source/V1_1_vendor/shrub_02/textures/shrub_02_diff_1k.jpg",
+        "sha256": "9956eff294034d70516d867e9668428a23d782feb3d4c34061dce5e44bacd5a8"
+      },
+      {
+        "path": "art_source/V1_1_vendor/shrub_02/textures/shrub_02_nor_gl_1k.jpg",
+        "sha256": "54c24e433365d5410223b7ebd2b33042b80831f80976e10768114db5ef6911d7"
+      }
+    ],
+    "authors": {
+      "Rico Cilliers": "All"
+    }
+  },
+  {
+    "asset": "rock_moss_set_01",
+    "source": "https://polyhaven.com/a/rock_moss_set_01",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "art_source/V1_1_vendor/rock_moss_set_01/rock_moss_set_01.bin",
+        "sha256": "de8360e6175879aaf02c171911069cf5f1852547f9ca7f10e440085dbcc3315e"
+      },
+      {
+        "path": "art_source/V1_1_vendor/rock_moss_set_01/rock_moss_set_01.gltf",
+        "sha256": "c36675aca9c6b2be7785c2534cf413b03ec82a5a2a5407a2b1c0cdb0346c9727"
+      },
+      {
+        "path": "art_source/V1_1_vendor/rock_moss_set_01/textures/rock_moss_set_01_diff_1k.jpg",
+        "sha256": "40cea65d8aa4ee73a93b04af19963834d061eee9779c3fc2c1cba76eef812ccc"
+      },
+      {
+        "path": "art_source/V1_1_vendor/rock_moss_set_01/textures/rock_moss_set_01_nor_gl_1k.jpg",
+        "sha256": "eb4aad3f207f1dc5b624d74ae240372171626a66912bd71adf7bd3e518181d6e"
+      },
+      {
+        "path": "art_source/V1_1_vendor/rock_moss_set_01/textures/rock_moss_set_01_rough_1k.jpg",
+        "sha256": "4d6ec46623abd8e2cdb855f59c7ce31873ad61b36b60e4de579e9e776a497c6b"
+      }
+    ],
+    "authors": {
+      "Kless Gyzen": "All"
+    }
+  },
+  {
+    "asset": "pot_enamel_01",
+    "source": "https://polyhaven.com/a/pot_enamel_01",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "files": [
+      {
+        "path": "art_source/V1_1_vendor/pot_enamel_01/pot_enamel_01.bin",
+        "sha256": "134771c9f71269f791ad9e52910f25542e94b5e83adff1c9acc620c93d486d13"
+      },
+      {
+        "path": "art_source/V1_1_vendor/pot_enamel_01/pot_enamel_01.gltf",
+        "sha256": "ca60a8399463429cf23e04784334cbe344886e5c8747860ad9ad44c044e03dde"
+      },
+      {
+        "path": "art_source/V1_1_vendor/pot_enamel_01/textures/pot_enamel_01_arm_1k.jpg",
+        "sha256": "e8ab66b9a9f3e136d78dc393d30a9436b53570a4aaea26d5ae46913752bf15fe"
+      },
+      {
+        "path": "art_source/V1_1_vendor/pot_enamel_01/textures/pot_enamel_01_diff_1k.jpg",
+        "sha256": "b8b15e6cbdeebc49034f06418f5daf097fd954a4df1e63f1efbc85c96dec2c7d"
+      },
+      {
+        "path": "art_source/V1_1_vendor/pot_enamel_01/textures/pot_enamel_01_nor_gl_1k.jpg",
+        "sha256": "e489edcf2014fa96c3dfca2c966a5b3bb8c0d02e88c9adeea96465d44662f56e"
+      }
+    ],
+    "authors": {
+      "Kuutti Siitonen": "All"
+    }
+  },
+  {
+    "asset": "brown_mud_02",
+    "source": "https://polyhaven.com/a/brown_mud_02",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "asset": "aerial_grass_rock",
+    "source": "https://polyhaven.com/a/aerial_grass_rock",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "authors": {
+      "Rob Tuytel": "All"
+    }
+  },
+  {
+    "asset": "kloofendal_overcast_puresky",
+    "source": "https://polyhaven.com/a/kloofendal_overcast_puresky",
+    "license": "CC0-1.0",
+    "use": "2k HDRI sky and natural reflections",
+    "authors": {
+      "Greg Zaal": "All"
+    }
+  }
+]

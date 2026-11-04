@@ -1,0 +1,27 @@
+[
+  {
+    "asset": "grass_medium_01",
+    "source_polygons": 24730,
+    "near_polygons": 14250
+  },
+  {
+    "asset": "grass_bermuda_01",
+    "source_polygons": 941,
+    "near_polygons": 941
+  },
+  {
+    "asset": "shrub_02",
+    "source_polygons": 27254,
+    "near_polygons": 9598
+  },
+  {
+    "asset": "rock_moss_set_01",
+    "source_polygons": 63127,
+    "near_polygons": 34996
+  },
+  {
+    "asset": "pot_enamel_01",
+    "source_polygons": 11416,
+    "near_polygons": 9328
+  }
+]
