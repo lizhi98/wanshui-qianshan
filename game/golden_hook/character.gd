@@ -19,6 +19,7 @@ var previous_yaw:=0.0
 var ground_origin_y:=0.0
 var sole_offsets={"l":.086,"r":.086}
 var collapse_clock:=0.0
+var gait_height := NAN
 func _ready():
 	if "Qing" in str(get_parent().name): set_meta("rig_resource","res://assets/golden_hook/models/qing.glb")
 	elif "Zhou_Elder" in str(get_parent().name): set_meta("rig_resource","res://assets/golden_hook/models/elder.glb")
@@ -92,7 +93,8 @@ func _process(delta):
 	collapse_clock=collapse_clock+delta if posture=="collapsed" else 0.0
 	turning=absf(angle_difference(previous_yaw,owner_actor.rotation.y))/maxf(delta,.0001); previous_yaw=owner_actor.rotation.y
 	var measured=speed
-	if is_instance_valid(owner_actor.mission) and owner_actor == owner_actor.mission.player:
+	var is_player = is_instance_valid(owner_actor.mission) and owner_actor == owner_actor.mission.player
+	if is_player:
 		# The shared blend space interpolates idle, walk, jog and sprint by speed.
 		# Keep the clips at their authored tempo as the player crosses surfaces.
 		animation_tree.set("parameters/LocomotionRate/scale", 1.0)
@@ -111,6 +113,16 @@ func _process(delta):
 	elif external_grip and is_instance_valid(contact_prop): hand_targets=contact.targets(contact_profile,contact_prop)
 	super._process(0.0 if posture=="collapsed" and collapse_clock>2.3 else delta)
 	speed=measured
+	if is_player and mode in ["walk","run"] and posture in ["standing","weak"] and owner_actor.is_on_floor():
+		# Soften only the vertical gait oscillation before the feet are planted.
+		var pelvis_index = skeleton.find_bone("pelvis")
+		var pose = skeleton.get_bone_global_pose(pelvis_index)
+		if is_nan(gait_height): gait_height = pose.origin.y
+		gait_height = lerpf(gait_height, pose.origin.y, 1.0 - exp(-delta * 9.0))
+		pose.origin.y = lerpf(pose.origin.y, gait_height, 0.7)
+		skeleton.set_bone_global_pose(pelvis_index, pose)
+	else:
+		gait_height = NAN
 	rifle.hide()
 	if posture=="seated": _settle_feet()
 	if posture=="weak" and mode in ["walk","idle"]: _bend_torso(.095 if "Zhou" in str(owner_actor.name) else .055)
@@ -152,6 +164,7 @@ func hold(kind:String):
 	elif kind=="parcel": held_node=P.parcel(self)
 func reset_pose():
 	super.reset_pose()
+	gait_height = NAN
 	posture="standing"; hold(""); external_grip=false; contact.clear(); contact_profile=""; contact_prop=null; release_emotion()
 	collapse_clock=0; ground_origin_y=0
 	if ground_contact: ground_contact.reset(true)
