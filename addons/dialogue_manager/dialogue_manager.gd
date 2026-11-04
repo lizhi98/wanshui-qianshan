@@ -110,7 +110,7 @@ func _ready() -> void:
 
 	ignore_missing_state_values = DMSettings.get_setting(DMSettings.IGNORE_MISSING_STATE_VALUES, false)
 
-	if EngineDebugger.is_active():
+	if _has_dialogue_debugger():
 		EngineDebugger.register_message_capture("dm", _capture)
 		# If this is a debug build we can preload autoloads (otherwise this is
 		# done on the first state request.
@@ -412,7 +412,7 @@ func get_line(resource: DialogueResource, key: String, extra_game_states: Array)
 
 	line.next_id = "|".join(stack) if line.next_id == DMConstants.ID_NULL else _get_id_with_resource(resource, line.next_id) + id_trail
 
-	if EngineDebugger.is_active():
+	if _has_dialogue_debugger():
 		EngineDebugger.send_message("dm:get_line", [line.id])
 
 	return line
@@ -746,7 +746,7 @@ func show_error_for_missing_state_value(message: String, extra_game_states: Arra
 		push_error(message)
 	elif will_show:
 		# Let the debugger know before we break
-		if EngineDebugger.is_active() and extra_game_states.size() > 0:
+		if _has_dialogue_debugger() and extra_game_states.size() > 0:
 			EngineDebugger.send_message("dm:debug", [extra_game_states[0].debugger])
 
 		# If you're here then you're missing a method or property in your game state. The error
@@ -846,9 +846,14 @@ func unregister_state_context(alias: String) -> void:
 	_send_state_to_debugger()
 
 
+# The runtime autoload can be used without the editor plugin that handles dm: messages.
+func _has_dialogue_debugger() -> bool:
+	return EngineDebugger.is_active() and "res://addons/dialogue_manager/plugin.cfg" in ProjectSettings.get_setting("editor_plugins/enabled", PackedStringArray())
+
+
 # Let the debugger know about the current scene
 func _send_current_scene_to_debugger(current_scene: Node = null) -> void:
-	if not EngineDebugger.is_active(): return
+	if not _has_dialogue_debugger(): return
 
 	if not is_instance_valid(current_scene):
 		current_scene = get_current_scene.call() if get_current_scene.is_valid() else null
@@ -865,7 +870,7 @@ func _send_current_scene_to_debugger(current_scene: Node = null) -> void:
 
 # Let the debugger know about the latest state
 func _send_state_to_debugger() -> void:
-	if not EngineDebugger.is_active(): return
+	if not _has_dialogue_debugger(): return
 
 	var serialised_context: Dictionary = {}
 	for key: String in _registered_contexts.keys():
