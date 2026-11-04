@@ -35,7 +35,7 @@ func _ready():
 	personality=2 if variant=="zhou" else (1 if variant=="amu" else 0)
 	animation_offset=[.32,1.17,2.06][personality]+float(abs(hash(actor_name))%11)*.03
 	blink_clock=[.8,2.2,3.7][personality]
-	rig = load("res://assets/remaster/characters/"+variant+".glb").instantiate()
+	rig = load(str(get_meta("rig_resource", "res://assets/remaster/characters/"+variant+".glb"))).instantiate()
 	add_child(rig)
 	skeleton = rig.find_children("*","Skeleton3D",true,false)[0]
 	animator = rig.find_children("*","AnimationPlayer",true,false)[0]

@@ -87,8 +87,6 @@ func _ready():
 	if "--golden-smoke" in OS.get_cmdline_user_args(): call_deferred("export_smoke")
 	if "--golden-replay" in OS.get_cmdline_user_args(): call_deferred("start_replay")
 	if "--v11-action-lab" in OS.get_cmdline_user_args():call_deferred("start_action_lab")
-	if "--golden-first-smoke" in OS.get_cmdline_user_args() and not get_tree().has_meta("golden_first_smoked"):
-		get_tree().set_meta("golden_first_smoked",true); call_deferred("start_navigation_smoke")
 func _inputs():
 	for entry in [["sprint",KEY_SHIFT],["interact",KEY_E],["pause",KEY_ESCAPE],["bend_hook",KEY_D]]:
 		if not InputMap.has_action(entry[0]):
@@ -753,5 +751,3 @@ func start_replay():
 	var runner=load("res://qa/golden_input_playthrough.gd").new(); get_tree().root.add_child(runner); runner.run(self)
 func start_action_lab():
 	var runner=load("res://qa/golden_action_lab.gd").new();get_tree().root.add_child(runner);runner.run(self)
-func start_navigation_smoke():
-	var runner=load("res://qa/golden_navigation_smoke.gd").new(); get_tree().root.add_child(runner); runner.run(self)
