@@ -140,7 +140,10 @@ func _process(delta):
 	if mission:
 		var cinematic=mission.busy and mission.view.cinematic and not mission.crafting and not mission.fishing.active
 		var playing=mission.started and not menu.visible and (mission.dialogue_rows.is_empty() or mission.walk_and_talk) and not cinematic
-		for bar in bars: bar.visible=mission.started and not menu.visible and (cinematic or not mission.dialogue_rows.is_empty())
+		var dialogue_active = not mission.dialogue_rows.is_empty()
+		var intro_playing = dialogue_active and mission.dialogue_group == "intro"
+		var show_bars = mission.started and not menu.visible and not intro_playing and (cinematic or dialogue_active)
+		for bar in bars: bar.visible = show_bars
 		fishing_panel.visible=playing and mission.fishing.active
 		chapter.get_parent().visible=playing and not mission.fishing.active; task_backdrop.visible=playing and not mission.fishing.active
 		hint.visible=playing and not mission.fishing.active; warning.visible=playing and not mission.fishing.active
