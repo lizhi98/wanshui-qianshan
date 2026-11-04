@@ -1,24 +1,30 @@
-# Godot 4+ specific ignores
+# Godot editor state, imported cache and local export credentials.
+# Keep project.godot, export_presets.cfg, *.import sidecars and *.uid files.
 .godot/
-
-# Godot-specific ignores
 .import/
-export.cfg
-export_presets.cfg
-
-# Imported translations (automatically generated from CSV files)
+/export.cfg
+/export_credentials.cfg
 *.translation
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# Local builds and root-level Windows exports.
+/build/
+/*.exe
+/*.pck
+/*.exe.new
+/*.exe.previous
+/data_*/
 
-# Kenney ignores
-build/
-*.blend1
+# Local test evidence. Keep test scripts and fixtures under tests/ and qa/.
+/test_evidence/
+
+# Blender backup copies, Python bytecode and Mono caches.
+*.blend[0-9]
+*.blend[0-9][0-9]
 __pycache__/
 *.pyc
+.mono/
+mono_crash.*.json
 
-# Local test output
-test_evidence/
+# OS thumbnail and folder metadata.
+Thumbs.db
+.DS_Store
