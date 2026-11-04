@@ -1,6 +1,7 @@
 extends RefCounted
 # After the authored full-body clip: only terrain/contact corrections, never a gait generator.
 var visual
+var responsive_player_feet := false
 var contacts:Dictionary={}
 var events:Array=[]
 var clock:=0.0
@@ -14,7 +15,10 @@ const SOLE=.070
 const PLANT_HEIGHT=.115
 const RELEASE_HEIGHT=.145
 const MAX_LOCK_OFFSET=.18
-func setup(v):visual=v
+func setup(v):
+ visual=v
+ var actor=v.get_parent()
+ responsive_player_feet=is_instance_valid(actor.mission) and actor==actor.mission.player
 func reset(full:=false):
  contacts.clear();events.clear();was_moving=false;stop_blend=0
  if full:pelvis_offset=0
@@ -57,6 +61,20 @@ func tick(delta):
    goal=raw.lerp(state.stop_point+Vector3.UP*visual.sole_offset(side),stop_blend);goal.y=maxf(goal.y,hit.position.y+visual.sole_offset(side));weight=1.0
    if stop_blend<=0:
     plant_serial+=1;state.plant_id=plant_serial;state.point=Vector3(raw.x,hit.position.y,raw.z);state.planted=true;state.erase("stop_point")
+  if responsive_player_feet and moving:
+   # Ease out the horizontal plant offset as the authored swing takes over.
+   var offset=Vector3(goal.x-raw.x,0,goal.z-raw.z).limit_length(.055)
+   var previous:Vector3=state.get("plant_offset",Vector3.ZERO)
+   offset=previous.move_toward(offset,delta*.75)
+   state.plant_offset=offset
+   goal.x=raw.x+offset.x;goal.z=raw.z+offset.z
+   var lift=maxf(0.0,hit.position.y+visual.sole_offset(side)-raw.y)
+   var vertical=move_toward(float(state.get("plant_height_offset",0.0)),goal.y-raw.y,delta*.50)
+   state.plant_height_offset=vertical
+   goal.y=raw.y+maxf(vertical,lift)
+   if offset.length_squared()>.000001 or absf(vertical)>.001:weight=1.0
+  else:
+   state.erase("plant_offset");state.erase("plant_height_offset")
   contacts[side]=state
   if weight>0:
    # A stopping foot interpolates horizontally too. Sample beneath the final
@@ -93,10 +111,16 @@ func solve(side:String,world_goal:Vector3,world_normal:Vector3):
   contacts[side].planted=false;contacts[side].released=true
   var hit=probe(authored_world)
   if not hit.is_empty():world_goal=Vector3(authored_world.x,maxf(authored_world.y,hit.position.y+visual.sole_offset(side)),authored_world.z);goal=sk.to_local(world_goal);ray=goal-a.origin
- var length=clampf(ray.length(),.08,l1+l2-.006);var direction=ray.normalized()
+ var extension_margin=.0001 if responsive_player_feet else .006
+ var length=clampf(ray.length(),.08,l1+l2-extension_margin);var direction=ray.normalized()
  var along=(l1*l1-l2*l2+length*length)/(2*length);var height=sqrt(maxf(0,l1*l1-along*along))
  # The authored knee selects the bend side; no fixed arbitrary sideways pole.
  var pole=b.origin-a.origin;var bend=Vector3(pole-direction*direction.dot(pole)).normalized()
+ if responsive_player_feet:
+  # Preserve the clip's knee direction even when the ankle target crosses the leg axis.
+  var authored_ray=(c.origin-a.origin).normalized()
+  var authored_bend=pole.slide(authored_ray)
+  if authored_bend.length_squared()>.000001:bend=authored_bend.slide(direction).normalized()
  if bend.length()<.5:bend=Vector3.FORWARD.slide(direction).normalized()
  var knee=a.origin+direction*along+bend*height;var ankle=a.origin+direction*length
  var q1=Quaternion((b.origin-a.origin).normalized(),(knee-a.origin).normalized());var q2=Quaternion((c.origin-b.origin).normalized(),(ankle-knee).normalized())
