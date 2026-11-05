@@ -215,7 +215,7 @@ func play_dialogue(group:String,finished:=Callable()):
 	# Ordinary conversations retain the player's follow camera and mouse look.
 	dialogue_uses_camera=group in ["intro","supplies_done","demo","secret_notice","secret","found_elder","last_soup","silence","keepsake","onward"]
 	player.locked=not walk_and_talk;view.cinematic=dialogue_uses_camera;busy=not walk_and_talk
-	if group in ["comrade_a","comrade_b"]:
+	if group in ["comrade_a","comrade_b","secret_notice","secret"]:
 		_settle_comrade_conversation()
 	focus_point=_dialogue_focus(group); focus_distance=4.1
 	if group in ["secret","last_soup","silence"]: focus_distance=2.5
@@ -267,7 +267,7 @@ func _cinematic_camera(delta):
 	elif dialogue_group.begins_with("secret"):
 		var row=dialogue_rows[dialogue_index]
 		var actor=elder if row.speaker=="老班长" else player
-		focus_point=actor.position+Vector3(0,.98 if actor==elder else 1.15,0)
+		focus_point=actor.position+Vector3(0,.98 if actor==elder else 1.40,0)
 		desired=focus_point+actor.global_basis*Vector3(.75,.2,1.4)
 	elif dialogue_group=="onward":
 		focus_point=player.position+Vector3(0,1,-2);desired=player.position+Vector3(8,6,8)
@@ -474,9 +474,10 @@ func _do_action(option:Dictionary):
 	if id in ["comrade_a","comrade_b"]:
 		_settle_comrade_conversation()
 	else:
-		await _approach(_elder_head() if id=="last_deliver" else point,.66 if id=="last_deliver" else .82)
+		var approach_distance = 1.15 if id in ["inspect_scraps","understand"] else (.66 if id=="last_deliver" else .82)
+		await _approach(_elder_head() if id=="last_deliver" else point,approach_distance)
 	if not started or epoch!=session_epoch: return
-	var kneeling=id not in ["comrade_a","comrade_b","serve_a","serve_b","continue_march","leave"]
+	var kneeling=id not in ["comrade_a","comrade_b","serve_a","serve_b","continue_march","leave","inspect_scraps","understand"]
 	player.visual.posture="kneel" if kneeling else "standing"
 	player.visual.hand_targets=[point+Vector3(-.07,.18,0),point+Vector3(.07,.18,0)] if kneeling else []
 	if not await _wait(.8,epoch): return
@@ -547,7 +548,7 @@ func _do_action(option:Dictionary):
 		elder.visual.reset_pose(); elder.visual.hold("scraps"); audio.set_mood("silence"); elder.walk([world.at_ground(Vector3(-13,0,2)),world.points.secret],1.3)
 		_finish_action(); play_dialogue("after_soup"); return
 	if id=="understand":
-		_finish_action(); elder.moving=false; elder.face(player.position); elder.visual.posture="seated"; elder.visual.hold("scraps"); player.visual.posture="kneel"
+		_finish_action(); elder.moving=false; elder.face(player.position); elder.visual.posture="seated"; elder.visual.hold("scraps"); _settle_comrade_conversation()
 		audio.set_mood("silence")
 		var bowl=elder.visual.held_node;elder.visual.external_grip=true;elder.visual.set_contact("bowl",bowl)
 		var start=bowl.position
