@@ -59,6 +59,7 @@ var performance_mode:=false
 var secret_observed:=false
 var escort_clock:=0.0
 var walk_and_talk:=false
+var dialogue_uses_camera:=false
 var collapse_seen:=false
 func _ready():
 	if "--v11-manual-sandbox" in OS.get_cmdline_user_args():store.path="user://golden_hook_v11_manual_sandbox.json"
@@ -189,7 +190,7 @@ func _process(delta):
 	if story.step in ["leave","archive"]: _escort_tick(delta)
 	if not dialogue_rows.is_empty():
 		dialogue_left-=delta; dialogue_age+=delta
-		if not walk_and_talk:_cinematic_camera(delta)
+		if dialogue_uses_camera:_cinematic_camera(delta)
 		if dialogue_left<=0: _next_line()
 	if fishing.active and dialogue_rows.is_empty(): fishing.tick(delta)
 	if crafting and not busy and dialogue_rows.is_empty(): _craft_tick(delta)
@@ -205,16 +206,18 @@ func play_dialogue(group:String,finished:=Callable()):
 	if not Dialogue.GROUPS.has(group) and group!="secret_notice": return
 	dialogue_group=group; dialogue_rows=Dialogue.new().lines_for(group); dialogue_index=-1; dialogue_finish=finished
 	walk_and_talk=group=="march"
-	player.locked=not walk_and_talk;view.cinematic=not walk_and_talk;busy=not walk_and_talk
+	# Ordinary conversations retain the player's follow camera and mouse look.
+	dialogue_uses_camera=group in ["intro","supplies_done","demo","secret_notice","secret","found_elder","last_soup","silence","keepsake","onward"]
+	player.locked=not walk_and_talk;view.cinematic=dialogue_uses_camera;busy=not walk_and_talk
 	focus_point=_dialogue_focus(group); focus_distance=4.1
 	if group in ["secret","last_soup","silence"]: focus_distance=2.5
 	_next_line()
 func _next_line():
 	audio.stop_voice(); dialogue_index+=1; dialogue_age=0
 	if dialogue_index>=dialogue_rows.size():
-		var callback=dialogue_finish;var was_walking=walk_and_talk;_cancel_dialogue()
+		var callback=dialogue_finish;var used_camera=dialogue_uses_camera;_cancel_dialogue()
 		busy=false; player.locked=crafting or fishing.active
-		if not player.locked and not was_walking: _reset_camera()
+		if not player.locked and used_camera: _reset_camera()
 		if not player.locked and not callback.is_valid() and player.visual.posture=="kneel": player.visual.posture="weak"; player.visual.mode="idle"
 		if callback.is_valid(): callback.call()
 		return
@@ -234,6 +237,7 @@ func _next_line():
 		speaker_actor.visual.conversation_role=1
 func _cancel_dialogue():
 	walk_and_talk=false
+	dialogue_uses_camera=false
 	dialogue_rows=[]; dialogue_index=-1; dialogue_finish=Callable()
 	voice_actor=null
 	if hud: hud.hide_dialogue(); hud.map_panel.hide()
@@ -549,7 +553,7 @@ func _do_action(option:Dictionary):
 func _finish_action():
 	busy=false; player.locked=false; player.visual.posture="weak"; player.visual.hand_targets=[]
 	player.visual.mode="idle"; player.visual.speed=0
-	if not crafting and not fishing.active: _reset_camera()
+	if view.cinematic and not crafting and not fishing.active: _reset_camera()
 	save_checkpoint()
 func _handoff(receiver,epoch:int)->bool:
 	var bowl=player.visual.held_node
