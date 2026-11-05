@@ -11,6 +11,8 @@ var blink_clock := 1.0
 var face_meshes: Array = []
 var motion_speed := 0.0
 var action_blend := 0.0
+var upper_body_reload := false
+var reload_blend := 0.0
 var personality := 0
 var animation_offset := 0.0
 var conversation_role := 0 # 0 gameplay, 1 speaker, 2 listener
@@ -113,8 +115,15 @@ func _make_tree():
 				transition.xfade_time = 0.24
 				states.add_transition(from,to,transition)
 	graph.add_node("Actions",states,Vector2(260,300))
+	# The same upper-body mask preserves the locomotion hips and leg tracks.
+	graph.add_node("Reload",_clip("Pistol_Reload"),Vector2(0,440))
+	graph.add_node("ReloadSeek",AnimationNodeTimeSeek.new(),Vector2(260,440))
+	graph.connect_node("ReloadSeek",0,"Reload")
+	graph.add_node("ReloadBlend",upper.duplicate(),Vector2(480,180))
+	graph.connect_node("ReloadBlend",0,"UpperBody")
+	graph.connect_node("ReloadBlend",1,"ReloadSeek")
 	graph.add_node("ActionBlend",AnimationNodeBlend2.new(),Vector2(520,80))
-	graph.connect_node("ActionBlend",0,"UpperBody")
+	graph.connect_node("ActionBlend",0,"ReloadBlend")
 	graph.connect_node("ActionBlend",1,"Actions")
 	graph.connect_node("output",0,"ActionBlend")
 	animation_tree.tree_root = graph
@@ -142,6 +151,8 @@ func _process(delta):
 	hurt_time = maxf(0,hurt_time-delta)
 	if last_mode != mode:
 		pose_time = 0
+		if upper_body_reload and mode=="reload":
+			animation_tree.set("parameters/ReloadSeek/seek_request",0.0)
 		if mode=="climb":
 			climb_travel=0; climb_origin_z=global_position.z; climb_previous_z=global_position.z
 		else: climb_grips.clear()
@@ -152,10 +163,13 @@ func _process(delta):
 	var use_action = action in ["talk","explain","point","concerned","assure","recall","resolve","pickup","place","brace","reload","climb","kneel_aim","dead","hit","jump"]
 	if use_action and playback.get_current_node()!=action: playback.travel(action)
 	motion_speed = lerpf(motion_speed,speed,minf(delta*8,1))
-	action_blend = move_toward(action_blend,1.0 if use_action else 0.0,delta*5)
+	var layered_reload = upper_body_reload and action=="reload"
+	reload_blend = move_toward(reload_blend,1.0 if layered_reload else 0.0,delta*8)
+	action_blend = move_toward(action_blend,1.0 if use_action and not layered_reload else 0.0,delta*5)
 	animation_tree.set("parameters/Locomotion/blend_position",motion_speed)
 	animation_tree.set("parameters/UpperBody/blend_amount",1.0 if armed or mode=="aim" else 0.0)
 	animation_tree.set("parameters/ActionBlend/blend_amount",action_blend)
+	animation_tree.set("parameters/ReloadBlend/blend_amount",reload_blend)
 	var work_height=.25
 	if hand_targets.size()==2: work_height=clampf((to_local(hand_targets[0]).y+to_local(hand_targets[1]).y)*.5,.2,.8)
 	for work in ["pickup","place","brace"]: animation_tree.set("parameters/Actions/"+work+"/blend_position",work_height)

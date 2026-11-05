@@ -32,7 +32,8 @@ func _ready():
 	view.aim_fov = 24.0
 	view.scale_aim_sensitivity = true
 	combat.player_shot_sound = "res://assets/audio/rifle_player_arisaka.wav"
-	combat.player_shot_volume_db = -4.0
+	combat.player_shot_volume_db = -2.0
+	player.visual.upper_body_reload = true
 	player.free_walk_speed = 1.4
 	player.visual.motion_space.set_blend_point_position(1, player.free_walk_speed)
 	process_physics_priority=20
