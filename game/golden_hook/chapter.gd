@@ -209,6 +209,8 @@ func play_dialogue(group:String,finished:=Callable()):
 	# Ordinary conversations retain the player's follow camera and mouse look.
 	dialogue_uses_camera=group in ["intro","supplies_done","demo","secret_notice","secret","found_elder","last_soup","silence","keepsake","onward"]
 	player.locked=not walk_and_talk;view.cinematic=dialogue_uses_camera;busy=not walk_and_talk
+	if group in ["comrade_a","comrade_b"]:
+		_settle_comrade_conversation()
 	focus_point=_dialogue_focus(group); focus_distance=4.1
 	if group in ["secret","last_soup","silence"]: focus_distance=2.5
 	_next_line()
@@ -451,11 +453,22 @@ func _approach(point:Vector3,distance:=.82):
 		player.rotation.y=lerp_angle(player.rotation.y,atan2(move.x,move.z),minf(delta*9,1)); player.visual.speed=1.7; player.visual.mode="walk"
 	var face=point-player.position
 	player.rotation.y=atan2(face.x,face.z); player.rotation_direction=player.rotation.y; player.visual.speed=0
+func _settle_comrade_conversation():
+	# A conversation needs neither a scripted approach nor a reaching/weak pose.
+	player.velocity=Vector3.ZERO; player.movement_velocity=Vector3.ZERO
+	player.visual.speed=0; player.visual.walk_gait_scale=1.0
+	player.visual.posture="standing"; player.visual.mode="idle"
+	player.visual.hand_targets=[]
+	if player.visual.ground_contact: player.visual.ground_contact.reset(true)
+
 func _do_action(option:Dictionary):
 	var epoch=session_epoch
 	busy=true; player.locked=true
 	var id=option.id; var point=option.point
-	await _approach(_elder_head() if id=="last_deliver" else point,.66 if id=="last_deliver" else .82)
+	if id in ["comrade_a","comrade_b"]:
+		_settle_comrade_conversation()
+	else:
+		await _approach(_elder_head() if id=="last_deliver" else point,.66 if id=="last_deliver" else .82)
 	if not started or epoch!=session_epoch: return
 	var kneeling=id not in ["comrade_a","comrade_b","serve_a","serve_b","continue_march","leave"]
 	player.visual.posture="kneel" if kneeling else "standing"
