@@ -13,6 +13,8 @@ var max_range := 70.0
 var enemy_range := 65.0
 var aim_assist := false
 var enemy_damage := 7
+var player_shot_sound := "res://assets/audio/rifle.wav"
+var player_shot_volume_db := -10.0
 
 func _process(delta):
 	if mission.paused or mission.failed:
@@ -92,7 +94,7 @@ func fire_player() -> bool:
 		impact(end)
 	flash(muzzle)
 	tracer(muzzle,end,Color("ffd39b"))
-	mission.sound("res://assets/audio/rifle.wav", -10)
+	mission.sound(player_shot_sound, player_shot_volume_db)
 	mission.view.recoil()
 	return true
 
