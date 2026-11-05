@@ -10,6 +10,7 @@ var armed := false
 var blink_clock := 1.0
 var face_meshes: Array = []
 var motion_speed := 0.0
+var walk_gait_scale := 1.0
 var action_blend := 0.0
 var upper_body_reload := false
 var reload_blend := 0.0
@@ -82,6 +83,8 @@ func _make_tree():
 	for entry in [["Idle_Loop",0.0],["Walk_Loop",1.8],["Jog_Fwd_Loop",3.2],["Sprint_Loop",4.8]]:
 		motion_space.add_blend_point(_clip(entry[0]), entry[1], -1, entry[0])
 	graph.add_node("Locomotion",motion_space,Vector2(0,0))
+	graph.add_node("WalkPace",AnimationNodeTimeScale.new(),Vector2(130,0))
+	graph.connect_node("WalkPace",0,"Locomotion")
 	graph.add_node("Aim",_clip("Pistol_Idle_Loop"),Vector2(0,180))
 	var upper = AnimationNodeBlend2.new()
 	upper.filter_enabled = true
@@ -92,7 +95,7 @@ func _make_tree():
 		if bone.begins_with("spine") or bone.begins_with("clavicle") or "arm" in bone or "hand" in bone or "head" in bone.to_lower() or bone.begins_with("neck") or bone.begins_with("thumb") or bone.begins_with("index") or bone.begins_with("middle") or bone.begins_with("ring") or bone.begins_with("pinky"):
 			upper.set_filter_path(path,true)
 	graph.add_node("UpperBody",upper,Vector2(260,60))
-	graph.connect_node("UpperBody",0,"Locomotion")
+	graph.connect_node("UpperBody",0,"WalkPace")
 	graph.connect_node("UpperBody",1,"Aim")
 	var states = AnimationNodeStateMachine.new()
 	# Conversation uses a quiet breathing base. Authored asymmetric hand targets
@@ -162,7 +165,10 @@ func _process(delta):
 	if hurt_time>0: action = "hit"
 	var use_action = action in ["talk","explain","point","concerned","assure","recall","resolve","pickup","place","brace","reload","climb","kneel_aim","dead","hit","jump"]
 	if use_action and playback.get_current_node()!=action: playback.travel(action)
-	motion_speed = lerpf(motion_speed,speed,minf(delta*8,1))
+	# Preserve stride length: normalize blend selection, accelerate only locomotion.
+	var gait_scale = maxf(walk_gait_scale, .1)
+	motion_speed = lerpf(motion_speed,speed/gait_scale,minf(delta*8,1))
+	animation_tree.set("parameters/WalkPace/scale",gait_scale if speed>.1 else 1.0)
 	var layered_reload = upper_body_reload and action=="reload"
 	reload_blend = move_toward(reload_blend,1.0 if layered_reload else 0.0,delta*8)
 	action_blend = move_toward(action_blend,1.0 if use_action and not layered_reload else 0.0,delta*5)

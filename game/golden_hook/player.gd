@@ -4,6 +4,9 @@ extends "res://game/v2/player.gd"
 var sink:=0.0
 var scripted_destination:=Vector3.INF
 var scripted_pace:=1.15
+func walk_speed_multiplier() -> float:
+	if mission and mission.story and mission.story.step=="leave": return 1.0
+	return super.walk_speed_multiplier()
 func walk_to(destination:Vector3,pace:float):scripted_destination=destination;scripted_pace=pace
 func handle_controls(delta):
 	super.handle_controls(delta)
@@ -14,14 +17,16 @@ func handle_controls(delta):
 func handle_effects(delta):
 	var horizontal=Vector2(velocity.x,velocity.z).length()
 	visual.speed=horizontal
+	visual.walk_gait_scale=walk_speed_multiplier() if horizontal>.1 else 1.0
 	visual.mode="walk" if horizontal>.1 else "idle"
 	if not is_on_floor(): visual.mode="jump"
 	if carrying: visual.mode="carry"
 	step_time+=delta
-	if horizontal>.4 and is_on_floor() and step_time>.55:
+	if horizontal>.4 and is_on_floor() and step_time>.55/walk_speed_multiplier():
 		step_time=0; mission.sound("res://sounds/land.ogg",-31)
 func _physics_process(delta):
 	if scripted_destination!=Vector3.INF and mission and not mission.paused:
+		visual.walk_gait_scale=1.0
 		var direction=scripted_destination-position;direction.y=0
 		if direction.length()<.13:scripted_destination=Vector3.INF;velocity=Vector3.ZERO;visual.speed=0;visual.mode="idle";return
 		velocity=direction.normalized()*scripted_pace+Vector3.DOWN*.5;move_and_slide()

@@ -7,7 +7,7 @@ func check(ok,label):
 func run():
  var g=load("res://game/v2/main.tscn").instantiate();root.add_child(g);await process_frame
  g.set_process(false);g.set_physics_process(false);g.player.set_physics_process(false);g.combat.set_process(false);g.paused=false
- var v=g.player.visual;v.set_process(false);v.animation_offset=0;v.personality=0;v.armed=true;v.speed=1.4;v.mode="reload"
+ var v=g.player.visual;v.set_process(false);v.animation_offset=0;v.personality=0;v.armed=true;v.speed=1.75;v.walk_gait_scale=1.25;v.mode="reload"
  var bone=v.skeleton.find_bone("calf_l")
  check(bone>=0,"leg bone located")
  var rotations=[]
@@ -18,7 +18,7 @@ func run():
  for q in rotations.slice(60):range_angle=maxf(range_angle,rotations[60].angle_to(q))
  check(range_angle>.15,"walking legs keep cycling while reloading; radians="+str(range_angle))
  check(v.reload_blend==1 and v.action_blend==0,"reload isolated from full body actions")
- v.speed=3.8
+ v.speed=3.8;v.walk_gait_scale=1.0
  rotations.clear()
  for i in 120:
   v._process(1.0/60.0)

@@ -89,7 +89,7 @@ func _make_tree():
 		clip.loop_mode=Animation.LOOP_LINEAR;library.add_animation("Memorial_Clear_Loop",clip)
 	super._make_tree()
 	var graph=animation_tree.tree_root
-	graph.disconnect_node("UpperBody",0);graph.add_node("LocomotionRate",AnimationNodeTimeScale.new());graph.connect_node("LocomotionRate",0,"Locomotion");graph.connect_node("UpperBody",0,"LocomotionRate")
+	graph.disconnect_node("UpperBody",0);graph.add_node("LocomotionRate",AnimationNodeTimeScale.new());graph.connect_node("LocomotionRate",0,"WalkPace");graph.connect_node("UpperBody",0,"LocomotionRate")
 	var actions=animation_tree.tree_root.get_node("Actions")
 	actions.get_node("dead").animation="Sitting_Idle_Loop" if animator.has_animation("Sitting_Idle_Loop") else "Sitting_Idle"
 	actions.get_node("reload").animation="PickUp_Table"

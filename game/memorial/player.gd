@@ -7,11 +7,13 @@ var walk_speed:=1.7
 var run_speed:=3.8
 var motion_state:="Idle"
 var avoidance_presence:NavigationAgent3D
+func _init():walking_speed_scale=1.25
 func request_facing(point:Vector3):facing_target=point;facing_requested=true
 func _physics_process(delta):
  var before_yaw=rotation.y
  if climbing:super._physics_process(delta);return
  if locked:
+  visual.walk_gait_scale=1.0
   avoidance_presence.velocity=Vector3.ZERO
   movement_velocity=Vector3.ZERO;velocity=Vector3(0,-.5,0);apply_floor_snap();move_and_slide();visual.speed=0
   if facing_requested:

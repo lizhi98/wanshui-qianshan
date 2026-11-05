@@ -2,6 +2,7 @@
 extends "res://game/player.gd"
 var balance_assist := true
 func _init():
+	walking_speed_scale = 1.25
 	free_walk_speed = 1.8
 	free_run_speed = 3.8
 

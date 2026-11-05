@@ -74,7 +74,7 @@ func _make_tree():
 	for key in ["pickup","place","brace"]:
 		var blend=states.get_node(key); blend.set_blend_point_node(0,_clip("Grass_Kneel_Hold"))
 	var graph=animation_tree.tree_root
-	graph.disconnect_node("UpperBody",0); graph.add_node("LocomotionRate",AnimationNodeTimeScale.new()); graph.connect_node("LocomotionRate",0,"Locomotion"); graph.connect_node("UpperBody",0,"LocomotionRate")
+	graph.disconnect_node("UpperBody",0); graph.add_node("LocomotionRate",AnimationNodeTimeScale.new()); graph.connect_node("LocomotionRate",0,"WalkPace"); graph.connect_node("UpperBody",0,"LocomotionRate")
 func _process(delta):
 	if not skeleton: return
 	var owner_actor=get_parent()

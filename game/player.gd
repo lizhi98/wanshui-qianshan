@@ -42,6 +42,7 @@ func _physics_process(delta):
 	if locked:
 		movement_velocity = Vector3.ZERO
 		visual.speed=0
+		if "walk_gait_scale" in visual: visual.walk_gait_scale = 1.0
 		velocity = Vector3.ZERO
 		return
 	handle_controls(delta)
@@ -65,11 +66,15 @@ func _physics_process(delta):
 
 var free_walk_speed := 3.1
 var free_run_speed := 4.8
+var walking_speed_scale := 1.0
+
+func walk_speed_multiplier() -> float:
+	return walking_speed_scale if not Input.is_action_pressed("sprint") and not carrying and not aiming else 1.0
 
 func handle_controls(_delta):
 	var input = Vector3(Input.get_axis("move_left", "move_right"), 0, Input.get_axis("move_forward", "move_back"))
 	input = input.rotated(Vector3.UP, view.rotation.y).limit_length(1.0)
-	var speed = free_walk_speed
+	var speed = free_walk_speed * walk_speed_multiplier()
 	if Input.is_action_pressed("sprint") and not aiming and not carrying:
 		speed = free_run_speed
 	if carrying: speed = 1.65
@@ -81,6 +86,7 @@ func handle_controls(_delta):
 func handle_effects(delta):
 	var horizontal = Vector2(velocity.x, velocity.z).length()
 	visual.speed = horizontal
+	if "walk_gait_scale" in visual: visual.walk_gait_scale = walk_speed_multiplier() if horizontal>.1 else 1.0
 	if carrying:
 		visual.mode = "carry"
 	elif mission.combat.reloading:
@@ -96,7 +102,7 @@ func handle_effects(delta):
 	else:
 		visual.mode = "idle"
 	step_time += delta
-	if get_position_delta().length() > delta*.4 and is_on_floor() and step_time > (0.3 if horizontal>3.4 else 0.48):
+	if get_position_delta().length() > delta*.4 and is_on_floor() and step_time > (0.3 if horizontal>3.4 else 0.48) / walk_speed_multiplier():
 		step_time = 0.0
 		mission.sound("res://sounds/land.ogg", -24)
 
