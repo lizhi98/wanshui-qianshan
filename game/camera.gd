@@ -6,6 +6,7 @@ var cinematic := true
 var shake := 0.0
 var aim_fov := 48.0
 var sensitivity := 1.0
+var scale_aim_sensitivity := false
 var focus_grace := .15
 var use_bridge_bounds:=true
 const CAMERA_MASK=1|16|32
@@ -27,8 +28,15 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseMotion and focus_grace<=0 and not cinematic and not mission.paused and not mission.failed and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		camera_rotation.y -= event.relative.x*0.14*sensitivity
-		camera_rotation.x = clampf(camera_rotation.x-event.relative.y*0.12*sensitivity, -54, 30)
+		var input_scale = sensitivity * _aim_input_scale()
+		camera_rotation.y -= event.relative.x*0.14*input_scale
+		camera_rotation.x = clampf(camera_rotation.x-event.relative.y*0.12*input_scale, -54, 30)
+
+func _aim_input_scale() -> float:
+	# Match screen-space mouse travel as the aiming FOV blends in.
+	if scale_aim_sensitivity and target and target.aiming:
+		return clampf(tan(deg_to_rad(camera.fov)*.5)/tan(deg_to_rad(66.0)*.5), .2, 1.0)
+	return 1.0
 
 func _physics_process(delta):
 	focus_grace=maxf(0,focus_grace-delta)
@@ -86,7 +94,7 @@ func _sweep_to(destination:Vector3)->Vector3:
 
 func handle_input(delta):
 	var input = Vector3(Input.get_axis("camera_up", "camera_down"), Input.get_axis("camera_left", "camera_right"), 0)
-	camera_rotation += input.limit_length(1.0)*rotation_speed*delta
+	camera_rotation += input.limit_length(1.0)*rotation_speed*delta*_aim_input_scale()
 	camera_rotation.x = clampf(camera_rotation.x, -54, 30)
 
 func recoil():

@@ -29,6 +29,8 @@ func hud_type(): return load("res://game/v2/hud.gd")
 func modern_type(): return load("res://game/v33/retired_epilogue.gd")
 func _ready():
 	super._ready()
+	view.aim_fov = 24.0
+	view.scale_aim_sensitivity = true
 	player.free_walk_speed = 1.4
 	player.visual.motion_space.set_blend_point_position(1, player.free_walk_speed)
 	process_physics_priority=20
