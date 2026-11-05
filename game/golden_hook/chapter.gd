@@ -211,6 +211,7 @@ func _process(delta):
 func play_dialogue(group:String,finished:=Callable()):
 	if not Dialogue.GROUPS.has(group) and group!="secret_notice": return
 	dialogue_group=group; dialogue_rows=Dialogue.new().lines_for(group); dialogue_index=-1; dialogue_finish=finished
+	if group=="supplies_done": _stand_for_supplies()
 	walk_and_talk=group=="march"
 	# Ordinary conversations retain the player's follow camera and mouse look.
 	dialogue_uses_camera=group in ["intro","supplies_done","demo","secret_notice","secret","found_elder","last_soup","silence","keepsake","onward"]
@@ -345,7 +346,7 @@ func interactions()->Array:
 	var options=[]
 	match story.step:
 		"supplies":
-			var titles={"bag_a":"检查第一只粮袋","bag_b":"检查第二只粮袋","comrade_a":"问问小石的情况","comrade_b":"问问阿青的情况","ration":"查看剩余口粮","greens_a":"拾取剧情食材","greens_b":"拾取剧情食材"}
+			var titles={"bag_a":"检查第一只粮袋","bag_b":"检查第二只粮袋","comrade_a":"问问小石的情况","comrade_b":"问问阿青的情况","ration":"查看剩余口粮","greens_a":"拾取食材","greens_b":"拾取食材"}
 			for id in Story.SUPPLIES:
 				if not story.done.get(id,false): options.append(_entry(id,id,titles[id]))
 			if options.is_empty(): options.append(_entry("deliver_supplies","elder","把食材交给老班长"))
@@ -356,7 +357,7 @@ func interactions()->Array:
 		"heat","bend","tie","mount": options.append(_entry("resume_craft","work","继续制作鱼钩"))
 		"first_fishing": options.append(_entry("fish","first_bank","准备钓鱼 · 还需 %d 条"%(2-story.inventory.fish)))
 		"cook_fish": options.append(_entry("put_fish","pot","把两条小鱼放进锅里"))
-		"cook_greens": options.append(_entry("put_greens","pot","加入带回的剧情食材"))
+		"cook_greens": options.append(_entry("put_greens","pot","加入带回的食材"))
 		"light_fire": options.append(_entry("light_fire","pot","点燃营火"))
 		"serve":
 			if story.done.get("serve_a",false) and story.done.get("serve_b",false): options.append(_entry("drink_soup","pot","喝下留给自己的鱼汤"))
@@ -400,7 +401,7 @@ func objective_text()->String:
 	if crafting:
 		return {"heat":"把针放在火上，留意金属颜色的变化","bend":"趁热把针弯成钩形","tie":"把钓线系到鱼钩上","mount":"把钓线装到细枝上"}.get(story.step,"")
 	if story.step=="supplies":
-		return "检查物资与战友 · %d / 5\n寻找两份剧情食材 · %d / 2"%[int(story.done.get("bag_a",false))+int(story.done.get("bag_b",false))+int(story.done.get("comrade_a",false))+int(story.done.get("comrade_b",false))+int(story.done.get("ration",false)),story.inventory.greens]
+		return "检查物资与战友 · %d / 5\n寻找两份食材 · %d / 2"%[int(story.done.get("bag_a",false))+int(story.done.get("bag_b",false))+int(story.done.get("comrade_a",false))+int(story.done.get("comrade_b",false))+int(story.done.get("ration",false)),story.inventory.greens]
 	if story.step=="simmer": return "守在火塘旁，等热汤煮好"
 	if story.step=="farewell": return "陪在老班长身旁"
 	return target_name()
@@ -467,17 +468,24 @@ func _settle_comrade_conversation():
 	player.visual.hand_targets=[]
 	if player.visual.ground_contact: player.visual.ground_contact.reset(true)
 
+func _stand_for_supplies():
+	elder.moving=false
+	elder.visual.posture="standing"; elder.visual.mode="idle"; elder.visual.speed=0
+	elder.visual.hand_targets=[]
+	elder.face(player.position)
+
 func _do_action(option:Dictionary):
 	var epoch=session_epoch
 	busy=true; player.locked=true
 	var id=option.id; var point=option.point
+	if id=="deliver_supplies": _stand_for_supplies()
 	if id in ["comrade_a","comrade_b"]:
 		_settle_comrade_conversation()
 	else:
 		var approach_distance = 1.15 if id in ["inspect_scraps","understand"] else (.66 if id=="last_deliver" else .82)
 		await _approach(_elder_head() if id=="last_deliver" else point,approach_distance)
 	if not started or epoch!=session_epoch: return
-	var kneeling=id not in ["comrade_a","comrade_b","serve_a","serve_b","continue_march","leave","inspect_scraps","understand"]
+	var kneeling=id not in ["comrade_a","comrade_b","serve_a","serve_b","continue_march","leave","inspect_scraps","understand","deliver_supplies"]
 	player.visual.posture="kneel" if kneeling else "standing"
 	player.visual.hand_targets=[point+Vector3(-.07,.18,0),point+Vector3(.07,.18,0)] if kneeling else []
 	if not await _wait(.8,epoch): return

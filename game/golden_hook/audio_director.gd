@@ -43,7 +43,7 @@ func speak(row:Dictionary)->float:
 	var path="res://assets/golden_hook/audio/voice/"+str(row.id)+".wav"
 	if ResourceLoader.exists(path):
 		voice.stream=load(path); voice.volume_db=linear_to_db(maxf(.0001,master*voice_volume*.88)); voice.play()
-		return voice.stream.get_length()+.14
+		return voice.stream.get_length()+maxf(0.0,float(row.get("pause_after",.14)))
 	return maxf(3.0,str(row.text).length()*.16)
 func stop_voice(): voice.stop(); voice_energy=0; voice_id=""
 func cue(id:String):

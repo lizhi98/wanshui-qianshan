@@ -120,6 +120,7 @@ const GROUPS={
       "id": "supplies_done_02",
       "speaker": "老班长",
       "text": "够这一顿。可后面的路……",
+      "pause_after": 1.25,
       "mood": "停顿"
     },
     {
