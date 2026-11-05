@@ -80,8 +80,10 @@ func enqueue_voice(who:String,line:String):
 
 func _next_voice():
 	last_voice=voice_queue.pop_front()
-	mission.hud.dialogue(last_voice.who,last_voice.text)
 	var entry=voice_manifest.get(last_voice.key,{})
+	# Keep the original event key while displaying the revised spoken wording.
+	last_voice.text=str(entry.get("display_text",last_voice.text))
+	mission.hud.dialogue(last_voice.who,last_voice.text)
 	var path=str(entry.get("file",""))
 	if not path.is_empty() and ResourceLoader.exists(path):
 		voice_busy=true
