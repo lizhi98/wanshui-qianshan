@@ -449,15 +449,19 @@ func _approach(point:Vector3,distance:=.82):
 	if direction.length()<.1: direction=Vector3.BACK
 	var goal=world.at_ground(point+direction.normalized()*distance)
 	var timeout=0.0
-	while Vector2(player.position.x-goal.x,player.position.z-goal.z).length()>.05 and timeout<2.2:
+	# Let the player controller own both displacement and gait while input is locked.
+	player.visual.posture="standing"; player.visual.hand_targets=[]
+	player.visual.ground_contact.reset(true)
+	player.walk_to(goal,1.7)
+	while player.scripted_destination!=Vector3.INF and timeout<2.2:
 		await get_tree().physics_frame
 		if epoch!=session_epoch or not started: return
 		if paused: continue
-		var delta=get_physics_process_delta_time(); timeout+=delta
-		var move=goal-player.position; move.y=0
-		var offset=move.limit_length(delta*1.7)
-		player.move_and_collide(offset); player.position.y=world.height_at(player.position)
-		player.rotation.y=lerp_angle(player.rotation.y,atan2(move.x,move.z),minf(delta*9,1)); player.visual.speed=1.7; player.visual.mode="walk"
+		timeout+=get_physics_process_delta_time()
+	player.scripted_destination=Vector3.INF
+	player.velocity=Vector3.ZERO; player.movement_velocity=Vector3.ZERO
+	player.visual.mode="idle"; player.visual.walk_gait_scale=1.0
+	player.visual.ground_contact.reset(true)
 	var face=point-player.position
 	player.rotation.y=atan2(face.x,face.z); player.rotation_direction=player.rotation.y; player.visual.speed=0
 func _settle_comrade_conversation():
@@ -580,6 +584,8 @@ func _do_action(option:Dictionary):
 		play_dialogue(id)
 func _finish_action():
 	busy=false; player.locked=false; player.visual.posture="weak"; player.visual.hand_targets=[]
+	player.velocity=Vector3.ZERO; player.movement_velocity=Vector3.ZERO
+	player.visual.ground_contact.reset(true)
 	player.visual.mode="idle"; player.visual.speed=0
 	if view.cinematic and not crafting and not fishing.active: _reset_camera()
 	save_checkpoint()

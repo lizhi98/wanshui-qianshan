@@ -89,6 +89,9 @@ func _process(delta):
 		mode="dead"; speed=0; look_enabled=false; conversation_role=0; gaze_yaw=0; gaze_pitch=0
 		if not _can_whisper(): speech_energy=0; mouth_level=0
 	elif old_posture in ["kneel","seated","collapsed"] and old_posture!=posture: mode="idle"
+	if old_posture!=posture and ground_contact:
+		# Do not drag standing feet toward anchors recorded before kneeling/rising.
+		ground_contact.reset(true)
 	old_posture=posture
 	collapse_clock=collapse_clock+delta if posture=="collapsed" else 0.0
 	turning=absf(angle_difference(previous_yaw,owner_actor.rotation.y))/maxf(delta,.0001); previous_yaw=owner_actor.rotation.y
