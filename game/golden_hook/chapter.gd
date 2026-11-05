@@ -36,7 +36,13 @@ var safe_position:=Vector3(-8,0,16)
 var checkpoint_clock:=0.0
 var reaction_window:=1.15
 var demo_seen:=false
-var crafting:=false
+var crafting:=false:
+	set(value):
+		crafting=value
+		# The craft close-up belongs to the elder; exclude the observer's body.
+		# Every exit/restart/load path already resets crafting, restoring visibility.
+		if is_instance_valid(player) and is_instance_valid(player.visual):
+			player.visual.visible=not value
 var heat_progress:=0.0
 var bend_progress:=0.0
 var dialogue_rows:Array=[]
@@ -589,7 +595,8 @@ func _enter_craft():
 	elder.visual.reset_pose()
 	var goal=world.flame.position+Vector3(-.62,0,.18) if story.step=="heat" else world.points.work+Vector3(-.45,0,-.6)
 	elder.walk([world.at_ground(goal)],1.3)
-	player.visual.posture="kneel"
+	player.visual.posture="standing"
+	player.visual.hand_targets=[]
 	view.camera.global_position=world.points.work+Vector3(-1.3,1.35,1.35); view.camera.look_at(world.points.work+Vector3(0,.23,0)); view.camera.fov=42
 func _exit_craft():
 	crafting=false; player.locked=false; player.visual.reset_pose(); elder.visual.reset_pose(); _reset_camera(); save_checkpoint()
@@ -600,7 +607,7 @@ func _craft_tick(delta):
 	var goal=elder.visual.to_global(Vector3(-.12,1.0,.35)) if elder.moving else (world.flame.position+Vector3(-.38,.30,.28) if story.step=="heat" else work+Vector3(.02,.16,.08))
 	world.work_hook.global_position=world.work_hook.global_position.lerp(goal,1-exp(-delta*12))
 	elder.visual.external_grip=true;elder.visual.set_contact("hook",world.work_hook)
-	player.visual.hand_targets=[work+Vector3(-.21,.2,.15),work+Vector3(.21,.2,.15)]
+	player.visual.hand_targets=[]
 	if story.step=="heat":
 		var heat_focus=world.work_needle.global_position
 		view.camera.global_position=view.camera.global_position.lerp(heat_focus+Vector3(.08,.26,.48),minf(delta*4,1)); view.camera.look_at(heat_focus+Vector3(.005,0,0));view.camera.fov=39
