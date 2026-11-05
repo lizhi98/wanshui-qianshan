@@ -78,6 +78,7 @@ func _ready():
 	player.died.connect(recover_from_swamp)
 	view=Node3D.new(); view.name="View"; view.set_script(load("res://game/camera.gd")); view.mission=self; view.target=player; view.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
 	var camera=Camera3D.new(); camera.name="Camera"; camera.current=true; camera.far=420; view.add_child(camera); add_child(view); player.view=view
+	view.use_bridge_bounds=false
 	var fill=OmniLight3D.new(); camera.add_child(fill); fill.light_color=Color("c6d3ce"); fill.light_energy=.18; fill.omni_range=4.5
 	elder=_actor("Zhou_Elder",world.points.elder); shi=_actor("Amu_Shi",world.points.comrade_a); qing=_actor("XiaoQing",world.points.comrade_b); actors=[elder,shi,qing]
 	elder.scale=Vector3.ONE*1.035; qing.scale=Vector3.ONE*.97
@@ -215,6 +216,8 @@ func play_dialogue(group:String,finished:=Callable()):
 	walk_and_talk=group=="march"
 	# Ordinary conversations retain the player's follow camera and mouse look.
 	dialogue_uses_camera=group in ["intro","supplies_done","demo","secret_notice","secret","found_elder","last_soup","silence","keepsake","onward"]
+	if view.cinematic and not dialogue_uses_camera:
+		_reset_camera()
 	player.locked=not walk_and_talk;view.cinematic=dialogue_uses_camera;busy=not walk_and_talk
 	if group in ["comrade_a","comrade_b","secret_notice","secret"]:
 		_settle_comrade_conversation()
