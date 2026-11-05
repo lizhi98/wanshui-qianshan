@@ -31,7 +31,6 @@ var fish_detail:Label
 var tension:ProgressBar
 var progress:ProgressBar
 var charge:ProgressBar
-var bars:Array=[]
 var task_backdrop:PanelContainer
 func label(text:String,size:int,color:=INK)->Label:
 	var n=Label.new(); n.text=text
@@ -101,8 +100,6 @@ func _ready():
 	fish_status=label("",22,GOLD); fv.add_child(fish_status)
 	fish_detail=label("",16); fish_detail.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; fish_detail.custom_minimum_size=Vector2(315,31); fv.add_child(fish_detail)
 	charge=_bar(fv,"抛竿蓄力",Color("c4b580")); tension=_bar(fv,"鱼线张力  绿色区域为宜",Color("93ad80")); progress=_bar(fv,"收线进度",Color("bdac72"))
-	for y in [0,690]:
-		var bar=ColorRect.new(); root.add_child(bar); bar.color=Color.BLACK; bar.position=Vector2(0,y); bar.size=Vector2(1280,30); bar.mouse_filter=Control.MOUSE_FILTER_IGNORE; bar.hide(); bars.append(bar)
 	root.move_child(menu, -1)
 func _bar(parent,text:String,color:Color)->ProgressBar:
 	var row=VBoxContainer.new();row.add_theme_constant_override("separation",1);parent.add_child(row);row.add_child(label(text,13,Color("aebba4")))
@@ -153,10 +150,6 @@ func _process(delta):
 	if mission:
 		var cinematic=mission.busy and mission.view.cinematic and not mission.crafting and not mission.fishing.active
 		var playing=mission.started and not menu.visible and (mission.dialogue_rows.is_empty() or mission.walk_and_talk) and not cinematic
-		var dialogue_active = not mission.dialogue_rows.is_empty()
-		var intro_playing = dialogue_active and mission.dialogue_group == "intro"
-		var show_bars = mission.started and not menu.visible and not intro_playing and (cinematic or dialogue_active)
-		for bar in bars: bar.visible = show_bars
 		fishing_panel.visible=playing and mission.fishing.active
 		chapter.get_parent().visible=playing and not mission.fishing.active; task_backdrop.visible=playing and not mission.fishing.active
 		hint.visible=playing and not mission.fishing.active; warning.visible=playing and not mission.fishing.active
